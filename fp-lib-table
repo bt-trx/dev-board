@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name wt32i)(type KiCad)(uri ${KIPRJMOD}/lib/wt32i/wt32i.pretty)(options "")(descr ""))
+  (lib (name bc127)(type KiCad)(uri ${KIPRJMOD}/lib/bc127/bc127.pretty)(options "")(descr ""))
+  (lib (name kingbright_led)(type KiCad)(uri ${KIPRJMOD}/lib/kingbright/kingbright_led.pretty)(options "")(descr ""))
+)

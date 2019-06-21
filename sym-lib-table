@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Sierra_BC127)(type Legacy)(uri ${KIPRJMOD}/lib/bc127/Sierra_BC127.lib)(options "")(descr ""))
+  (lib (name SILabs_WT32i)(type Legacy)(uri ${KIPRJMOD}/lib/wt32i/SILabs_WT32i.lib)(options "")(descr ""))
+  (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/lib/teensy/teensy.lib)(options "")(descr ""))
+)

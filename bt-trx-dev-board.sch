@@ -321,8 +321,8 @@ UART_UC_CTS
 $Sheet
 S 8850 650  1750 1400
 U 5BE3535B
-F0 "Audio Cirquit" 50
-F1 "audio_cirquit.sch" 50
+F0 "Audio Circuit" 50
+F1 "audio_circuit.sch" 50
 F2 "MIC_LP" O L 8850 1100 50 
 F3 "MIC_LN" O L 8850 1200 50 
 F4 "AUDIO_OUT" O R 10600 850 50 

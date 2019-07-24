@@ -3,4 +3,5 @@
   (lib (name bc127)(type KiCad)(uri ${KIPRJMOD}/lib/bc127/bc127.pretty)(options "")(descr ""))
   (lib (name kingbright_led)(type KiCad)(uri ${KIPRJMOD}/lib/kingbright/kingbright_led.pretty)(options "")(descr ""))
   (lib (name nodemcu_esp-32s)(type KiCad)(uri ${KIPRJMOD}/lib/nodemcu_esp-32s)(options "")(descr ""))
+  (lib (name ESP32-DEVKITC-32D)(type Legacy)(uri ${KIPRJMOD}/lib/nodemcu_esp-32s/ESP32-DEVKITC-32D.mod)(options "")(descr ""))
 )

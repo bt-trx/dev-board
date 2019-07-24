@@ -600,4 +600,28 @@ Wire Notes Line
 	3350 6950 6300 6950
 Wire Notes Line
 	3350 4800 6300 4800
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D3AD2F8
+P 1550 7150
+F 0 "H3" H 1650 7196 50  0000 L CNN
+F 1 "MountingHole" H 1650 7105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 7150 50  0001 C CNN
+F 3 "~" H 1550 7150 50  0001 C CNN
+F 4 "-" H 750 0   50  0001 C CNN "Mouser Best.Nr."
+	1    1550 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D3AD300
+P 1550 7350
+F 0 "H4" H 1650 7396 50  0000 L CNN
+F 1 "MountingHole" H 1650 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 7350 50  0001 C CNN
+F 3 "~" H 1550 7350 50  0001 C CNN
+F 4 "-" H 750 0   50  0001 C CNN "Mouser Best.Nr."
+	1    1550 7350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

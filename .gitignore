@@ -4,3 +4,4 @@ _autosave*
 *.tmp
 *.html
 *.csv
+fp-info-cache

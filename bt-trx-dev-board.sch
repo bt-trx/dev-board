@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bt-trx-dev-board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -230,8 +230,7 @@ F 0 "J2" H 3470 5575 50  0000 C CNN
 F 1 "PTT_BUTTON" H 3470 5666 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 5900 50  0001 C CNN
 F 3 "~" H 3550 5900 50  0001 C CNN
-F 4 "" H 3550 5900 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "855-M20-9990246" H -2300 -200 50  0001 C CNN "Mouser Best.Nr."
+F 4 "855-M20-9990246" H -2300 -200 50  0001 C CNN "Mouser Best.Nr."
 	1    3550 5900
 	-1   0    0    1   
 $EndComp
@@ -298,26 +297,10 @@ F 6 "634-WT32I-A-AI61" H 0   0   50  0001 C CNN "Mouser Best.Nr."
 	1    3750 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3350 3850 3350 4100
-Wire Wire Line
-	3450 3850 3450 4100
-Text Label 3450 4100 3    50   ~ 0
-UART_UC_RTS
-Text Label 3350 4100 3    50   ~ 0
-UART_UC_CTS
 Wire Notes Line
 	700  950  700  4700
 Wire Notes Line
 	6300 950  6300 4700
-Wire Wire Line
-	8850 2800 8750 2800
-Wire Wire Line
-	8850 2900 8750 2900
-Text Label 8750 2800 2    50   ~ 0
-UART_UC_RTS
-Text Label 8750 2900 2    50   ~ 0
-UART_UC_CTS
 $Sheet
 S 8850 650  1750 1400
 U 5BE3535B
@@ -431,12 +414,10 @@ F2 "UART_UC_TX" O L 8850 2600 50
 F3 "UART_UC_RX" I L 8850 2700 50 
 F4 "WT32_ONOFF_FROM_UC" O L 8850 3300 50 
 F5 "+V_IN" I L 8850 2350 50 
-F6 "UART_UC_RTS" O L 8850 2800 50 
-F7 "UART_UC_CTS" I L 8850 2900 50 
-F8 "UART_CAT_RX" I R 10600 2850 50 
-F9 "UART_CAT_TX" O R 10600 2950 50 
-F10 "PTT_IN" I L 8850 3050 50 
-F11 "PTT_OUT" O L 8850 3150 50 
+F6 "UART_CAT_RX" I R 10600 2850 50 
+F7 "UART_CAT_TX" O R 10600 2950 50 
+F8 "PTT_IN" I L 8850 3050 50 
+F9 "PTT_OUT" O L 8850 3150 50 
 $EndSheet
 Wire Wire Line
 	8850 3050 8750 3050
@@ -536,64 +517,48 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR012
 U 1 1 5CD1BCEE
-P 5100 6250
+P 5450 6600
 AR Path="/5CD1BCEE" Ref="#PWR012"  Part="1" 
 AR Path="/5C10B93A/5CD1BCEE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR012" H 5100 6100 50  0001 C CNN
-F 1 "+3V3" V 5100 6450 50  0000 C CNN
-F 2 "" H 5100 6250 50  0001 C CNN
-F 3 "" H 5100 6250 50  0001 C CNN
-	1    5100 6250
-	1    0    0    -1  
+F 0 "#PWR012" H 5450 6450 50  0001 C CNN
+F 1 "+3V3" V 5450 6800 50  0000 C CNN
+F 2 "" H 5450 6600 50  0001 C CNN
+F 3 "" H 5450 6600 50  0001 C CNN
+	1    5450 6600
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5CD1BCF6
-P 5100 6500
+P 5200 6600
 AR Path="/5CD1BCF6" Ref="R1"  Part="1" 
 AR Path="/5C10B93A/5CD1BCF6" Ref="R?"  Part="1" 
-F 0 "R1" H 5170 6546 50  0000 L CNN
-F 1 "10k" H 5170 6455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 6500 50  0001 C CNN
-F 3 "~" H 5100 6500 50  0001 C CNN
-F 4 "" H 1450 1350 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "603-RC0805FR-0710KL" H 1450 1350 50  0001 C CNN "Mouser Best.Nr."
-	1    5100 6500
-	1    0    0    -1  
+F 0 "R1" H 5270 6646 50  0000 L CNN
+F 1 "10k" H 5270 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 6600 50  0001 C CNN
+F 3 "~" H 5200 6600 50  0001 C CNN
+F 4 "603-RC0805FR-0710KL" H 1550 1450 50  0001 C CNN "Mouser Best.Nr."
+	1    5200 6600
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5100 6250 5100 6350
+	5450 6600 5350 6600
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5CD1BD02
-P 4500 6550
+P 4700 6400
 AR Path="/5C10B93A/5CD1BD02" Ref="J?"  Part="1" 
 AR Path="/5CD1BD02" Ref="J4"  Part="1" 
-F 0 "J4" V 4466 6362 50  0000 R CNN
-F 1 "ENABLE_PTT_IN" V 4250 6700 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4500 6550 50  0001 C CNN
-F 3 "~" H 4500 6550 50  0001 C CNN
-F 4 "855-M20-9990246" H -1150 4850 50  0001 C CNN "Mouser Best.Nr."
-	1    4500 6550
+F 0 "J4" V 4666 6212 50  0000 R CNN
+F 1 "ENAPLE_PTT_PULLUP" V 4800 6500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4700 6400 50  0001 C CNN
+F 3 "~" H 4700 6400 50  0001 C CNN
+F 4 "855-M20-9990246" H -950 4700 50  0001 C CNN "Mouser Best.Nr."
+	1    4700 6400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4350 5800 4350 6750
-Text Label 5500 6750 0    50   ~ 0
+Text Label 5500 6100 0    50   ~ 0
 UC_PTT_IN
-Wire Notes Line
-	6300 4800 6300 6950
-Wire Notes Line
-	3350 4800 3350 6950
-Wire Wire Line
-	4350 6750 4500 6750
-Wire Wire Line
-	4600 6750 5100 6750
-Wire Wire Line
-	5100 6650 5100 6750
-Connection ~ 5100 6750
-Wire Wire Line
-	5100 6750 5500 6750
 Text Notes 4450 5400 0    50   ~ 0
 Jumper J4 selects if the Teensy or the\nPTT Button is connected to the PTT\nof the Radio\nJumper J6 must be set if the PTT Button\nshould be connected to the Teensy\nConnector J2 connects an internal PTT Button\nAudio Jack J3 connects an external PTT Button
 Wire Notes Line
@@ -624,4 +589,21 @@ F 4 "-" H 750 0   50  0001 C CNN "Mouser Best.Nr."
 	1    1550 7350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5050 6600 4800 6600
+Wire Wire Line
+	4350 6600 4700 6600
+Wire Wire Line
+	4350 5800 4350 6100
+Wire Wire Line
+	5500 6100 4350 6100
+Connection ~ 4350 6100
+Wire Wire Line
+	4350 6100 4350 6600
+Wire Notes Line
+	6300 4800 6300 6950
+Wire Notes Line
+	3350 4800 3350 6950
+NoConn ~ 3350 3850
+NoConn ~ 3450 3850
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bt-trx-dev-board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -36,8 +36,8 @@ F 0 "C4" V 1798 6850 50  0000 C CNN
 F 1 "1uF" V 1889 6850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 6700 50  0001 C CNN
 F 3 "~" H 2050 6850 50  0001 C CNN
-F 4 "" H 300 0   50  0001 C CNN "Reichelt Best.Nr."
-F 5 "581-F981V105MSA" H 300 0   50  0001 C CNN "Mouser Best.Nr."
+F 4 "TBD" H 300 0   50  0001 C CNN "Mouser Best.Nr."
+F 5 "Tantal neccessary?" H 2050 6850 50  0001 C CNN "Notes"
 	1    2050 6850
 	0    1    1    0   
 $EndComp
@@ -94,8 +94,7 @@ F 0 "L3" V 3790 5900 50  0000 C CNN
 F 1 "100nH" V 3699 5900 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 5900 50  0001 C CNN
 F 3 "~" H 3600 5900 50  0001 C CNN
-F 4 "" H 300 -100 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "810-MLF2012DR10MT000" H 300 -100 50  0001 C CNN "Mouser Best.Nr."
+F 4 "810-MLF2012DR10MT000" H 300 -100 50  0001 C CNN "Mouser Best.Nr."
 	1    3600 5900
 	0    -1   -1   0   
 $EndComp
@@ -145,11 +144,11 @@ L Device:C C5
 U 1 1 5BFC0AC9
 P 3150 6600
 F 0 "C5" H 3265 6646 50  0000 L CNN
-F 1 "10nF" H 3265 6555 50  0000 L CNN
+F 1 "15pF" H 3265 6555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3188 6450 50  0001 C CNN
 F 3 "~" H 3150 6600 50  0001 C CNN
-F 4 "" H 300 200 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "710-885012207092" H 300 200 50  0001 C CNN "Mouser Best.Nr."
+F 4 "TBD" H 300 200 50  0001 C CNN "Mouser Best.Nr."
+F 5 "Tantal neccessary?" H 3150 6600 50  0001 C CNN "Notes"
 	1    3150 6600
 	1    0    0    -1  
 $EndComp
@@ -161,8 +160,8 @@ F 0 "C3" V 1798 6350 50  0000 C CNN
 F 1 "1uF" V 1889 6350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 6200 50  0001 C CNN
 F 3 "~" H 2050 6350 50  0001 C CNN
-F 4 "" H 150 0   50  0001 C CNN "Reichelt Best.Nr."
-F 5 "581-F981V105MSA" H 150 0   50  0001 C CNN "Mouser Best.Nr."
+F 4 "TBD" H 150 0   50  0001 C CNN "Mouser Best.Nr."
+F 5 "Tantal neccessary?" H 2050 6350 50  0001 C CNN "Notes"
 	1    2050 6350
 	0    1    1    0   
 $EndComp
@@ -174,26 +173,22 @@ F 0 "C2" V 1798 5900 50  0000 C CNN
 F 1 "1uF" V 1889 5900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 5750 50  0001 C CNN
 F 3 "~" H 2050 5900 50  0001 C CNN
-F 4 "" H 150 -100 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "581-F981V105MSA" H 150 -100 50  0001 C CNN "Mouser Best.Nr."
+F 4 "TBD" H 150 -100 50  0001 C CNN "Mouser Best.Nr."
+F 5 "Tantal neccessary?" H 2050 5900 50  0001 C CNN "Notes"
 	1    2050 5900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2450 5900 2450 5950
 $Comp
 L power:GNDA #PWR016
 U 1 1 5C1B2304
-P 2450 5950
-F 0 "#PWR016" H 2450 5700 50  0001 C CNN
-F 1 "GNDA" H 2455 5777 50  0000 C CNN
-F 2 "" H 2450 5950 50  0001 C CNN
-F 3 "" H 2450 5950 50  0001 C CNN
-	1    2450 5950
+P 2650 6900
+F 0 "#PWR016" H 2650 6650 50  0001 C CNN
+F 1 "GNDA" H 2655 6727 50  0000 C CNN
+F 2 "" H 2650 6900 50  0001 C CNN
+F 3 "" H 2650 6900 50  0001 C CNN
+	1    2650 6900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 5900 3000 5900
 Connection ~ 3150 6350
 Wire Wire Line
 	3150 6350 3150 6450
@@ -207,8 +202,7 @@ F 0 "L1" V 1290 4000 50  0000 C CNN
 F 1 "100nH" V 1199 4000 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1100 4000 50  0001 C CNN
 F 3 "~" H 1100 4000 50  0001 C CNN
-F 4 "" H -2200 -2000 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "810-MLF2012DR10MT000" H -2200 -2000 50  0001 C CNN "Mouser Best.Nr."
+F 4 "810-MLF2012DR10MT000" H -2200 -2000 50  0001 C CNN "Mouser Best.Nr."
 	1    1100 4000
 	1    0    0    -1  
 $EndComp
@@ -275,8 +269,8 @@ F 0 "C1" V 1798 1650 50  0000 C CNN
 F 1 "100uF" V 1889 1650 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 1500 50  0001 C CNN
 F 3 "~" H 2050 1650 50  0001 C CNN
-F 4 "" H 150 -4350 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "581-F980J107MSA" H 150 -4350 50  0001 C CNN "Mouser Best.Nr."
+F 4 "TBD" H 150 -4350 50  0001 C CNN "Mouser Best.Nr."
+F 5 "Tantal neccessary?" H 2050 1650 50  0001 C CNN "Notes"
 	1    2050 1650
 	0    1    1    0   
 $EndComp
@@ -313,11 +307,6 @@ Wire Wire Line
 	2550 2100 2550 2700
 Wire Wire Line
 	3150 6050 3150 6350
-Wire Wire Line
-	2200 5900 2450 5900
-Connection ~ 2450 5900
-Wire Wire Line
-	2200 6350 3150 6350
 $Comp
 L Connector:TestPoint TP7
 U 1 1 5C7783F5
@@ -436,14 +425,13 @@ Wire Wire Line
 $Comp
 L Device:L L2
 U 1 1 5CD0D38F
-P 3150 1950
-F 0 "L2" V 3340 1950 50  0000 C CNN
-F 1 "100nH" V 3249 1950 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3150 1950 50  0001 C CNN
-F 3 "~" H 3150 1950 50  0001 C CNN
-F 4 "" H -150 -4050 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "810-MLF2012DR10MT000" H -150 -4050 50  0001 C CNN "Mouser Best.Nr."
-	1    3150 1950
+P 3350 1950
+F 0 "L2" V 3540 1950 50  0000 C CNN
+F 1 "100nH" V 3449 1950 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3350 1950 50  0001 C CNN
+F 3 "~" H 3350 1950 50  0001 C CNN
+F 4 "810-MLF2012DR10MT000" H 50  -4050 50  0001 C CNN "Mouser Best.Nr."
+	1    3350 1950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -462,11 +450,11 @@ L Device:C C6
 U 1 1 5CD0D832
 P 3650 2350
 F 0 "C6" H 3765 2396 50  0000 L CNN
-F 1 "10nF" H 3765 2305 50  0000 L CNN
+F 1 "15pF" H 3765 2305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 2200 50  0001 C CNN
 F 3 "~" H 3650 2350 50  0001 C CNN
-F 4 "" H 800 -4050 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "710-885012207092" H 800 -4050 50  0001 C CNN "Mouser Best.Nr."
+F 4 "TBD" H 800 -4050 50  0001 C CNN "Mouser Best.Nr."
+F 5 "Tantal neccessary?" H 3650 2350 50  0001 C CNN "Notes"
 	1    3650 2350
 	1    0    0    -1  
 $EndComp
@@ -477,8 +465,54 @@ Wire Wire Line
 Connection ~ 3650 1950
 Wire Wire Line
 	3650 1950 4150 1950
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5D4B6C36
+P 2800 1650
+F 0 "JP2" H 2800 1425 50  0000 C CNN
+F 1 "BYPASS" H 2800 1516 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2800 1650 50  0001 C CNN
+F 3 "~" H 2800 1650 50  0001 C CNN
+F 4 "-" H 1250 -2750 50  0001 C CNN "Mouser Best.Nr."
+	1    2800 1650
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	3300 1950 3650 1950
+	2650 1650 2550 1650
+Connection ~ 2550 1650
 Wire Wire Line
-	2700 1950 3000 1950
+	3050 1650 3050 1950
+Wire Wire Line
+	3050 1950 3200 1950
+Wire Wire Line
+	3500 1950 3650 1950
+Wire Wire Line
+	2950 1650 3050 1650
+Wire Wire Line
+	2700 1950 3050 1950
+Connection ~ 3050 1950
+$Comp
+L Device:C C8
+U 1 1 5D4A378C
+P 2650 6600
+F 0 "C8" H 2765 6646 50  0000 L CNN
+F 1 "15pF" H 2765 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 6450 50  0001 C CNN
+F 3 "~" H 2650 6600 50  0001 C CNN
+F 4 "TBD" H -200 200 50  0001 C CNN "Mouser Best.Nr."
+F 5 "Tantal neccessary?" H 2650 6600 50  0001 C CNN "Notes"
+	1    2650 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6750 2650 6900
+Wire Wire Line
+	2200 5900 2650 5900
+Wire Wire Line
+	2200 6350 3150 6350
+Wire Wire Line
+	2650 6450 2650 5900
+Connection ~ 2650 5900
+Wire Wire Line
+	2650 5900 3000 5900
 $EndSCHEMATC

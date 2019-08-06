@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bt-trx-dev-board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -22,10 +22,9 @@ AR Path="/5C1540B8" Ref="SW?"  Part="1"
 AR Path="/5C10B93A/5C1540B8" Ref="SW1"  Part="1" 
 F 0 "SW1" V 946 3052 50  0000 R CNN
 F 1 "SW_Push" V 855 3052 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_Tactile_SKHH_Angled" H 900 3300 50  0001 C CNN
+F 2 "Button_Switch_SMD:Panasonic_EVQPUL_EVQPUC" H 900 3300 50  0001 C CNN
 F 3 "" H 900 3300 50  0001 C CNN
-F 4 "" H -2750 -2500 50  0001 C CNN "Reichelt Best.Nr."
-F 5 " 611-PTS645VK832" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
+F 4 " 667-EVQ-PUL02K" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    900  3100
 	0    -1   1    0   
 $EndComp
@@ -58,8 +57,7 @@ F 0 "R2" H 970 2696 50  0000 L CNN
 F 1 "10k" H 970 2605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 830 2650 50  0001 C CNN
 F 3 "~" H 900 2650 50  0001 C CNN
-F 4 "" H -2750 -2500 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "603-RC0805FR-0710KL" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
+F 4 "603-RC0805FR-0710KL" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    900  2650
 	1    0    0    -1  
 $EndComp
@@ -77,8 +75,7 @@ F 0 "R4" H 2070 2696 50  0000 L CNN
 F 1 "820R" H 2070 2605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1930 2650 50  0001 C CNN
 F 3 "~" H 2000 2650 50  0001 C CNN
-F 4 "" H -2750 -2500 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "603-RC0805JR-07820RL" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
+F 4 "603-RC0805JR-07820RL" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    2000 2650
 	1    0    0    -1  
 $EndComp
@@ -92,8 +89,7 @@ F 0 "D4" V 2050 3250 50  0000 R CNN
 F 1 "LED BLUE 2mA" V 1950 3700 50  0000 R CNN
 F 2 "Kingbright:APA2107LSECK" H 2000 3050 50  0001 C CNN
 F 3 "~" H 2000 3050 50  0001 C CNN
-F 4 "" H -2750 -2500 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "604-APA2107LVBCD" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
+F 4 "604-APA2107LVBCD" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    2000 3050
 	0    -1   -1   0   
 $EndComp
@@ -126,8 +122,7 @@ F 0 "R5" H 2420 2696 50  0000 L CNN
 F 1 "820R" H 2420 2605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2280 2650 50  0001 C CNN
 F 3 "~" H 2350 2650 50  0001 C CNN
-F 4 "" H -2750 -2500 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "603-RC0805JR-07820RL" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
+F 4 "603-RC0805JR-07820RL" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    2350 2650
 	1    0    0    -1  
 $EndComp
@@ -141,8 +136,7 @@ F 0 "D5" V 2388 2933 50  0000 R CNN
 F 1 "LED GREEN 2mA" V 2297 2933 50  0000 R CNN
 F 2 "Kingbright:APA2107LSECK" H 2350 3050 50  0001 C CNN
 F 3 "~" H 2350 3050 50  0001 C CNN
-F 4 "" H -2750 -2500 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "604-APA2107LZGCK" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
+F 4 "604-APA2107LZGCK" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    2350 3050
 	0    -1   -1   0   
 $EndComp
@@ -196,8 +190,7 @@ F 0 "F1" V 2525 1050 50  0000 C CNN
 F 1 "Polyfuse 500mA" V 2616 1050 50  0000 C CNN
 F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2800 850 50  0001 L CNN
 F 3 "~" H 2750 1050 50  0001 C CNN
-F 4 "" H -2650 -50 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "530-0ZCJ0025AF2E" H -2650 -50 50  0001 C CNN "Mouser Best.Nr."
+F 4 "530-0ZCJ0025AF2E" H -2650 -50 50  0001 C CNN "Mouser Best.Nr."
 	1    2750 1050
 	0    1    1    0   
 $EndComp
@@ -210,7 +203,7 @@ F 1 "47uH, 390mA" V 1663 1050 50  0000 C CNN
 F 2 "Inductor_SMD:L_Wuerth_MAPI-3020" H 1750 1050 50  0001 C CNN
 F 3 "~" H 1750 1050 50  0001 C CNN
 F 4 "710-74438335470" V 1750 1050 50  0001 C CNN "Mouser Best.Nr."
-F 5 "" V 1750 1050 50  0001 C CNN "Notes"
+F 5 "to be verified" V 1750 1050 50  0001 C CNN "Notes"
 	1    1750 1050
 	0    1    1    0   
 $EndComp
@@ -223,7 +216,6 @@ F 1 "TVS 16V" V 2100 1300 50  0000 L CNN
 F 2 "Diode_SMD:D_SMB" H 2000 1250 50  0001 C CNN
 F 3 "~" H 2000 1250 50  0001 C CNN
 F 4 "652-P6SMB16CA" V 2000 1250 50  0001 C CNN "Mouser Best.Nr."
-F 5 "" V 2000 1250 50  0001 C CNN "Notes"
 	1    2000 1250
 	0    1    1    0   
 $EndComp
@@ -259,8 +251,7 @@ F 0 "R3" H 1270 4596 50  0000 L CNN
 F 1 "2.2k" H 1270 4505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1130 4550 50  0001 C CNN
 F 3 "~" H 1200 4550 50  0001 C CNN
-F 4 "" H -7550 1050 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "603-RC0805JR-072K2L " H -7550 1050 50  0001 C CNN "Mouser Best.Nr."
+F 4 "603-RC0805JR-072K2L " H -7550 1050 50  0001 C CNN "Mouser Best.Nr."
 	1    1200 4550
 	1    0    0    -1  
 $EndComp
@@ -274,8 +265,7 @@ F 0 "D1" V 1238 4833 50  0000 R CNN
 F 1 "LED AMBER 2mA" V 1147 4833 50  0000 R CNN
 F 2 "Kingbright:APA2107LSECK" H 1200 4950 50  0001 C CNN
 F 3 "~" H 1200 4950 50  0001 C CNN
-F 4 "" H -7550 1050 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "604-APA2107LSECKJ4RV" H -7550 1050 50  0001 C CNN "Mouser Best.Nr."
+F 4 "604-APA2107LSECKJ4RV" H -7550 1050 50  0001 C CNN "Mouser Best.Nr."
 	1    1200 4950
 	0    -1   -1   0   
 $EndComp
@@ -339,8 +329,6 @@ Wire Wire Line
 	6800 2200 6900 2200
 Text HLabel 6800 1900 0    50   Input ~ 0
 PTT_IN
-Text HLabel 8600 2100 2    50   Input ~ 0
-UART_UC_CTS
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C7D8BC0
@@ -437,8 +425,7 @@ F 0 "R6" H 2970 4596 50  0000 L CNN
 F 1 "4.7k" H 2970 4505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 4550 50  0001 C CNN
 F 3 "~" H 2900 4550 50  0001 C CNN
-F 4 "" H -750 -600 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "603-RC0805JR-074K7L" H -750 -600 50  0001 C CNN "Mouser Best.Nr."
+F 4 "603-RC0805JR-074K7L" H -750 -600 50  0001 C CNN "Mouser Best.Nr."
 	1    2900 4550
 	1    0    0    -1  
 $EndComp
@@ -452,8 +439,7 @@ F 0 "R7" H 3270 4596 50  0000 L CNN
 F 1 "4.7k" H 3270 4505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3130 4550 50  0001 C CNN
 F 3 "~" H 3200 4550 50  0001 C CNN
-F 4 "" H -450 -600 50  0001 C CNN "Reichelt Best.Nr."
-F 5 "603-RC0805JR-074K7L" H -450 -600 50  0001 C CNN "Mouser Best.Nr."
+F 4 "603-RC0805JR-074K7L" H -450 -600 50  0001 C CNN "Mouser Best.Nr."
 	1    3200 4550
 	1    0    0    -1  
 $EndComp
@@ -581,6 +567,7 @@ F 5 "Eval Board For Esp-Wroom-32" H 7700 2200 50  0001 L BNN "Field5"
 F 6 "Unavailable" H 7700 2200 50  0001 L BNN "Field6"
 F 7 "ESP32-DEVKITC-32D" H 7700 2200 50  0001 L BNN "Field7"
 F 8 "None" H 7700 2200 50  0001 L BNN "Field8"
+F 9 "TBD" H 7700 2200 50  0001 C CNN "Mouser Best.Nr."
 	1    7700 2200
 	1    0    0    -1  
 $EndComp
@@ -694,8 +681,6 @@ Text Notes 8650 1700 0    50   ~ 0
 Serial0 (USB)
 Wire Notes Line
 	8600 1550 8600 1750
-Text HLabel 8600 2200 2    50   Output ~ 0
-UART_UC_RTS
 Text Notes 7450 2300 0    50   ~ 0
 Vin=4.3...15 V
 $Comp
@@ -722,10 +707,6 @@ external 5k pullup
 Wire Notes Line
 	9200 2050 9200 2450
 Wire Wire Line
-	8500 2100 8600 2100
-Wire Wire Line
-	8500 2200 8600 2200
-Wire Wire Line
 	8500 2300 8600 2300
 Wire Wire Line
 	8500 2400 8600 2400
@@ -737,4 +718,16 @@ Wire Wire Line
 	6900 1900 6800 1900
 Text Notes 6100 2550 2    50   ~ 0
 Serial1 (CAT)\nneed to be remapped \nin software
+Wire Wire Line
+	6750 2400 6900 2400
+Wire Wire Line
+	6900 2500 6750 2500
+NoConn ~ 8500 2000
+NoConn ~ 8500 2800
+NoConn ~ 6900 1700
+NoConn ~ 6900 1800
+NoConn ~ 6900 2700
+NoConn ~ 6900 2300
+NoConn ~ 8500 2100
+NoConn ~ 8500 2200
 $EndSCHEMATC

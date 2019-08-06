@@ -45,24 +45,6 @@ Wire Wire Line
 	900  2900 900  2850
 Wire Wire Line
 	900  2850 1050 2850
-Wire Wire Line
-	900  2850 900  2800
-$Comp
-L Device:R R?
-U 1 1 5C1540CA
-P 900 2650
-AR Path="/5C1540CA" Ref="R?"  Part="1" 
-AR Path="/5C10B93A/5C1540CA" Ref="R2"  Part="1" 
-F 0 "R2" H 970 2696 50  0000 L CNN
-F 1 "10k" H 970 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 830 2650 50  0001 C CNN
-F 3 "~" H 900 2650 50  0001 C CNN
-F 4 "603-RC0805FR-0710KL" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
-	1    900  2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	900  2450 900  2500
 Text Label 1050 2850 0    50   ~ 0
 BTN0
 $Comp
@@ -321,27 +303,14 @@ Text Label 6800 2100 2    50   ~ 0
 LED0
 Text Label 6800 2200 2    50   ~ 0
 LED1
-Text HLabel 8600 1400 2    50   Output ~ 0
+Text HLabel 8600 2500 2    50   Output ~ 0
 WT32_ONOFF_FROM_UC
-Text Label 8650 2500 0    50   ~ 0
+Text Label 8600 2600 0    50   ~ 0
 BTN0
 Wire Wire Line
 	6800 2200 6900 2200
 Text HLabel 6800 1900 0    50   Input ~ 0
 PTT_IN
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5C7D8BC0
-P 900 2450
-AR Path="/5C7D8BC0" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5C7D8BC0" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 900 2300 50  0001 C CNN
-F 1 "+3V3" V 900 2650 50  0000 C CNN
-F 2 "" H 900 2450 50  0001 C CNN
-F 3 "" H 900 2450 50  0001 C CNN
-	1    900  2450
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	700  3950 2150 3950
 Wire Notes Line
@@ -352,11 +321,8 @@ Text HLabel 6750 2400 0    50   Output ~ 0
 UART_CAT_TX
 Text HLabel 6800 2000 0    50   Output ~ 0
 PTT_OUT
-Connection ~ 900  2850
 Text Notes 950  3300 0    50   ~ 0
 7914S-1-050E 
-Wire Wire Line
-	8500 2500 8650 2500
 Wire Wire Line
 	2000 2800 2000 2900
 Wire Wire Line
@@ -365,8 +331,6 @@ Text Notes 9250 2400 0    50   ~ 0
 Serial2 (WT32i)\nCTS, RTS need to\nbe remapped \nin software
 Wire Notes Line
 	6150 2350 6150 2550
-Wire Wire Line
-	8500 1400 8600 1400
 Text Label 8650 1800 0    50   ~ 0
 SDA
 Text Label 8650 1500 0    50   ~ 0
@@ -698,11 +662,9 @@ F 3 "" H 6800 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 2600 6900 2600
-NoConn ~ 8500 2700
-Text Notes 8500 2700 0    50   ~ 0
+Text Notes 8950 2700 0    50   ~ 0
 onboard LED
-NoConn ~ 8500 2600
-Text Notes 8500 2600 0    50   ~ 0
+Text Notes 8950 2600 0    50   ~ 0
 external 5k pullup
 Wire Notes Line
 	9200 2050 9200 2450
@@ -729,5 +691,13 @@ NoConn ~ 6900 1800
 NoConn ~ 6900 2700
 NoConn ~ 6900 2300
 NoConn ~ 8500 2100
+Wire Wire Line
+	8500 2500 8600 2500
+NoConn ~ 8500 1400
+NoConn ~ 8500 2700
 NoConn ~ 8500 2200
+Wire Wire Line
+	8500 2600 8600 2600
+Text Notes 800  2700 0    50   ~ 0
+No pullup needed\nas IO0 has pullup\nalways active.\nIO0 is also the serial \nflash button.
 $EndSCHEMATC

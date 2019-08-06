@@ -26,7 +26,7 @@ F 2 "Button_Switch_SMD:Panasonic_EVQPUL_EVQPUC" H 900 3300 50  0001 C CNN
 F 3 "" H 900 3300 50  0001 C CNN
 F 4 " 667-EVQ-PUL02K" H -2750 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    900  3100
-	0    -1   1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?

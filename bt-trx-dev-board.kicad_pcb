@@ -278,6 +278,11 @@
     (pad 36 thru_hole circle (at 12.7 20.88 90) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask))
     (pad 37 thru_hole circle (at 12.7 23.42 90) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask))
     (pad 38 thru_hole circle (at 12.7 25.96 90) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask))
+    (model ${KIPRJMOD}/3d_models/esp32_devkitc/ESP32-DEVKITC-32D--3DModel-STEP-56544.STEP
+      (offset (xyz 0 -3 4.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_3.2mm_M3_DIN965 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5C78364A)
@@ -286,7 +291,7 @@
     (tags "mounting hole 3.2mm no annular m3 din965")
     (path /5D3AD2F8)
     (attr virtual)
-    (fp_text reference H3 (at -161.25 4.75) (layer F.SilkS)
+    (fp_text reference H3 (at 0.025 -3.232) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole (at 0 3.8) (layer F.Fab)
@@ -306,7 +311,7 @@
     (tags "mounting hole 3.2mm no annular m3 din965")
     (path /5D3AD300)
     (attr virtual)
-    (fp_text reference H4 (at -164.25 -38.75 90) (layer F.SilkS)
+    (fp_text reference H4 (at -3.785 0.212 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole (at 0 3.8) (layer F.Fab)
@@ -1192,9 +1197,9 @@
       (net 31 "Net-(D6-Pad2)"))
     (pad 2 smd roundrect (at 1.4875 0 90) (size 1.425 1.75) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.175439)
       (net 29 "Net-(C7-Pad1)"))
-    (model ${KISYS3DMOD}/Fuse.3dshapes/Fuse_1206_3216Metric.wrl
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+      (scale (xyz 1.8 1 1.3))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1250,7 +1255,12 @@
     (model ${KISYS3DMOD}/Connector_RJ.3dshapes/RJ45_Amphenol_54602-x08_Horizontal.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 -15))
+    )
+    (model ${KISYS3DMOD}/Connector_RJ.3dshapes/RJ45_Amphenol_RJHSE538X.wrl
+      (offset (xyz 8 -4 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -180))
     )
   )
 
@@ -1337,6 +1347,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KISYS3DMOD}/Audio Jack/AB2_TRS_3p5MM_PTH.wrl"
+      (offset (xyz 0 1.5 0))
+      (scale (xyz 0.5 0.5 0.5))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -1913,10 +1928,10 @@
       (net 33 "Net-(JP1-Pad2)"))
     (pad 3 smd rect (at 2.75 1.15) (size 1.3 1.3) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Potentiometer_SMD.3dshapes/Potentiometer_Vishay_TS53YL_Vertical.wrl
+    (model ${KISYS3DMOD}/Potentiometer_SMD.3dshapes/Potentiometer_Bourns_3314G_Vertical.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -1972,7 +1987,12 @@
     (model ${KISYS3DMOD}/Potentiometer_SMD.3dshapes/Potentiometer_Vishay_TS53YL_Vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
+    )
+    (model ${KISYS3DMOD}/Potentiometer_SMD.3dshapes/Potentiometer_Bourns_3314G_Vertical.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -2025,10 +2045,10 @@
       (net 15 AUDIO_B))
     (pad 3 smd rect (at 2.75 1.15) (size 1.3 1.3) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Potentiometer_SMD.3dshapes/Potentiometer_Vishay_TS53YL_Vertical.wrl
+    (model ${KISYS3DMOD}/Potentiometer_SMD.3dshapes/Potentiometer_Bourns_3314G_Vertical.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -2269,6 +2289,11 @@
       (net 1 GND))
     (pad 49 smd rect (at 15.4 -19.83 90) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
       (net 8 /SPK_LN))
+    (model ${KIPRJMOD}/lib/wt32i/wt32i.3dshapes/wt32i.wrl
+      (offset (xyz 8 12 0))
+      (scale (xyz 0.3937 0.3937 0.5))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5B36C52B) (tstamp 5D4A4F23)

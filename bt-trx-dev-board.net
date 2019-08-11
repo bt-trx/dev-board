@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch)
-    (date "Tue 06 Aug 2019 11:22:34 PM CEST")
+    (date "Sun 11 Aug 2019 08:11:06 PM CEST")
     (tool "Eeschema 5.1.2+dfsg1-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -507,7 +507,7 @@
       (tstamp 5CD4937D))
     (comp (ref U3)
       (value ESP32-DEVKITC-32D)
-      (footprint ESP32-DEVKITC-32D:MODULE_ESP32-DEVKITC-32D)
+      (footprint nodemcu_esp-32s:ESP-32_NodeMCU)
       (datasheet None)
       (fields
         (field (name Field4) "Espressif Systems")

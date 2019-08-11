@@ -3358,7 +3358,7 @@
   (gr_text "PTT\nPullUp" (at 164.846 124.206) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
-  (gr_text "         V1.4\nDL1COM\nDC1MIL" (at 126.746 79.756) (layer F.SilkS) (tstamp 5D4A8822)
+  (gr_text "           V4\nDL1COM\nDC1MIL" (at 126.746 79.756) (layer F.SilkS) (tstamp 5D4A8822)
     (effects (font (size 1.5 1.25) (thickness 0.3)) (justify left))
   )
   (gr_line (start 120.424391 66.291943) (end 120.425 66.3) (layer Edge.Cuts) (width 0.15) (tstamp 5D4A4C31))

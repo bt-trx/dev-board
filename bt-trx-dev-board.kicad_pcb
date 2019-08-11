@@ -1168,15 +1168,10 @@
       (net 12 /V_IN))
     (pad 8 thru_hole circle (at 8.89 -2.54 90) (size 1.5 1.5) (drill 0.76) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Connector_RJ.3dshapes/RJ45_Amphenol_54602-x08_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/3d_models/54602-908LF/54602-908LF.step
+      (offset (xyz 4.5 4 6.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 -15))
-    )
-    (model ${KISYS3DMOD}/Connector_RJ.3dshapes/RJ45_Amphenol_RJHSE538X.wrl
-      (offset (xyz 8 -4 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 -180))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -1259,15 +1254,10 @@
     (pad T thru_hole oval (at 2 2.4 270) (size 2.8 1.8) (drill oval 2 1) (layers *.Cu *.Mask)
       (net 16 /PTT_BUTTON))
     (pad R thru_hole oval (at 2 7.9 270) (size 2.8 1.8) (drill oval 2 1) (layers *.Cu *.Mask))
-    (model ${KISYS3DMOD}/Connector_Audio.3dshapes/Jack_3.5mm_CUI_SJ1-3533NG_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/3d_models/SJ1-3533NG/SJ1-3533NG.step
+      (offset (xyz 0 -5.5 6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model "${KISYS3DMOD}/Audio Jack/AB2_TRS_3p5MM_PTH.wrl"
-      (offset (xyz 0 1.5 0))
-      (scale (xyz 0.5 0.5 0.5))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz -90 0 180))
     )
   )
 

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bt-trx-dev-board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -275,7 +275,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 1650 2550 1800
 Text Notes 900  3100 0    50   ~ 0
-Audio output is +/-350 mV, microphone input shoud be around +/-20mV
+Audio output is +/-350 mV, microphone input should be around +/-20mV
 Wire Wire Line
 	2550 2100 2550 2700
 $Comp

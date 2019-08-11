@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bt-trx-dev-board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -560,7 +560,7 @@ $EndComp
 Text Label 5500 6100 0    50   ~ 0
 UC_PTT_IN
 Text Notes 4450 5400 0    50   ~ 0
-Jumper J4 selects if the Teensy or the\nPTT Button is connected to the PTT\nof the Radio\nJumper J6 must be set if the PTT Button\nshould be connected to the Teensy\nConnector J2 connects an internal PTT Button\nAudio Jack J3 connects an external PTT Button
+Jumper J5 selects if the ESP32 or J2/J3 is\nconnected to the PTT of the radio\nConnector J2 connects an internal PTT Button\nAudio Jack J3 connects an external PTT Button\nJ4 enabled PTT pullup, might be needed for\nsome radios
 Wire Notes Line
 	3350 6950 6300 6950
 Wire Notes Line

@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "BT-TRX Development Board "
-Date "2019-05-09"
-Rev "v3"
+Date "2019-08-11"
+Rev "v4"
 Comp "bt-trx.com"
 Comment1 "Licensed under CERN OHL v1.2 - https://ohwr.org/licenses/cern-ohl/v1.2"
 Comment2 "Andreas Müller - DC1MIL"

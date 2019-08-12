@@ -315,9 +315,9 @@ Wire Notes Line
 	700  3950 2150 3950
 Wire Notes Line
 	700  5550 2150 5550
-Text HLabel 6750 2500 0    50   Input ~ 0
+Text HLabel 6750 2400 0    50   Input ~ 0
 UART_CAT_RX
-Text HLabel 6750 2400 0    50   Output ~ 0
+Text HLabel 6750 2300 0    50   Output ~ 0
 UART_CAT_TX
 Text HLabel 6800 2000 0    50   Output ~ 0
 PTT_OUT
@@ -330,7 +330,7 @@ Wire Wire Line
 Text Notes 9250 2400 0    50   ~ 0
 Serial2 (WT32i)\nCTS, RTS need to\nbe remapped \nin software
 Wire Notes Line
-	6150 2350 6150 2550
+	6150 2250 6150 2450
 Text Label 8650 1800 0    50   ~ 0
 SDA
 Text Label 8650 1500 0    50   ~ 0
@@ -678,18 +678,18 @@ Wire Wire Line
 	8500 1500 8650 1500
 Wire Wire Line
 	6900 1900 6800 1900
-Text Notes 6100 2550 2    50   ~ 0
+Text Notes 6100 2450 2    50   ~ 0
 Serial1 (CAT)\nneed to be remapped \nin software
 Wire Wire Line
-	6750 2400 6900 2400
+	6750 2300 6900 2300
 Wire Wire Line
-	6900 2500 6750 2500
+	6900 2400 6750 2400
 NoConn ~ 8500 2000
 NoConn ~ 8500 2800
 NoConn ~ 6900 1700
 NoConn ~ 6900 1800
 NoConn ~ 6900 2700
-NoConn ~ 6900 2300
+NoConn ~ 6900 2500
 NoConn ~ 8500 2100
 Wire Wire Line
 	8500 2500 8600 2500

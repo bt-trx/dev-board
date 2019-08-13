@@ -32,8 +32,7 @@ F 0 "C4" V 1798 6850 50  0000 C CNN
 F 1 "1uF" V 1889 6850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 6700 50  0001 C CNN
 F 3 "~" H 2050 6850 50  0001 C CNN
-F 4 "TBD" H 300 0   50  0001 C CNN "Mouser Best.Nr."
-F 5 "Tantal neccessary?" H 2050 6850 50  0001 C CNN "Notes"
+F 4 "80-C0805C105K3RAUTO" H 300 0   50  0001 C CNN "Mouser Best.Nr."
 	1    2050 6850
 	0    1    1    0   
 $EndComp
@@ -127,8 +126,7 @@ F 0 "C5" H 3265 6646 50  0000 L CNN
 F 1 "15pF" H 3265 6555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3188 6450 50  0001 C CNN
 F 3 "~" H 3150 6600 50  0001 C CNN
-F 4 "TBD" H 300 200 50  0001 C CNN "Mouser Best.Nr."
-F 5 "Tantal neccessary?" H 3150 6600 50  0001 C CNN "Notes"
+F 4 "80-C0805C150J4HAUTO" H 300 200 50  0001 C CNN "Mouser Best.Nr."
 	1    3150 6600
 	1    0    0    -1  
 $EndComp
@@ -140,8 +138,7 @@ F 0 "C3" V 1798 6350 50  0000 C CNN
 F 1 "1uF" V 1889 6350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 6200 50  0001 C CNN
 F 3 "~" H 2050 6350 50  0001 C CNN
-F 4 "TBD" H 150 0   50  0001 C CNN "Mouser Best.Nr."
-F 5 "Tantal neccessary?" H 2050 6350 50  0001 C CNN "Notes"
+F 4 "80-C0805C105K3RAUTO" H 150 0   50  0001 C CNN "Mouser Best.Nr."
 	1    2050 6350
 	0    1    1    0   
 $EndComp
@@ -153,8 +150,7 @@ F 0 "C2" V 1798 5800 50  0000 C CNN
 F 1 "1uF" V 1889 5800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 5650 50  0001 C CNN
 F 3 "~" H 2050 5800 50  0001 C CNN
-F 4 "TBD" H 150 -200 50  0001 C CNN "Mouser Best.Nr."
-F 5 "Tantal neccessary?" H 2050 5800 50  0001 C CNN "Notes"
+F 4 "80-C0805C105K3RAUTO" H 150 -200 50  0001 C CNN "Mouser Best.Nr."
 	1    2050 5800
 	0    1    1    0   
 $EndComp
@@ -239,11 +235,10 @@ L Device:C C1
 U 1 1 5C774C08
 P 2050 1650
 F 0 "C1" V 1798 1650 50  0000 C CNN
-F 1 "100uF" V 1889 1650 50  0000 C CNN
+F 1 "1uF" V 1889 1650 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 1500 50  0001 C CNN
 F 3 "~" H 2050 1650 50  0001 C CNN
-F 4 "TBD" H 150 -4350 50  0001 C CNN "Mouser Best.Nr."
-F 5 "Tantal neccessary?" H 2050 1650 50  0001 C CNN "Notes"
+F 4 "80-C0805C105K3RAUTO" H 150 -4350 50  0001 C CNN "Mouser Best.Nr."
 	1    2050 1650
 	0    1    1    0   
 $EndComp
@@ -410,8 +405,7 @@ F 0 "C6" H 3765 2396 50  0000 L CNN
 F 1 "15pF" H 3765 2305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 2200 50  0001 C CNN
 F 3 "~" H 3650 2350 50  0001 C CNN
-F 4 "TBD" H 800 -4050 50  0001 C CNN "Mouser Best.Nr."
-F 5 "Tantal neccessary?" H 3650 2350 50  0001 C CNN "Notes"
+F 4 "80-C0805C150J4HAUTO" H 800 -4050 50  0001 C CNN "Mouser Best.Nr."
 	1    3650 2350
 	1    0    0    -1  
 $EndComp
@@ -456,8 +450,7 @@ F 0 "C8" H 2765 6646 50  0000 L CNN
 F 1 "15pF" H 2765 6555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 6450 50  0001 C CNN
 F 3 "~" H 2650 6600 50  0001 C CNN
-F 4 "TBD" H -200 200 50  0001 C CNN "Mouser Best.Nr."
-F 5 "Tantal neccessary?" H 2650 6600 50  0001 C CNN "Notes"
+F 4 "80-C0805C150J4HAUTO" H -200 200 50  0001 C CNN "Mouser Best.Nr."
 	1    2650 6600
 	1    0    0    -1  
 $EndComp

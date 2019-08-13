@@ -60,7 +60,7 @@ F 3 "" H 2900 6100 50  0001 C CNN
 	1    2900 6100
 	1    0    0    -1  
 $EndComp
-Text Notes 4300 5350 0    50   ~ 0
+Text Notes 4500 5700 0    50   ~ 0
 Line level input can be as high as 5 Vpp.\nVariable voltage divider is used to drop this down to\nbelow 1 Vpp to avoid saturation of WT32 input
 Text Notes 900  3400 0    50   ~ 0
 Optional secondary Audio Input Channel
@@ -226,8 +226,6 @@ Text GLabel 1900 4400 2    50   Input ~ 0
 AUDIO_B
 Wire Wire Line
 	1700 4400 1900 4400
-Text GLabel 4400 4850 2    50   Input ~ 0
-AUDIO_B
 Text Notes 1400 4800 0    50   ~ 0
 Line level input can be as high as 5 Vpp.\nVariable voltage divider is used to drop this down to\nbelow 1 Vpp to avoid saturation of WT32 input
 $Comp

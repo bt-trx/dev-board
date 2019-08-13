@@ -1,0 +1,44 @@
+Component,Part,References,Value,Footprint,Quantity Per PCB,Reichelt Best.Nr.,Mouser Best.Nr.
+1,C,C5 C6 C8,15pF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,3,,80-C0805C150J4HAUTO
+2,C,C1 C2 C3 C4,1uF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,4,,80-C0805C105K3RAUTO
+3,CP,C7,220uF 25V,CP_Elec_10x10.5,1,,667-EEE-HA1H221P
+4,D,D2 D6,1N5817,D_SMA,2,,583-FM5817
+5,LED,D1,LED AMBER 2mA,APA2107LSECK,1,,604-APA2107LSECKJ4RV
+6,LED,D4,LED BLUE 2mA,APA2107LSECK,1,,604-APA2107LVBCD
+7,LED,D5,LED GREEN 2mA,APA2107LSECK,1,,604-APA2107LZGCK
+8,D_Zener,D3,TVS 16V,D_SMB,1,,652-P6SMB16CA
+9,Polyfuse,F1,Polyfuse 500mA,Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder,1,,530-0ZCJ0025AF2E
+10,AudioJack2,J3,AudioJack2,Jack_3.5mm_CUI_SJ1-3533NG_Horizontal,1,,490-SJ1-3533NG
+11,Conn_01x02,J4,ENAPLE_PTT_PULLUP,PinHeader_1x02_P2.54mm_Vertical,1,,855-M20-9990246
+12,Conn_01x04,J6,I2C,PinHeader_1x04_P2.54mm_Vertical,1,,855-M20-9770446
+13,Conn_01x02,J2,PTT_BUTTON,PinHeader_1x02_P2.54mm_Vertical,1,,855-M20-9990246
+14,Conn_01x03,J5,PTT_SELECT,PinHeader_1x03_P2.54mm_Vertical,1,,855-M20-9990346
+15,RJ45,J1,RJ45,RJ45_Amphenol_54602-x08_Horizontal,1,,649-54602-908LF
+16,SolderJumper_2_Open,JP1,AUDIO_B,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,1,,-
+17,SolderJumper_2_Open,JP2,BYPASS,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,1,,-
+18,L,L1 L2 L3 L5,100nH,L_0805_2012Metric_Pad1.15x1.40mm_HandSolder,4,,810-MLF2012DR10MT000
+19,L,L4,"47uH, 390mA",L_Wuerth_MAPI-3020,1,,710-74438335470
+20,Housing,N1,Housing,OSHW-Logo2_7.3x6mm_SilkScreen,1,,546-1553CBKBAT
+21,R,R1,10k,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,,603-RC0805FR-0710KL
+22,R,R3,2.2k,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,,603-RC0805JR-072K2L
+23,R,R6 R7,4.7k,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,603-RC0805JR-074K7L
+24,R,R4 R5,820R,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,603-RC0805JR-07820RL
+25,R_POT_TRIM,RV1 RV2 RV3,10k,Potentiometer_Vishay_TS53YL_Vertical,3,,72-TS53YL-10K
+26,SW_Push,SW1,SW_Push,Panasonic_EVQPUL_EVQPUC,1,,667-EVQ-PUL02K
+27,ESP32-DEVKITC-32D,U3,ESP32-DEVKIT,ESP-32_NodeMCU,1,,485-3591
+28,SILabs_WT32i,U1,SILabs_WT32i,LGA50-1.0-23.9X15.9MM,1,,634-WT32I-A-AI61
+
+
+
+
+
+Component Groups:,28
+Component Count:,41
+Fitted Components:,41
+Number of PCBs:,1
+Total components:,41
+Schematic Version:,v4
+Schematic Date:,2019-08-11
+BoM Date:,Tue 13 Aug 2019 10:54:37 PM CEST
+Schematic Source:,/home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch
+KiCad Version:,Eeschema 5.1.2+dfsg1-1

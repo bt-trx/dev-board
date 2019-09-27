@@ -570,8 +570,6 @@ NoConn ~ 6900 2900
 Wire Wire Line
 	6800 3100 6900 3100
 Wire Wire Line
-	3400 1050 3550 1050
-Wire Wire Line
 	3550 1050 3550 1000
 $Comp
 L power:+5V #PWR?
@@ -586,20 +584,6 @@ F 3 "" H 3550 1000 50  0001 C CNN
 	1    3550 1000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D D6
-U 1 1 5CD3E78C
-P 3250 1050
-F 0 "D6" H 3250 834 50  0000 C CNN
-F 1 "1N5817" H 3250 925 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 3250 1050 50  0001 C CNN
-F 3 "~" H 3250 1050 50  0001 C CNN
-F 4 "583-FM5817" H 3250 1050 50  0001 C CNN "Mouser Best.Nr."
-	1    3250 1050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2900 1050 3100 1050
 Text Notes 1900 1900 0    50   ~ 0
 Bidirectional\nBreakdown Voltage: 15.2-16.8 V
 $Comp
@@ -726,4 +710,6 @@ F 3 "" H 1450 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1450 2950 1450 3350
+Wire Wire Line
+	2900 1050 3550 1050
 $EndSCHEMATC

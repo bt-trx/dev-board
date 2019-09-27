@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bt-trx-dev-board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -382,29 +382,27 @@ CAT_RX
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5C7B53A0
-P 4600 5600
-F 0 "J5" V 4566 5412 50  0000 R CNN
-F 1 "PTT_SELECT" V 4475 5412 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4600 5600 50  0001 C CNN
-F 3 "~" H 4600 5600 50  0001 C CNN
-F 4 "855-M20-9990346" H -2300 -200 50  0001 C CNN "Mouser Best.Nr."
-	1    4600 5600
+P 4700 5600
+F 0 "J5" V 4666 5412 50  0000 R CNN
+F 1 "PTT_SELECT" V 4575 5412 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4700 5600 50  0001 C CNN
+F 3 "~" H 4700 5600 50  0001 C CNN
+F 4 "855-M20-9990346" H -2200 -200 50  0001 C CNN "Mouser Best.Nr."
+	1    4700 5600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4700 5800 5500 5800
-Text Label 5500 5800 0    50   ~ 0
+	4800 5800 5600 5800
+Text Label 5600 5800 0    50   ~ 0
 UC_PTT_OUT
 Wire Wire Line
-	4600 5800 4600 5950
+	4700 5800 4700 5950
 Wire Wire Line
-	4600 5950 5500 5950
-Text Label 5500 5950 0    50   ~ 0
+	4700 5950 5600 5950
+Text Label 5600 5950 0    50   ~ 0
 PTT
-Text Label 3850 5800 0    50   ~ 0
+Text Label 3950 5800 0    50   ~ 0
 PTT_BUTTON
-Wire Wire Line
-	3750 5800 4350 5800
 $Sheet
 S 8850 2300 1750 1200
 U 5C10B93A
@@ -416,51 +414,38 @@ F4 "WT32_ONOFF_FROM_UC" O L 8850 3300 50
 F5 "+V_IN" I L 8850 2350 50 
 F6 "UART_CAT_RX" I R 10600 2850 50 
 F7 "UART_CAT_TX" O R 10600 2950 50 
-F8 "PTT_IN" I L 8850 3050 50 
-F9 "PTT_OUT" O L 8850 3150 50 
+F8 "PTT_IN" I L 8850 2950 50 
+F9 "PTT_OUT" O L 8850 3050 50 
+F10 "PTT_LED" O L 8850 3150 50 
 $EndSheet
 Wire Wire Line
+	8850 2950 8750 2950
+Wire Wire Line
 	8850 3050 8750 3050
-Wire Wire Line
-	8850 3150 8750 3150
-Text Label 8750 3050 2    50   ~ 0
+Text Label 8750 2950 2    50   ~ 0
 UC_PTT_IN
-Text Label 8750 3150 2    50   ~ 0
+Text Label 8750 3050 2    50   ~ 0
 UC_PTT_OUT
-$Comp
-L Connector:AudioJack2 J3
-U 1 1 5C79345F
-P 3650 5150
-F 0 "J3" H 3550 5000 50  0000 R CNN
-F 1 "AudioJack2" H 3900 4900 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 3650 5150 50  0001 C CNN
-F 3 "~" H 3650 5150 50  0001 C CNN
-F 4 "490-SJ1-3533NG " H -2300 -200 50  0001 C CNN "Mouser Best.Nr."
-	1    3650 5150
-	1    0    0    1   
-$EndComp
+Connection ~ 4450 5800
 Wire Wire Line
-	3850 5150 4350 5150
-Connection ~ 4350 5800
-Wire Wire Line
-	4350 5800 4500 5800
+	4450 5800 4600 5800
 $Comp
 L power:GND #PWR06
 U 1 1 5C7A36F0
-P 3950 5300
-F 0 "#PWR06" H 3950 5050 50  0001 C CNN
-F 1 "GND" H 3955 5127 50  0000 C CNN
-F 2 "" H 3950 5300 50  0001 C CNN
-F 3 "" H 3950 5300 50  0001 C CNN
-	1    3950 5300
+P 3950 5400
+F 0 "#PWR06" H 3950 5150 50  0001 C CNN
+F 1 "GND" H 3955 5227 50  0000 C CNN
+F 2 "" H 3950 5400 50  0001 C CNN
+F 3 "" H 3950 5400 50  0001 C CNN
+	1    3950 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 5250 3950 5300
+	3950 5350 3950 5400
 Wire Wire Line
-	3850 5250 3950 5250
+	3850 5350 3950 5350
 Wire Wire Line
-	4350 5150 4350 5800
+	4450 5150 4450 5800
 $Comp
 L power:GND #PWR01
 U 1 1 5C038459
@@ -517,50 +502,50 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR012
 U 1 1 5CD1BCEE
-P 5450 6600
+P 5550 6600
 AR Path="/5CD1BCEE" Ref="#PWR012"  Part="1" 
 AR Path="/5C10B93A/5CD1BCEE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR012" H 5450 6450 50  0001 C CNN
-F 1 "+3V3" V 5450 6800 50  0000 C CNN
-F 2 "" H 5450 6600 50  0001 C CNN
-F 3 "" H 5450 6600 50  0001 C CNN
-	1    5450 6600
+F 0 "#PWR012" H 5550 6450 50  0001 C CNN
+F 1 "+3V3" V 5550 6800 50  0000 C CNN
+F 2 "" H 5550 6600 50  0001 C CNN
+F 3 "" H 5550 6600 50  0001 C CNN
+	1    5550 6600
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5CD1BCF6
-P 5200 6600
+P 5300 6600
 AR Path="/5CD1BCF6" Ref="R1"  Part="1" 
 AR Path="/5C10B93A/5CD1BCF6" Ref="R?"  Part="1" 
-F 0 "R1" H 5270 6646 50  0000 L CNN
-F 1 "10k" H 5270 6555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 6600 50  0001 C CNN
-F 3 "~" H 5200 6600 50  0001 C CNN
-F 4 "603-RC0805FR-0710KL" H 1550 1450 50  0001 C CNN "Mouser Best.Nr."
-	1    5200 6600
+F 0 "R1" H 5370 6646 50  0000 L CNN
+F 1 "10k" H 5370 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 6600 50  0001 C CNN
+F 3 "~" H 5300 6600 50  0001 C CNN
+F 4 "603-RC0805FR-0710KL" H 1650 1450 50  0001 C CNN "Mouser Best.Nr."
+	1    5300 6600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5450 6600 5350 6600
+	5550 6600 5450 6600
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5CD1BD02
-P 4700 6400
+P 4800 6400
 AR Path="/5C10B93A/5CD1BD02" Ref="J?"  Part="1" 
 AR Path="/5CD1BD02" Ref="J4"  Part="1" 
-F 0 "J4" V 4666 6212 50  0000 R CNN
-F 1 "ENAPLE_PTT_PULLUP" V 4800 6500 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4700 6400 50  0001 C CNN
-F 3 "~" H 4700 6400 50  0001 C CNN
-F 4 "855-M20-9990246" H -950 4700 50  0001 C CNN "Mouser Best.Nr."
-	1    4700 6400
+F 0 "J4" V 4766 6212 50  0000 R CNN
+F 1 "ENAPLE_PTT_PULLUP" V 4900 6500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4800 6400 50  0001 C CNN
+F 3 "~" H 4800 6400 50  0001 C CNN
+F 4 "855-M20-9990246" H -850 4700 50  0001 C CNN "Mouser Best.Nr."
+	1    4800 6400
 	0    -1   -1   0   
 $EndComp
-Text Label 5500 6100 0    50   ~ 0
+Text Label 5600 6100 0    50   ~ 0
 UC_PTT_IN
-Text Notes 4450 5400 0    50   ~ 0
-Jumper J5 selects if the ESP32 or J2/J3 is\nconnected to the PTT of the radio\nConnector J2 connects an internal PTT Button\nAudio Jack J3 connects an external PTT Button\nJ4 enabled PTT pullup, might be needed for\nsome radios
+Text Notes 4550 5550 0    50   ~ 0
+J5 selects if the ESP32 or J2/J3 is\nconnected to the PTT of the radio\n\nJ2 connects an internal PTT Button\n\nJ3 connects an external PTT Button\n\nJ4 enables PTT pullup, might be needed for\nsome radios
 Wire Notes Line
 	3350 6950 6300 6950
 Wire Notes Line
@@ -590,20 +575,43 @@ F 4 "-" H 750 0   50  0001 C CNN "Mouser Best.Nr."
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 6600 4800 6600
+	5150 6600 4900 6600
 Wire Wire Line
-	4350 6600 4700 6600
+	4450 6600 4800 6600
 Wire Wire Line
-	4350 5800 4350 6100
+	4450 5800 4450 6100
 Wire Wire Line
-	5500 6100 4350 6100
-Connection ~ 4350 6100
+	5600 6100 4450 6100
+Connection ~ 4450 6100
 Wire Wire Line
-	4350 6100 4350 6600
+	4450 6100 4450 6600
 Wire Notes Line
 	6300 4800 6300 6950
 Wire Notes Line
 	3350 4800 3350 6950
 NoConn ~ 3350 3850
 NoConn ~ 3450 3850
+$Comp
+L Connector:AudioJack3 J3
+U 1 1 5D8E8C9D
+P 3650 5250
+F 0 "J3" H 3450 5000 50  0000 R CNN
+F 1 "AudioJack3" H 3800 4900 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 3650 5250 50  0001 C CNN
+F 3 "~" H 3650 5250 50  0001 C CNN
+	1    3650 5250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3850 5250 3950 5250
+Text Label 3950 5250 0    50   ~ 0
+UC_PTT_LED
+Wire Wire Line
+	8850 3150 8750 3150
+Text Label 8750 3150 2    50   ~ 0
+UC_PTT_LED
+Wire Wire Line
+	3850 5150 4450 5150
+Wire Wire Line
+	3750 5800 4450 5800
 $EndSCHEMATC

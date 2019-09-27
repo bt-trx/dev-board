@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bt-trx-dev-board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -518,18 +518,6 @@ Wire Wire Line
 	2000 1050 2500 1050
 Connection ~ 2500 1050
 $Comp
-L ESP32-DEVKITC-32D:ESP32-DEVKITC-32D U3
-U 1 1 5D1E8FF9
-P 7700 2200
-F 0 "U3" H 7700 3367 50  0000 C CNN
-F 1 "ESP32-DEVKIT" H 7700 3276 50  0000 C CNN
-F 2 "nodemcu_esp-32s:ESP-32_NodeMCU" H 7700 2200 50  0001 L BNN
-F 3 "None" H 7700 2200 50  0001 L BNN
-F 4 " 485-3591 " H 7700 2200 50  0001 C CNN "Mouser Best.Nr."
-	1    7700 2200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR?
 U 1 1 5D1E94DA
 P 6800 1300
@@ -681,7 +669,6 @@ Wire Wire Line
 NoConn ~ 8500 2000
 NoConn ~ 8500 2800
 NoConn ~ 6900 1700
-NoConn ~ 6900 1800
 NoConn ~ 6900 2700
 NoConn ~ 6900 2500
 NoConn ~ 8500 2100
@@ -694,4 +681,20 @@ Wire Wire Line
 	8500 2600 8600 2600
 Text Notes 800  2700 0    50   ~ 0
 No pullup needed\nas IO0 has pullup\nalways active.\nIO0 is also the serial \nflash button.
+$Comp
+L ESP32-DEVKITC-32D:ESP32-DEVKITC-32D U3
+U 1 1 5D1E8FF9
+P 7700 2200
+F 0 "U3" H 7700 3367 50  0000 C CNN
+F 1 "ESP32-DEVKIT" H 7700 3276 50  0000 C CNN
+F 2 "nodemcu_esp-32s:ESP-32_NodeMCU" H 7700 2200 50  0001 L BNN
+F 3 "None" H 7700 2200 50  0001 L BNN
+F 4 " 485-3591 " H 7700 2200 50  0001 C CNN "Mouser Best.Nr."
+	1    7700 2200
+	1    0    0    -1  
+$EndComp
+Text HLabel 6800 1800 0    50   Output ~ 0
+PTT_LED
+Wire Wire Line
+	6900 1800 6800 1800
 $EndSCHEMATC

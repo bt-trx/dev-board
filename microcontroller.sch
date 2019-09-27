@@ -600,13 +600,11 @@ Wire Wire Line
 Wire Wire Line
 	6900 2400 6750 2400
 NoConn ~ 8500 2000
-NoConn ~ 8500 2800
 NoConn ~ 6900 2500
 NoConn ~ 8500 2100
 Wire Wire Line
 	8500 2500 8600 2500
 NoConn ~ 8500 1400
-NoConn ~ 8500 2700
 NoConn ~ 8500 2200
 Wire Wire Line
 	8500 2600 8600 2600
@@ -728,4 +726,22 @@ PTT_LED
 NoConn ~ 6900 1800
 Wire Wire Line
 	6750 2700 6900 2700
+Text HLabel 9000 2800 2    50   Input ~ 0
+VOX_IN
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5D943D8B
+P 8750 2800
+F 0 "JP3" H 8750 2600 50  0000 C CNN
+F 1 "VOX" H 8750 2700 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8750 2800 50  0001 C CNN
+F 3 "~" H 8750 2800 50  0001 C CNN
+	1    8750 2800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8500 2700
+Wire Wire Line
+	8500 2800 8600 2800
+Wire Wire Line
+	8900 2800 9000 2800
 $EndSCHEMATC

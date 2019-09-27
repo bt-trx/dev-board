@@ -536,9 +536,16 @@ Wire Wire Line
 Text GLabel 2800 5650 2    50   Input ~ 0
 AUDIO_B
 Wire Wire Line
-	2650 6450 2650 5800
+	2650 6450 2650 6000
 Wire Wire Line
 	2650 5800 2650 5650
 Wire Wire Line
 	2650 5650 2800 5650
+Text HLabel 1250 6000 0    50   Output ~ 0
+VOX_OUT
+Wire Wire Line
+	1250 6000 2650 6000
+Connection ~ 2650 6000
+Wire Wire Line
+	2650 6000 2650 5800
 $EndSCHEMATC

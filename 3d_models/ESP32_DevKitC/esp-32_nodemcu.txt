@@ -1,0 +1,2 @@
+Downloaded from
+https://www.snapeda.com/parts/ESP32-DEVKITC-32D

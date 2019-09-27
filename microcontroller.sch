@@ -524,36 +524,10 @@ NoConn ~ 6900 1500
 NoConn ~ 6900 1600
 Text Notes 7100 3450 0    50   ~ 0
 ESP32 Pin Info:\nGPIO 6-11: Do not use! (onboard SPI Flash)\nGPIO 34-39: Input only\n
-$Comp
-L power:GND #PWR?
-U 1 1 5D1EF20C
-P 8600 1300
-AR Path="/5D1EF20C" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D1EF20C" Ref="#PWR037"  Part="1" 
-F 0 "#PWR037" H 8600 1050 50  0001 C CNN
-F 1 "GND" V 8600 1100 50  0000 C CNN
-F 2 "" H 8600 1300 50  0001 C CNN
-F 3 "" H 8600 1300 50  0001 C CNN
-	1    8600 1300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8500 1300 8600 1300
 NoConn ~ 8500 1600
 NoConn ~ 8500 1700
-$Comp
-L power:GND #PWR?
-U 1 1 5D1F3BFE
-P 8600 1900
-AR Path="/5D1F3BFE" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D1F3BFE" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 8600 1650 50  0001 C CNN
-F 1 "GND" V 8600 1700 50  0000 C CNN
-F 2 "" H 8600 1900 50  0001 C CNN
-F 3 "" H 8600 1900 50  0001 C CNN
-	1    8600 1900
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8500 1900 8600 1900
 NoConn ~ 6900 3000
@@ -601,19 +575,6 @@ Wire Notes Line
 	8600 1550 8600 1750
 Text Notes 7450 2300 0    50   ~ 0
 Vin=4.3...15 V
-$Comp
-L power:GND #PWR?
-U 1 1 5D22622B
-P 6800 2600
-AR Path="/5D22622B" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D22622B" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 6800 2350 50  0001 C CNN
-F 1 "GND" V 6800 2400 50  0000 C CNN
-F 2 "" H 6800 2600 50  0001 C CNN
-F 3 "" H 6800 2600 50  0001 C CNN
-	1    6800 2600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6800 2600 6900 2600
 Text Notes 8950 2700 0    50   ~ 0
@@ -640,7 +601,6 @@ Wire Wire Line
 	6900 2400 6750 2400
 NoConn ~ 8500 2000
 NoConn ~ 8500 2800
-NoConn ~ 6900 2700
 NoConn ~ 6900 2500
 NoConn ~ 8500 2100
 Wire Wire Line
@@ -664,10 +624,6 @@ F 4 " 485-3591 " H 7700 2200 50  0001 C CNN "Mouser Best.Nr."
 	1    7700 2200
 	1    0    0    -1  
 $EndComp
-Text HLabel 6800 1800 0    50   Output ~ 0
-PTT_LED
-Wire Wire Line
-	6900 1800 6800 1800
 Wire Notes Line
 	700  2150 3650 2150
 Wire Notes Line
@@ -718,14 +674,58 @@ L power:GND #PWR?
 U 1 1 5D8F131B
 P 6800 1700
 AR Path="/5D8F131B" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D8F131B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6800 1450 50  0001 C CNN
+AR Path="/5C10B93A/5D8F131B" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 6800 1450 50  0001 C CNN
 F 1 "GND" V 6800 1500 50  0000 C CNN
 F 2 "" H 6800 1700 50  0001 C CNN
 F 3 "" H 6800 1700 50  0001 C CNN
 	1    6800 1700
 	0    1    1    0   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D22622B
+P 6800 2600
+AR Path="/5D22622B" Ref="#PWR?"  Part="1" 
+AR Path="/5C10B93A/5D22622B" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 6800 2350 50  0001 C CNN
+F 1 "GND" V 6800 2400 50  0000 C CNN
+F 2 "" H 6800 2600 50  0001 C CNN
+F 3 "" H 6800 2600 50  0001 C CNN
+	1    6800 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1EF20C
+P 8600 1300
+AR Path="/5D1EF20C" Ref="#PWR?"  Part="1" 
+AR Path="/5C10B93A/5D1EF20C" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 8600 1050 50  0001 C CNN
+F 1 "GND" V 8600 1100 50  0000 C CNN
+F 2 "" H 8600 1300 50  0001 C CNN
+F 3 "" H 8600 1300 50  0001 C CNN
+	1    8600 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1F3BFE
+P 8600 1900
+AR Path="/5D1F3BFE" Ref="#PWR?"  Part="1" 
+AR Path="/5C10B93A/5D1F3BFE" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 8600 1650 50  0001 C CNN
+F 1 "GND" V 8600 1700 50  0000 C CNN
+F 2 "" H 8600 1900 50  0001 C CNN
+F 3 "" H 8600 1900 50  0001 C CNN
+	1    8600 1900
+	0    -1   -1   0   
+$EndComp
 Text Notes 6500 1750 2    50   ~ 0
 Indicator Pin for Hardware Version\nV4.1 = 0V
+Text HLabel 6750 2700 0    50   Output ~ 0
+PTT_LED
+NoConn ~ 6900 1800
+Wire Wire Line
+	6750 2700 6900 2700
 $EndSCHEMATC

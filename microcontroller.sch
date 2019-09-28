@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bt-trx-dev-board-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -522,8 +522,8 @@ Wire Wire Line
 	6900 1300 6800 1300
 NoConn ~ 6900 1500
 NoConn ~ 6900 1600
-Text Notes 7100 3450 0    50   ~ 0
-ESP32 Pin Info:\nGPIO 6-11: Do not use! (onboard SPI Flash)\nGPIO 34-39: Input only\n
+Text Notes 7100 3600 0    50   ~ 0
+ESP32 Pin Info:\nIO 6-11: Do not use! (onboard SPI Flash)\nIO 34-39: Input only\nADC1: IO 32...39\nADC2: Can't be used when using Wifi! (IO 0, 2, 4, 12...15, 25...27)
 Wire Wire Line
 	8500 1300 8600 1300
 NoConn ~ 8500 1600
@@ -719,7 +719,7 @@ F 3 "" H 8600 1900 50  0001 C CNN
 	1    8600 1900
 	0    -1   -1   0   
 $EndComp
-Text Notes 6500 1750 2    50   ~ 0
+Text Notes 6250 1700 2    50   ~ 0
 Indicator Pin for Hardware Version\nV4.1 = 0V
 Text HLabel 6750 2700 0    50   Output ~ 0
 PTT_LED
@@ -744,4 +744,12 @@ Wire Wire Line
 	8500 2800 8600 2800
 Wire Wire Line
 	8900 2800 9000 2800
+Wire Notes Line
+	6350 2050 6350 1450
+Text Notes 6300 1950 2    50   ~ 0
+ADC1 (32...39)
+Wire Notes Line style solid
+	6800 1650 6800 1600
+Wire Notes Line style solid
+	6800 1600 6250 1600
 $EndSCHEMATC

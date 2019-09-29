@@ -46,15 +46,15 @@ BTN0
 $Comp
 L Device:R R?
 U 1 1 5C1540D9
-P 2450 2650
+P 2450 2600
 AR Path="/5C1540D9" Ref="R?"  Part="1" 
 AR Path="/5C10B93A/5C1540D9" Ref="R4"  Part="1" 
-F 0 "R4" H 2520 2696 50  0000 L CNN
-F 1 "820R" H 2520 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2380 2650 50  0001 C CNN
-F 3 "~" H 2450 2650 50  0001 C CNN
-F 4 "603-RC0805JR-07820RL" H -2300 -2500 50  0001 C CNN "Mouser Best.Nr."
-	1    2450 2650
+F 0 "R4" H 2520 2646 50  0000 L CNN
+F 1 "820R" H 2520 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2380 2600 50  0001 C CNN
+F 3 "~" H 2450 2600 50  0001 C CNN
+F 4 "603-RC0805JR-07820RL" H -2300 -2550 50  0001 C CNN "Mouser Best.Nr."
+	1    2450 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -87,21 +87,21 @@ $EndComp
 Wire Wire Line
 	2450 3200 2450 3350
 Wire Wire Line
-	2450 2500 2450 2400
-Text Label 2450 2400 1    50   ~ 0
+	2450 2450 2450 2350
+Text Label 2450 2350 1    50   ~ 0
 LED0
 $Comp
 L Device:R R?
 U 1 1 5C1540F1
-P 2800 2650
+P 2800 2600
 AR Path="/5C1540F1" Ref="R?"  Part="1" 
 AR Path="/5C10B93A/5C1540F1" Ref="R5"  Part="1" 
-F 0 "R5" H 2870 2696 50  0000 L CNN
-F 1 "820R" H 2870 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2730 2650 50  0001 C CNN
-F 3 "~" H 2800 2650 50  0001 C CNN
-F 4 "603-RC0805JR-07820RL" H -2300 -2500 50  0001 C CNN "Mouser Best.Nr."
-	1    2800 2650
+F 0 "R5" H 2870 2646 50  0000 L CNN
+F 1 "820R" H 2870 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2730 2600 50  0001 C CNN
+F 3 "~" H 2800 2600 50  0001 C CNN
+F 4 "603-RC0805JR-07820RL" H -2300 -2550 50  0001 C CNN "Mouser Best.Nr."
+	1    2800 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -134,16 +134,10 @@ $EndComp
 Wire Wire Line
 	2800 3200 2800 3350
 Wire Wire Line
-	2800 2800 2800 2900
-Wire Wire Line
-	2800 2500 2800 2400
-Text Label 2800 2400 1    50   ~ 0
+	2800 2450 2800 2350
+Text Label 2800 2350 1    50   ~ 0
 LED1
-Wire Notes Line
-	3650 2150 3650 3600
-Wire Notes Line
-	700  2150 700  3600
-Text Notes 700  2150 0    50   ~ 0
+Text Notes 700  2000 0    50   ~ 0
 Button and LEDs
 Text HLabel 1000 1050 0    50   Input ~ 0
 +V_IN
@@ -298,8 +292,6 @@ Text Label 6800 2200 2    50   ~ 0
 LED1
 Text HLabel 8600 2500 2    50   Output ~ 0
 WT32_ONOFF_FROM_UC
-Text Label 8600 2600 0    50   ~ 0
-BTN0
 Wire Wire Line
 	6800 2200 6900 2200
 Text HLabel 6800 1900 0    50   Input ~ 0
@@ -317,11 +309,9 @@ PTT_OUT
 Text Notes 800  3400 1    50   ~ 0
 7914S-1-050E 
 Wire Wire Line
-	2450 2800 2450 2900
-Wire Wire Line
 	1200 4700 1200 4800
 Text Notes 9250 2400 0    50   ~ 0
-Serial2 (WT32i)\nCTS, RTS need to\nbe remapped \nin software
+Serial2 (WT32i) CTS, RTS need to\nbe remapped in software
 Wire Notes Line
 	6150 2250 6150 2450
 Text Label 8650 1800 0    50   ~ 0
@@ -581,8 +571,6 @@ Text Notes 8950 2700 0    50   ~ 0
 onboard LED
 Text Notes 8950 2600 0    50   ~ 0
 external 5k pullup
-Wire Notes Line
-	9200 2050 9200 2450
 Wire Wire Line
 	8500 2300 8600 2300
 Wire Wire Line
@@ -601,15 +589,13 @@ Wire Wire Line
 	6900 2400 6750 2400
 NoConn ~ 8500 2000
 NoConn ~ 6900 2500
-NoConn ~ 8500 2100
+NoConn ~ 8500 2800
 Wire Wire Line
 	8500 2500 8600 2500
 NoConn ~ 8500 1400
 NoConn ~ 8500 2200
 Wire Wire Line
-	8500 2600 8600 2600
-Text Notes 750  2450 0    50   ~ 0
-No pullup needed as IO0 has pullup\nalways active.\nIO0 is also the serial flash button.
+	8500 2100 8600 2100
 $Comp
 L ESP32-DEVKITC-32D:ESP32-DEVKITC-32D U3
 U 1 1 5D1E8FF9
@@ -623,15 +609,15 @@ F 4 " 485-3591 " H 7700 2200 50  0001 C CNN "Mouser Best.Nr."
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	700  2150 3650 2150
+	700  2000 3650 2000
 Wire Notes Line
 	700  3600 3650 3600
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 5D923484
 P 1650 2950
-F 0 "J7" H 1568 2625 50  0000 C CNN
-F 1 "Conn_01x02" H 1568 2716 50  0000 C CNN
+F 0 "J7" H 1600 2600 50  0000 C CNN
+F 1 "Conn_01x02" H 1800 2700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1650 2950 50  0001 C CNN
 F 3 "~" H 1650 2950 50  0001 C CNN
 	1    1650 2950
@@ -640,7 +626,7 @@ $EndComp
 Wire Wire Line
 	950  2700 950  2850
 Wire Wire Line
-	1450 2850 950  2850
+	1450 2850 1200 2850
 Connection ~ 950  2850
 Wire Wire Line
 	950  2850 950  2900
@@ -665,19 +651,17 @@ Wire Wire Line
 	1000 1050 1250 1050
 Wire Wire Line
 	1550 1050 1750 1050
-Wire Wire Line
-	6900 1700 6800 1700
 $Comp
 L power:GND #PWR?
 U 1 1 5D8F131B
-P 6800 1700
+P 2600 5950
 AR Path="/5D8F131B" Ref="#PWR?"  Part="1" 
 AR Path="/5C10B93A/5D8F131B" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 6800 1450 50  0001 C CNN
-F 1 "GND" V 6800 1500 50  0000 C CNN
-F 2 "" H 6800 1700 50  0001 C CNN
-F 3 "" H 6800 1700 50  0001 C CNN
-	1    6800 1700
+F 0 "#PWR0101" H 2600 5700 50  0001 C CNN
+F 1 "GND" V 2600 5750 50  0000 C CNN
+F 2 "" H 2600 5950 50  0001 C CNN
+F 3 "" H 2600 5950 50  0001 C CNN
+	1    2600 5950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -719,37 +703,113 @@ F 3 "" H 8600 1900 50  0001 C CNN
 	1    8600 1900
 	0    -1   -1   0   
 $EndComp
-Text Notes 6250 1700 2    50   ~ 0
-Indicator Pin for Hardware Version\nV4.1 = 0V
+Text Notes 3350 6050 2    50   ~ 0
+V4.1 = 0V
 Text HLabel 6750 2700 0    50   Output ~ 0
 PTT_LED
-NoConn ~ 6900 1800
 Wire Wire Line
 	6750 2700 6900 2700
-Text HLabel 9000 2800 2    50   Input ~ 0
+Text HLabel 1150 5950 0    50   Input ~ 0
 VOX_IN
 $Comp
 L Jumper:SolderJumper_2_Open JP3
 U 1 1 5D943D8B
-P 8750 2800
-F 0 "JP3" H 8750 2600 50  0000 C CNN
-F 1 "VOX" H 8750 2700 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8750 2800 50  0001 C CNN
-F 3 "~" H 8750 2800 50  0001 C CNN
-	1    8750 2800
-	1    0    0    -1  
+P 1400 5950
+F 0 "JP3" H 1400 6050 50  0000 C CNN
+F 1 "VOX" H 1400 5850 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1400 5950 50  0001 C CNN
+F 3 "~" H 1400 5950 50  0001 C CNN
+	1    1400 5950
+	-1   0    0    1   
 $EndComp
 NoConn ~ 8500 2700
 Wire Wire Line
-	8500 2800 8600 2800
+	6900 1800 6800 1800
 Wire Wire Line
-	8900 2800 9000 2800
+	1250 5950 1150 5950
 Wire Notes Line
-	6350 2050 6350 1450
-Text Notes 6300 1950 2    50   ~ 0
+	6250 2050 6250 1450
+Text Notes 6200 2050 2    50   ~ 0
 ADC1 (32...39)
-Wire Notes Line style solid
-	6800 1650 6800 1600
-Wire Notes Line style solid
-	6800 1600 6250 1600
+Wire Notes Line
+	9200 2250 9200 2450
+Text Label 8600 2100 0    50   ~ 0
+BTN0
+NoConn ~ 8500 2600
+Text Label 6800 1800 2    50   ~ 0
+VOX
+Wire Wire Line
+	2600 5950 2950 5950
+Wire Wire Line
+	1550 5950 1750 5950
+Text Label 1750 5950 0    50   ~ 0
+VOX
+Wire Notes Line
+	700  5650 2150 5650
+Wire Notes Line
+	2150 5650 2150 6100
+Wire Notes Line
+	2150 6100 700  6100
+Wire Notes Line
+	700  6100 700  5650
+Text Notes 700  5650 0    50   ~ 0
+VOX Input
+Wire Notes Line
+	2250 5650 2250 6100
+Wire Notes Line
+	2250 6100 3650 6100
+Wire Notes Line
+	3650 6100 3650 5650
+Wire Notes Line
+	3650 5650 2250 5650
+Text Notes 2250 5650 0    50   ~ 0
+Hardware Version Indicator
+Text Label 2950 5950 0    50   ~ 0
+HW_VER
+Wire Wire Line
+	6900 1700 6800 1700
+Text Label 6800 1700 2    50   ~ 0
+HW_VER
+$Comp
+L Device:R R?
+U 1 1 5D9F2FE4
+P 1200 2600
+AR Path="/5D9F2FE4" Ref="R?"  Part="1" 
+AR Path="/5C10B93A/5D9F2FE4" Ref="R2"  Part="1" 
+F 0 "R2" H 1270 2646 50  0000 L CNN
+F 1 "10k" H 1270 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1130 2600 50  0001 C CNN
+F 3 "~" H 1200 2600 50  0001 C CNN
+F 4 "603-RC0805JR-07820RL" H -3550 -2550 50  0001 C CNN "Mouser Best.Nr."
+	1    1200 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 2850
+Wire Wire Line
+	1200 2850 950  2850
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D9F9842
+P 1200 2350
+AR Path="/5D9F9842" Ref="#PWR?"  Part="1" 
+AR Path="/5C10B93A/5D9F9842" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 1200 2200 50  0001 C CNN
+F 1 "+3V3" V 1200 2550 50  0000 C CNN
+F 2 "" H 1200 2350 50  0001 C CNN
+F 3 "" H 1200 2350 50  0001 C CNN
+	1    1200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2750 2450 2900
+Wire Wire Line
+	2800 2750 2800 2900
+Wire Wire Line
+	1200 2750 1200 2850
+Wire Wire Line
+	1200 2350 1200 2450
+Wire Notes Line
+	3650 2000 3650 3600
+Wire Notes Line
+	700  2000 700  3600
 $EndSCHEMATC

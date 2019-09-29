@@ -530,20 +530,6 @@ F 4 "603-RC0805FR-0710KL" H 1650 1450 50  0001 C CNN "Mouser Best.Nr."
 $EndComp
 Wire Wire Line
 	5550 6600 5450 6600
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5CD1BD02
-P 4800 6400
-AR Path="/5C10B93A/5CD1BD02" Ref="J?"  Part="1" 
-AR Path="/5CD1BD02" Ref="J4"  Part="1" 
-F 0 "J4" V 4766 6212 50  0000 R CNN
-F 1 "ENAPLE_PTT_PULLUP" V 4900 6500 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4800 6400 50  0001 C CNN
-F 3 "~" H 4800 6400 50  0001 C CNN
-F 4 "855-M20-9990246" H -850 4700 50  0001 C CNN "Mouser Best.Nr."
-	1    4800 6400
-	0    -1   -1   0   
-$EndComp
 Text Label 5600 6100 0    50   ~ 0
 UC_PTT_IN
 Text Notes 4550 5550 0    50   ~ 0
@@ -576,10 +562,6 @@ F 4 "-" H 750 0   50  0001 C CNN "Mouser Best.Nr."
 	1    1550 7350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 6600 4900 6600
-Wire Wire Line
-	4450 6600 4800 6600
 Wire Wire Line
 	4450 5800 4450 6100
 Wire Wire Line
@@ -624,4 +606,19 @@ Wire Wire Line
 	10600 1750 10700 1750
 Text Label 10700 1750 0    50   ~ 0
 VOX
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5D933957
+P 4850 6600
+F 0 "JP4" H 4850 6805 50  0000 C CNN
+F 1 "EN_PTT_PULLUP" H 4850 6714 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4850 6600 50  0001 C CNN
+F 3 "~" H 4850 6600 50  0001 C CNN
+	1    4850 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6600 4700 6600
+Wire Wire Line
+	5000 6600 5150 6600
 $EndSCHEMATC

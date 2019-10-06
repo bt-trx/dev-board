@@ -22,9 +22,9 @@ AR Path="/5C1540B8" Ref="SW?"  Part="1"
 AR Path="/5C10B93A/5C1540B8" Ref="SW1"  Part="1" 
 F 0 "SW1" V 996 3052 50  0000 R CNN
 F 1 "SW_Push" V 905 3052 50  0000 R CNN
-F 2 "Button_Switch_SMD:Panasonic_EVQPUL_EVQPUC" H 950 3300 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SKHH_Angled" H 950 3300 50  0001 C CNN
 F 3 "" H 950 3300 50  0001 C CNN
-F 4 " 667-EVQ-PUL02K" H -2700 -2500 50  0001 C CNN "Mouser Best.Nr."
+F 4 " 611-PTS645VK832" H -2700 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    950  3100
 	0    -1   -1   0   
 $EndComp
@@ -620,6 +620,7 @@ F 0 "J7" H 1600 2600 50  0000 C CNN
 F 1 "Conn_01x02" H 1800 2700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1650 2950 50  0001 C CNN
 F 3 "~" H 1650 2950 50  0001 C CNN
+F 4 " 855-M20-9990246" H 1650 2950 50  0001 C CNN "Mouser Best.Nr."
 	1    1650 2950
 	1    0    0    1   
 $EndComp
@@ -780,7 +781,7 @@ F 0 "R2" H 1270 2646 50  0000 L CNN
 F 1 "10k" H 1270 2555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1130 2600 50  0001 C CNN
 F 3 "~" H 1200 2600 50  0001 C CNN
-F 4 "603-RC0805JR-07820RL" H -3550 -2550 50  0001 C CNN "Mouser Best.Nr."
+F 4 " 603-RC0805FR-0710KL" H -3550 -2550 50  0001 C CNN "Mouser Best.Nr."
 	1    1200 2600
 	1    0    0    -1  
 $EndComp

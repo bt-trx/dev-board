@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch)
-    (date "Sun 06 Oct 2019 08:03:34 PM CEST")
+    (date "Sun 06 Oct 2019 08:29:52 PM CEST")
     (tool "Eeschema 5.1.4+dfsg1-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -361,7 +361,7 @@
       (tstamp 5C0DF1AC))
     (comp (ref SW1)
       (value SW_Push)
-      (footprint Button_Switch_SMD:Panasonic_EVQPUL_EVQPUC)
+      (footprint Button_Switch_THT:SW_Tactile_SKHH_Angled)
       (fields
         (field (name "Mouser Best.Nr.") " 667-EVQ-PUL02K"))
       (libsource (lib Switch) (part SW_Push) (description "Push button switch, generic, two pins"))

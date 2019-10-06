@@ -27,7 +27,7 @@ Component,Part,References,Value,Footprint,Quantity Per PCB,Reichelt Best.Nr.,Mou
 26,R,R4 R5,820R,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,603-RC0805JR-07820RL
 27,R_POT_TRIM,RV1 RV2 RV3,5k,Potentiometer_Vishay_TS53YL_Vertical,3,,72-TS53YL-5K
 28,SW_Push,SW1,SW_Push,SW_Tactile_SKHH_Angled,1,,611-PTS645VK832
-29,ESP32-DEVKITC-32D,U3,ESP32-DEVKIT,ESP32-DEVKITC-32D,1,,485-3591
+29,ESP32-DEVKITC-32D,U3,ESP32-DEVKIT,ESP32-DEVKITC-32D,1,,356-ESP32-DEVKITC32D
 30,SILabs_WT32i,U1,SILabs_WT32i,LGA50-1.0-23.9X15.9MM,1,,634-WT32I-A-AI61
 
 
@@ -41,6 +41,6 @@ Number of PCBs:,1
 Total components:,43
 Schematic Version:,v4.1
 Schematic Date:,2019-09-28
-BoM Date:,Sun 06 Oct 2019 09:16:57 PM CEST
+BoM Date:,Sun 06 Oct 2019 10:10:20 PM CEST
 Schematic Source:,/home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch
 KiCad Version:,Eeschema 5.1.4+dfsg1-1

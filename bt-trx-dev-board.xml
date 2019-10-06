@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch</source>
-    <date>Sun 06 Oct 2019 09:16:57 PM CEST</date>
+    <date>Sun 06 Oct 2019 10:10:22 PM CEST</date>
     <tool>Eeschema 5.1.4+dfsg1-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -609,7 +609,7 @@
       <footprint>nodemcu_esp-32s:ESP32-DEVKITC-32D</footprint>
       <datasheet>None</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 485-3591 </field>
+        <field name="Mouser Best.Nr."> 356-ESP32-DEVKITC32D </field>
       </fields>
       <libsource lib="ESP32-DEVKITC-32D" part="ESP32-DEVKITC-32D" description=""/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>

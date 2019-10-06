@@ -1,5 +1,5 @@
 Component,Part,References,Value,Footprint,Quantity Per PCB,Reichelt Best.Nr.,Mouser Best.Nr.
-1,C,C5 C6 C8,15pF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,3,,80-C0805C150J4HAUTO
+1,C,C5 C6 C8,15pF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,3,,710-885012007011
 2,C,C1 C2 C3 C4,1uF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,4,,80-C0805C105K3RAUTO
 3,CP,C7,220uF 25V,CP_Elec_10x10.5,1,,667-EEE-HA1H221P
 4,D,D2,1N5817,D_SMA,1,,583-FM5817
@@ -25,7 +25,7 @@ Component,Part,References,Value,Footprint,Quantity Per PCB,Reichelt Best.Nr.,Mou
 24,R,R3,2.2k,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,,603-RC0805JR-072K2L
 25,R,R6 R7,4.7k,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,603-RC0805JR-074K7L
 26,R,R4 R5,820R,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,603-RC0805JR-07820RL
-27,R_POT_TRIM,RV1 RV2 RV3,10k,Potentiometer_Vishay_TS53YL_Vertical,3,,72-TS53YL-10K
+27,R_POT_TRIM,RV1 RV2 RV3,5k,Potentiometer_Vishay_TS53YL_Vertical,3,,72-TS53YL-5K
 28,SW_Push,SW1,SW_Push,SW_Tactile_SKHH_Angled,1,,611-PTS645VK832
 29,ESP32-DEVKITC-32D,U3,ESP32-DEVKIT,ESP32-DEVKITC-32D,1,,485-3591
 30,SILabs_WT32i,U1,SILabs_WT32i,LGA50-1.0-23.9X15.9MM,1,,634-WT32I-A-AI61
@@ -41,6 +41,6 @@ Number of PCBs:,1
 Total components:,43
 Schematic Version:,v4.1
 Schematic Date:,2019-09-28
-BoM Date:,Sun 06 Oct 2019 08:55:17 PM CEST
+BoM Date:,Sun 06 Oct 2019 09:16:57 PM CEST
 Schematic Source:,/home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch
 KiCad Version:,Eeschema 5.1.4+dfsg1-1

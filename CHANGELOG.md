@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 nothing yet
 
+## [v4.1] - 2019-10-06
+### Added
+- LED Output on Audio Jack and PTT_BUTTON Pinheader
+- VOX Input (Audio IN to ADC)
+- Additional pinheader for SW1
+- Hardware indicator pin
+
+### Changed
+- Replaced SMD Button with through hole
+- Replaced PTT pull-up jumper with solder jumper
+- Moved F1 direct to VIN
+- Replaced ESP32 footprint with DEVKITC
+- Changed SW1 GPIO from GPIO0 to GPIO18
+
+### Removed
+- D6
+
 ## [v4] - 2019-08-13
 ### Added
 - Extended PCB size for usage of 4 mounting screws
@@ -62,6 +79,7 @@ Initial public release
 - Audio cirquit bypass
 
 [Unreleased]: https://github.com/bt-trx/dev-board/compare/v4...HEAD
+[v4.1]: https://github.com/bt-trx/dev-board/compare/v4...v4.1
 [v4]: https://github.com/bt-trx/dev-board/compare/v3...v4
 [v3]: https://github.com/bt-trx/dev-board/tree/v3
 [v2]: No public release

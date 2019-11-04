@@ -143,9 +143,9 @@ Wire Wire Line
 	2500 3150 2850 3150
 Wire Wire Line
 	2500 3250 2850 3250
-Text Label 1300 5550 2    50   ~ 0
+Text Label 1650 5400 2    50   ~ 0
 AUDIO_IN_A
-Text Label 1300 5350 2    50   ~ 0
+Text Label 1650 5600 2    50   ~ 0
 AUDIO_OUT
 Wire Wire Line
 	10600 850  10700 850 
@@ -153,21 +153,21 @@ Text Label 10700 850  0    50   ~ 0
 AUDIO_OUT
 Text Label 10700 1050 0    50   ~ 0
 AUDIO_IN_A
-Text Label 1300 5750 2    50   ~ 0
+Text Label 1650 5200 2    50   ~ 0
 AUDIO_IN_B
-Text Label 1300 5450 2    50   ~ 0
+Text Label 1650 5500 2    50   ~ 0
 PTT
 Wire Wire Line
-	1300 5450 1600 5450
+	1650 5500 1950 5500
 Wire Wire Line
-	1300 5550 1600 5550
+	1650 5400 1950 5400
 Wire Wire Line
-	1300 5650 1600 5650
+	1650 5300 1950 5300
 Wire Wire Line
-	1300 5750 1600 5750
-Text Label 1300 5850 2    50   ~ 0
+	1650 5200 1950 5200
+Text Label 1650 5100 2    50   ~ 0
 CAT_TX
-Text Label 1300 5650 2    50   ~ 0
+Text Label 1650 5300 2    50   ~ 0
 CAT_RX
 Wire Notes Line
 	3150 6200 3150 4800
@@ -175,9 +175,9 @@ Wire Notes Line
 	700  4800 700  6200
 Text Notes 700  4800 0    50   ~ 0
 Connection to Transceiver
-Text Label 1300 5250 2    50   ~ 0
+Text Label 1650 5700 2    50   ~ 0
 V_IN
-Text Label 1300 5150 2    50   ~ 0
+Text Label 1650 5800 2    50   ~ 0
 GND
 Wire Wire Line
 	8850 2350 8750 2350
@@ -435,18 +435,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR01
 U 1 1 5C038459
-P 800 5150
-F 0 "#PWR01" H 800 4900 50  0001 C CNN
-F 1 "GND" H 805 4977 50  0000 C CNN
-F 2 "" H 800 5150 50  0001 C CNN
-F 3 "" H 800 5150 50  0001 C CNN
-	1    800  5150
+P 1150 5800
+F 0 "#PWR01" H 1150 5550 50  0001 C CNN
+F 1 "GND" H 1155 5627 50  0000 C CNN
+F 2 "" H 1150 5800 50  0001 C CNN
+F 3 "" H 1150 5800 50  0001 C CNN
+	1    1150 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 5250 1300 5250
+	1950 5700 1650 5700
 Wire Wire Line
-	1300 5850 1600 5850
+	1650 5100 1950 5100
 Wire Notes Line
 	700  6200 3150 6200
 Wire Notes Line
@@ -458,19 +458,19 @@ Wire Wire Line
 $Comp
 L Connector:RJ45 J1
 U 1 1 5C7A0AB1
-P 2000 5550
-F 0 "J1" H 1670 5646 50  0000 R CNN
-F 1 "RJ45" H 1670 5555 50  0000 R CNN
-F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 2000 5575 50  0001 C CNN
-F 3 "~" V 2000 5575 50  0001 C CNN
-F 4 "649-54602-908LF " H -7600 -200 50  0001 C CNN "Mouser Best.Nr."
-	1    2000 5550
-	-1   0    0    -1  
+P 2350 5400
+F 0 "J1" H 2020 5496 50  0000 R CNN
+F 1 "RJ45" H 2020 5405 50  0000 R CNN
+F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 2350 5425 50  0001 C CNN
+F 3 "~" V 2350 5425 50  0001 C CNN
+F 4 "649-54602-908LF " H -7250 -350 50  0001 C CNN "Mouser Best.Nr."
+	1    2350 5400
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1600 5350 1300 5350
+	1950 5600 1650 5600
 Wire Wire Line
-	800  5150 1600 5150
+	1150 5800 1950 5800
 $Comp
 L Mechanical:Housing N1
 U 1 1 5C831FC9

@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "BT-TRX Development Board "
-Date "2019-09-28"
-Rev "v4.1"
+Date "2020-01-04"
+Rev "v5.0"
 Comp "bt-trx.com"
 Comment1 "Licensed under CERN OHL v1.2 - https://ohwr.org/licenses/cern-ohl/v1.2"
 Comment2 "Andreas Müller - DC1MIL"
@@ -231,13 +231,13 @@ AUDIO_IN_B
 $Comp
 L power:GND #PWR05
 U 1 1 5C0EA10B
-P 4350 6000
-F 0 "#PWR05" H 4350 5750 50  0001 C CNN
-F 1 "GND" H 4355 5827 50  0000 C CNN
-F 2 "" H 4350 6000 50  0001 C CNN
-F 3 "" H 4350 6000 50  0001 C CNN
-	1    4350 6000
-	1    0    0    -1  
+P 3900 5750
+F 0 "#PWR05" H 3900 5500 50  0001 C CNN
+F 1 "GND" H 3905 5577 50  0000 C CNN
+F 2 "" H 3900 5750 50  0001 C CNN
+F 3 "" H 3900 5750 50  0001 C CNN
+	1    3900 5750
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
@@ -367,26 +367,20 @@ CAT_RX
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5C7B53A0
-P 4700 5600
-F 0 "J5" V 4666 5412 50  0000 R CNN
-F 1 "PTT_SELECT" V 4575 5412 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4700 5600 50  0001 C CNN
-F 3 "~" H 4700 5600 50  0001 C CNN
-F 4 "855-M20-9990346" H -2200 -200 50  0001 C CNN "Mouser Best.Nr."
-	1    4700 5600
-	0    -1   -1   0   
+P 5200 6600
+F 0 "J5" H 5350 6550 50  0000 R CNN
+F 1 "PTT_SELECT" H 5700 6650 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5200 6600 50  0001 C CNN
+F 3 "~" H 5200 6600 50  0001 C CNN
+F 4 "855-M20-9990346" H -1700 800 50  0001 C CNN "Mouser Best.Nr."
+	1    5200 6600
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4800 5800 5600 5800
-Text Label 5600 5800 0    50   ~ 0
+Text Label 5050 6850 2    50   ~ 0
 UC_PTT_OUT
-Wire Wire Line
-	4700 5800 4700 5950
-Wire Wire Line
-	4700 5950 5600 5950
-Text Label 5600 5950 0    50   ~ 0
+Text Label 6400 6400 0    50   ~ 0
 PTT
-Text Label 3950 5800 0    50   ~ 0
+Text Label 4050 5650 0    50   ~ 0
 PTT_BUTTON
 $Sheet
 S 8850 2300 1750 1200
@@ -408,30 +402,23 @@ Wire Wire Line
 	8850 2950 8750 2950
 Wire Wire Line
 	8850 3050 8750 3050
-Text Label 8750 2950 2    50   ~ 0
-UC_PTT_IN
 Text Label 8750 3050 2    50   ~ 0
 UC_PTT_OUT
-Connection ~ 4450 5800
-Wire Wire Line
-	4450 5800 4600 5800
 $Comp
 L power:GND #PWR06
 U 1 1 5C7A36F0
-P 3950 5400
-F 0 "#PWR06" H 3950 5150 50  0001 C CNN
-F 1 "GND" H 3955 5227 50  0000 C CNN
-F 2 "" H 3950 5400 50  0001 C CNN
-F 3 "" H 3950 5400 50  0001 C CNN
-	1    3950 5400
+P 3950 6650
+F 0 "#PWR06" H 3950 6400 50  0001 C CNN
+F 1 "GND" H 3955 6477 50  0000 C CNN
+F 2 "" H 3950 6650 50  0001 C CNN
+F 3 "" H 3950 6650 50  0001 C CNN
+	1    3950 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 5350 3950 5400
+	3950 6600 3950 6650
 Wire Wire Line
-	3850 5350 3950 5350
-Wire Wire Line
-	4450 5150 4450 5800
+	3850 6600 3950 6600
 $Comp
 L power:GND #PWR01
 U 1 1 5C038459
@@ -488,40 +475,32 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR012
 U 1 1 5CD1BCEE
-P 5550 6600
+P 3950 5150
 AR Path="/5CD1BCEE" Ref="#PWR012"  Part="1" 
 AR Path="/5C10B93A/5CD1BCEE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR012" H 5550 6450 50  0001 C CNN
-F 1 "+3V3" V 5550 6800 50  0000 C CNN
-F 2 "" H 5550 6600 50  0001 C CNN
-F 3 "" H 5550 6600 50  0001 C CNN
-	1    5550 6600
-	0    1    1    0   
+F 0 "#PWR012" H 3950 5000 50  0001 C CNN
+F 1 "+3V3" V 3950 5350 50  0000 C CNN
+F 2 "" H 3950 5150 50  0001 C CNN
+F 3 "" H 3950 5150 50  0001 C CNN
+	1    3950 5150
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5CD1BCF6
-P 5300 6600
+P 3950 5400
 AR Path="/5CD1BCF6" Ref="R1"  Part="1" 
 AR Path="/5C10B93A/5CD1BCF6" Ref="R?"  Part="1" 
-F 0 "R1" H 5370 6646 50  0000 L CNN
-F 1 "10k" H 5370 6555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 6600 50  0001 C CNN
-F 3 "~" H 5300 6600 50  0001 C CNN
-F 4 " 603-RC0805FR-0710KL" H 1650 1450 50  0001 C CNN "Mouser Best.Nr."
-	1    5300 6600
-	0    1    1    0   
+F 0 "R1" H 4020 5446 50  0000 L CNN
+F 1 "10k" H 4020 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3880 5400 50  0001 C CNN
+F 3 "~" H 3950 5400 50  0001 C CNN
+F 4 " 603-RC0805FR-0710KL" H 300 250 50  0001 C CNN "Mouser Best.Nr."
+	1    3950 5400
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5550 6600 5450 6600
-Text Label 5600 6100 0    50   ~ 0
-UC_PTT_IN
-Text Notes 4550 5550 0    50   ~ 0
-J5 selects if the ESP32 or J2/J3 is\nconnected to the PTT of the radio\n\nJ2 connects an internal PTT Button\n\nJ3 connects an external PTT Button\n\nJ4 enables PTT pullup, might be needed for\nsome radios
-Wire Notes Line
-	3350 6950 6300 6950
-Wire Notes Line
-	3350 4800 6300 4800
+Text Notes 4550 5400 0    50   ~ 0
+J5 selects if J2/J3 is connected directly\nto the radio or via ESP32\n(to enable Soft-PTT features).\n\nJ2 connects an internal PTT Button\n\nJ3 connects an external PTT Button
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5D3AD2F8
@@ -546,15 +525,6 @@ F 4 "-" H 750 0   50  0001 C CNN "Mouser Best.Nr."
 	1    1550 7350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 5800 4450 6100
-Wire Wire Line
-	5600 6100 4450 6100
-Connection ~ 4450 6100
-Wire Wire Line
-	4450 6100 4450 6600
-Wire Notes Line
-	6300 4800 6300 6950
 Wire Notes Line
 	3350 4800 3350 6950
 NoConn ~ 3350 3850
@@ -562,27 +532,23 @@ NoConn ~ 3450 3850
 $Comp
 L Connector:AudioJack3 J3
 U 1 1 5D8E8C9D
-P 3650 5250
-F 0 "J3" H 3500 4900 50  0000 R CNN
-F 1 "PTT_CON" H 3750 5000 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 3650 5250 50  0001 C CNN
-F 3 "~" H 3650 5250 50  0001 C CNN
-F 4 "490-SJ1-3533NG" H 3650 5250 50  0001 C CNN "Mouser Best.Nr."
-	1    3650 5250
+P 3650 6500
+F 0 "J3" H 3500 6150 50  0000 R CNN
+F 1 "PTT_CON" H 3750 6250 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 3650 6500 50  0001 C CNN
+F 3 "~" H 3650 6500 50  0001 C CNN
+F 4 "490-SJ1-3533NG" H 3650 6500 50  0001 C CNN "Mouser Best.Nr."
+	1    3650 6500
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3850 5250 3950 5250
-Text Label 3950 5250 0    50   ~ 0
+	3850 6500 3950 6500
+Text Label 3950 6500 0    50   ~ 0
 UC_PTT_LED
 Wire Wire Line
 	8850 3150 8750 3150
 Text Label 8750 3150 2    50   ~ 0
 UC_PTT_LED
-Wire Wire Line
-	3850 5150 4450 5150
-Wire Wire Line
-	3750 5800 4450 5800
 Wire Wire Line
 	10600 2600 10800 2600
 Text Label 10800 2600 0    50   ~ 0
@@ -592,38 +558,119 @@ Wire Wire Line
 Text Label 10700 1750 0    50   ~ 0
 VOX
 $Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5D933957
-P 4850 6600
-F 0 "JP4" H 4850 6805 50  0000 C CNN
-F 1 "EN_PTT_PULLUP" H 4850 6714 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4850 6600 50  0001 C CNN
-F 3 "~" H 4850 6600 50  0001 C CNN
-	1    4850 6600
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5D9A6771
+P 3500 5750
+F 0 "J2" H 3600 6100 50  0000 R CNN
+F 1 "PTT_BUTTON" H 3600 6000 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3500 5750 50  0001 C CNN
+F 3 "~" H 3500 5750 50  0001 C CNN
+F 4 "855-M20-9990346" H -3400 -50 50  0001 C CNN "Mouser Best.Nr."
+	1    3500 5750
+	-1   0    0    -1  
+$EndComp
+Text Label 3950 5900 0    50   ~ 0
+UC_PTT_LED
+$Comp
+L Isolator:SFH617A-1 U?
+U 1 1 5E115F72
+P 5900 6500
+F 0 "U?" H 5900 6825 50  0000 C CNN
+F 1 "SFH615A-4" H 5900 6734 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5700 6300 50  0001 L CIN
+F 3 "https://asset.conrad.com/media10/add/160267/c1/-/en/000183258DS01/datenblatt-183258-isocom-components-optokoppler-phototransistor-sfh615a-4xsm-smd-4-transistor-dc.pdf" H 5900 6500 50  0001 L CNN
+	1    5900 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5E11C622
+P 5500 5900
+F 0 "#PWR0102" H 5500 5750 50  0001 C CNN
+F 1 "+3V3" H 5515 6073 50  0000 C CNN
+F 2 "" H 5500 5900 50  0001 C CNN
+F 3 "" H 5500 5900 50  0001 C CNN
+	1    5500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E1205EF
+P 5500 6150
+AR Path="/5E1205EF" Ref="R?"  Part="1" 
+AR Path="/5C10B93A/5E1205EF" Ref="R?"  Part="1" 
+F 0 "R?" H 5570 6196 50  0000 L CNN
+F 1 "150R" H 5570 6105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 6150 50  0001 C CNN
+F 3 "~" H 5500 6150 50  0001 C CNN
+F 4 " 603-RC0805FR-0710KL" H 1850 1000 50  0001 C CNN "Mouser Best.Nr."
+	1    5500 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 6600 4700 6600
+	5500 5900 5500 6000
 Wire Wire Line
-	5000 6600 5150 6600
+	5500 6300 5500 6400
+Wire Wire Line
+	5500 6400 5600 6400
+Wire Wire Line
+	5400 6600 5600 6600
+Wire Wire Line
+	5050 6850 5400 6850
+Wire Wire Line
+	5400 6850 5400 6700
+Wire Wire Line
+	3700 5750 3900 5750
+Wire Wire Line
+	3950 5650 3700 5650
+Text Label 3950 6400 0    50   ~ 0
+PTT_BUTTON
+Wire Wire Line
+	3700 5850 3800 5850
+Wire Wire Line
+	3950 5900 3800 5900
+Wire Wire Line
+	3800 5900 3800 5850
+Wire Wire Line
+	3850 6400 3950 6400
+Wire Wire Line
+	6200 6400 6400 6400
+Text Label 5050 6400 2    50   ~ 0
+PTT_BUTTON
+Wire Wire Line
+	5050 6400 5400 6400
+Wire Wire Line
+	5400 6400 5400 6500
+Wire Wire Line
+	3950 5150 3950 5250
+Wire Wire Line
+	3950 5550 3950 5650
+Wire Notes Line
+	6700 6950 6700 4800
+Wire Notes Line
+	3350 6950 6700 6950
+Wire Notes Line
+	3350 4800 6700 4800
 $Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5D9A6771
-P 3550 5900
-F 0 "J2" H 3650 6250 50  0000 R CNN
-F 1 "PTT_BUTTON" H 3650 6150 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3550 5900 50  0001 C CNN
-F 3 "~" H 3550 5900 50  0001 C CNN
-F 4 "855-M20-9990346" H -3350 100 50  0001 C CNN "Mouser Best.Nr."
-	1    3550 5900
-	-1   0    0    -1  
+L power:GNDA #PWR0103
+U 1 1 5E1B9556
+P 6400 6600
+F 0 "#PWR0103" H 6400 6350 50  0001 C CNN
+F 1 "GNDA" H 6405 6427 50  0000 C CNN
+F 2 "" H 6400 6600 50  0001 C CNN
+F 3 "" H 6400 6600 50  0001 C CNN
+	1    6400 6600
+	1    0    0    -1  
 $EndComp
-Text Label 3850 6000 0    50   ~ 0
-UC_PTT_LED
 Wire Wire Line
-	4350 5900 4350 6000
+	6200 6600 6400 6600
+Text Notes 5700 6050 0    50   ~ 10
+TODO Check if this OC model works fine with 10 mA\nTODO Set correct footprint
+Text Label 4050 5550 0    50   ~ 0
+UC_PTT_IN
 Wire Wire Line
-	3750 5900 4350 5900
+	3950 5650 4050 5650
+Connection ~ 3950 5650
 Wire Wire Line
-	3750 6000 3850 6000
+	4050 5550 4050 5650
 $EndSCHEMATC

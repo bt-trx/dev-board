@@ -62,8 +62,6 @@ F 3 "" H 2900 6100 50  0001 C CNN
 $EndComp
 Text Notes 4500 5700 0    50   ~ 0
 Line level input can be as high as 5 Vpp.\nVariable voltage divider is used to drop this down to\nbelow 1 Vpp to avoid saturation of WT32 input
-Text Notes 900  3400 0    50   ~ 0
-Optional secondary Audio Input Channel
 Wire Wire Line
 	2300 6850 2300 6900
 Wire Wire Line
@@ -93,16 +91,12 @@ F 4 "810-MLF2012DR10MT000" H 300 50  50  0001 C CNN "Mouser Best.Nr."
 $EndComp
 Wire Notes Line
 	800  1150 800  7100
-Text HLabel 1800 3650 2    50   Input ~ 0
-AUDIO_IN_B
 Wire Notes Line
 	6700 1250 6700 7200
 Wire Notes Line
 	800  1250 6700 1250
 Wire Notes Line
 	800  7200 6700 7200
-Wire Notes Line
-	800  5400 6700 5400
 Wire Notes Line
 	800  3200 6700 3200
 Connection ~ 4550 6350
@@ -167,67 +161,8 @@ F 3 "" H 2650 6900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3150 6750 3150 6900
-$Comp
-L Device:L L1
-U 1 1 5C7723BE
-P 1100 4000
-F 0 "L1" V 1290 4000 50  0000 C CNN
-F 1 "100nH" V 1199 4000 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1100 4000 50  0001 C CNN
-F 3 "~" H 1100 4000 50  0001 C CNN
-F 4 "810-MLF2012DR10MT000" H -2200 -2000 50  0001 C CNN "Mouser Best.Nr."
-	1    1100 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT_TRIM RV1
-U 1 1 5C7723C7
-P 1100 4400
-F 0 "RV1" V 1000 4400 50  0000 C CNN
-F 1 "5k" V 900 4400 50  0000 C CNN
-F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 1100 4400 50  0001 C CNN
-F 3 "~" H 1100 4400 50  0001 C CNN
-F 4 " 72-TS53YL-5K" H -1750 -1600 50  0001 C CNN "Mouser Best.Nr."
-	1    1100 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR014
-U 1 1 5C7723EC
-P 1100 5050
-F 0 "#PWR014" H 1100 4800 50  0001 C CNN
-F 1 "GNDA" H 1105 4877 50  0000 C CNN
-F 2 "" H 1100 5050 50  0001 C CNN
-F 3 "" H 1100 5050 50  0001 C CNN
-	1    1100 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4550 6350 5100 6350
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5C773465
-P 1550 4400
-F 0 "JP1" H 1550 4175 50  0000 C CNN
-F 1 "AUDIO_B" H 1550 4266 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1550 4400 50  0001 C CNN
-F 3 "~" H 1550 4400 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mouser Best.Nr."
-	1    1550 4400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1100 3650 1100 3850
-Wire Wire Line
-	1100 4150 1100 4250
-Wire Wire Line
-	1250 4400 1400 4400
-Text GLabel 1900 4400 2    50   Input ~ 0
-AUDIO_B
-Wire Wire Line
-	1700 4400 1900 4400
-Text Notes 1400 4800 0    50   ~ 0
-Line level input can be as high as 5 Vpp.\nVariable voltage divider is used to drop this down to\nbelow 1 Vpp to avoid saturation of WT32 input
 $Comp
 L Device:C C1
 U 1 1 5C774C08
@@ -310,19 +245,6 @@ $EndComp
 Connection ~ 1400 6350
 Wire Wire Line
 	1400 6350 1900 6350
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5C77A4DC
-P 1100 3650
-F 0 "TP1" H 1158 3770 50  0000 L CNN
-F 1 "AUDIO_IN_B" H 1158 3679 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1300 3650 50  0001 C CNN
-F 3 "~" H 1300 3650 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mouser Best.Nr."
-	1    1100 3650
-	1    0    0    -1  
-$EndComp
-Connection ~ 1100 3650
 Text Notes 900  1400 0    50   ~ 0
 Audio Output
 $Comp
@@ -354,8 +276,6 @@ Wire Wire Line
 	1400 1650 1900 1650
 Wire Wire Line
 	2200 1650 2550 1650
-Wire Wire Line
-	1100 3650 1800 3650
 Text HLabel 1250 2150 0    50   Input ~ 0
 SPK_LP
 $Comp
@@ -485,8 +405,6 @@ $EndComp
 Wire Wire Line
 	3750 6350 4550 6350
 Wire Wire Line
-	2200 5800 2650 5800
-Wire Wire Line
 	3450 6050 3300 6050
 Wire Wire Line
 	3150 5800 3150 5900
@@ -528,24 +446,18 @@ Wire Wire Line
 Connection ~ 3150 6350
 Wire Wire Line
 	3150 6350 3450 6350
-Connection ~ 2650 5800
-Wire Wire Line
-	2650 5800 3150 5800
-Wire Wire Line
-	1100 4550 1100 5050
-Text GLabel 2800 5650 2    50   Input ~ 0
-AUDIO_B
 Wire Wire Line
 	2650 6450 2650 6000
-Wire Wire Line
-	2650 5800 2650 5650
-Wire Wire Line
-	2650 5650 2800 5650
 Text HLabel 1250 6000 0    50   Output ~ 0
 VOX_OUT
 Wire Wire Line
 	1250 6000 2650 6000
-Connection ~ 2650 6000
+Wire Wire Line
+	2200 5800 2650 5800
 Wire Wire Line
 	2650 6000 2650 5800
+Connection ~ 2650 6000
+Connection ~ 2650 5800
+Wire Wire Line
+	2650 5800 3150 5800
 $EndSCHEMATC

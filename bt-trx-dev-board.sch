@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:bt-trx-dev-board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -105,12 +104,6 @@ F 3 "" H 4800 2550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 4650 2650
-Text Label 5150 2450 0    50   ~ 0
-MIC_BIAS
-Wire Wire Line
-	8850 1300 8750 1300
-Text Label 8750 1300 2    50   ~ 0
-MIC_BIAS
 $Comp
 L power:+3V3 #PWR03
 U 1 1 5C08557D
@@ -206,8 +199,6 @@ Wire Wire Line
 	4650 1950 5150 1950
 Wire Wire Line
 	4650 2050 5150 2050
-Wire Wire Line
-	4650 2450 5150 2450
 Text Label 2500 3250 2    50   ~ 0
 UART_UC_RX
 Text Label 2500 3150 2    50   ~ 0
@@ -286,11 +277,9 @@ F2 "MIC_LP" O L 8850 1100 50
 F3 "MIC_LN" O L 8850 1200 50 
 F4 "AUDIO_OUT" O R 10600 850 50 
 F5 "SPK_LN" I L 8850 800 50 
-F6 "MIC_BIAS" O L 8850 1300 50 
-F7 "AUDIO_IN_A" I R 10600 1050 50 
-F8 "AUDIO_GND" B L 8850 1750 50 
-F9 "SPK_LP" I L 8850 900 50 
-F10 "VOX_OUT" O R 10600 1750 50 
+F6 "AUDIO_IN_A" I R 10600 1050 50 
+F7 "SPK_LP" I L 8850 900 50 
+F8 "VOX_OUT" O R 10600 1750 50 
 $EndSheet
 Wire Wire Line
 	10700 1050 10600 1050
@@ -298,21 +287,6 @@ Wire Wire Line
 	8750 3300 8850 3300
 Wire Wire Line
 	8850 800  8750 800 
-$Comp
-L power:GND #PWR013
-U 1 1 5C781CAB
-P 8650 1850
-F 0 "#PWR013" H 8650 1600 50  0001 C CNN
-F 1 "GND" H 8655 1677 50  0000 C CNN
-F 2 "" H 8650 1850 50  0001 C CNN
-F 3 "" H 8650 1850 50  0001 C CNN
-	1    8650 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 1750 8650 1750
-Wire Wire Line
-	8650 1750 8650 1850
 $Comp
 L power:GND #PWR010
 U 1 1 5C783418
@@ -639,7 +613,7 @@ Wire Wire Line
 Wire Notes Line
 	6700 6950 6700 4800
 Wire Notes Line
-	3350 6950 6700 6950
+	3300 7000 6650 7000
 Wire Notes Line
 	3350 4800 6700 4800
 $Comp
@@ -656,7 +630,7 @@ $EndComp
 Wire Wire Line
 	6200 6600 6400 6600
 Text Notes 5700 6050 0    50   ~ 10
-TODO Check if this OC model works fine with 10 mA\nTODO Set correct footprint
+TODO Set correct footprint\nTODO Check alternative: Solid State MOSFET\nTested LTV-816S with 220R -> fine
 Text Label 4050 5550 0    50   ~ 0
 UC_PTT_IN
 Wire Wire Line
@@ -664,4 +638,37 @@ Wire Wire Line
 Connection ~ 3950 5650
 Wire Wire Line
 	4050 5550 4050 5650
+$Comp
+L Device:C C?
+U 1 1 5E304AD9
+P 5450 2450
+AR Path="/5BE3535B/5E304AD9" Ref="C?"  Part="1" 
+AR Path="/5E304AD9" Ref="C4"  Part="1" 
+F 0 "C4" V 5198 2450 50  0000 C CNN
+F 1 "1uF" V 5289 2450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5488 2300 50  0001 C CNN
+F 3 "~" H 5450 2450 50  0001 C CNN
+F 4 "80-C0805C105K3RAUTO" H 3700 -4400 50  0001 C CNN "Mouser Best.Nr."
+	1    5450 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 2450 5700 2500
+Wire Wire Line
+	5600 2450 5700 2450
+Wire Wire Line
+	4650 2450 5300 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5E304AE2
+P 5700 2500
+AR Path="/5BE3535B/5E304AE2" Ref="#PWR?"  Part="1" 
+AR Path="/5E304AE2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5700 2250 50  0001 C CNN
+F 1 "GND" H 5705 2327 50  0000 C CNN
+F 2 "" H 5700 2500 50  0001 C CNN
+F 3 "" H 5700 2500 50  0001 C CNN
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

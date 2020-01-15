@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:bt-trx-dev-board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -710,24 +709,11 @@ Text HLabel 6750 2700 0    50   Output ~ 0
 PTT_LED
 Wire Wire Line
 	6750 2700 6900 2700
-Text HLabel 1150 5950 0    50   Input ~ 0
+Text HLabel 1150 6150 0    50   Input ~ 0
 VOX_IN
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5D943D8B
-P 1400 5950
-F 0 "JP3" H 1400 6050 50  0000 C CNN
-F 1 "VOX" H 1400 5850 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1400 5950 50  0001 C CNN
-F 3 "~" H 1400 5950 50  0001 C CNN
-	1    1400 5950
-	-1   0    0    1   
-$EndComp
 NoConn ~ 8500 2700
 Wire Wire Line
 	6900 1800 6800 1800
-Wire Wire Line
-	1250 5950 1150 5950
 Wire Notes Line
 	6250 2050 6250 1450
 Text Notes 6200 2050 2    50   ~ 0
@@ -741,29 +727,27 @@ Text Label 6800 1800 2    50   ~ 0
 VOX
 Wire Wire Line
 	2600 5950 2950 5950
-Wire Wire Line
-	1550 5950 1750 5950
-Text Label 1750 5950 0    50   ~ 0
+Text Label 1750 6150 0    50   ~ 0
 VOX
 Wire Notes Line
 	700  5650 2150 5650
 Wire Notes Line
-	2150 5650 2150 6100
+	2150 5850 2150 6300
 Wire Notes Line
-	2150 6100 700  6100
+	2150 6300 700  6300
 Wire Notes Line
-	700  6100 700  5650
-Text Notes 700  5650 0    50   ~ 0
+	700  6300 700  5850
+Text Notes 700  5750 0    50   ~ 0
 VOX Input
 Wire Notes Line
-	2250 5650 2250 6100
+	2250 5850 2250 6300
 Wire Notes Line
-	2250 6100 3650 6100
+	2250 6300 3650 6300
 Wire Notes Line
-	3650 6100 3650 5650
+	3650 6300 3650 5850
 Wire Notes Line
-	3650 5650 2250 5650
-Text Notes 2250 5650 0    50   ~ 0
+	3650 5850 2250 5850
+Text Notes 2250 5850 0    50   ~ 0
 Hardware Version Indicator
 Text Label 2950 5950 0    50   ~ 0
 HW_VER
@@ -813,4 +797,20 @@ Wire Notes Line
 	3650 2000 3650 3600
 Wire Notes Line
 	700  2000 700  3600
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5E316637
+P 1450 5950
+F 0 "J?" V 1400 5600 50  0000 C CNN
+F 1 "Conn_01x02" V 1600 5700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 5950 50  0001 C CNN
+F 3 "~" H 1450 5950 50  0001 C CNN
+F 4 " 855-M20-9990246" H 1450 5950 50  0001 C CNN "Mouser Best.Nr."
+	1    1450 5950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1450 6150 1750 6150
+Wire Wire Line
+	1150 6150 1350 6150
 $EndSCHEMATC

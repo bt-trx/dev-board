@@ -17,39 +17,35 @@ Text HLabel 1250 2300 0    50   Input ~ 0
 SPK_LN
 Text HLabel 5450 1900 2    50   Output ~ 0
 AUDIO_OUT
-Text HLabel 5250 5550 2    50   Input ~ 0
-AUDIO_IN_A
-Text HLabel 1250 6850 0    50   Output ~ 0
-MIC_BIAS
-Text Notes 3200 5350 2    50   ~ 0
-Reference Schematic WT32i-DataSheet-1317400 page 49, 50
-Text Notes 4150 4800 0    50   ~ 0
+Text HLabel 5300 3650 2    50   Input ~ 0
+AUDIO_IN
+Text Notes 3900 5150 0    50   ~ 0
 Line level input can be as high as 5 Vpp.\nVariable voltage divider is used to drop this down to\nbelow 1 Vpp to avoid saturation of WT32 input
 $Comp
 L power:GNDA #PWR020
 U 1 1 5C1BEC59
-P 4000 6350
-F 0 "#PWR020" H 4000 6100 50  0001 C CNN
-F 1 "GNDA" H 4005 6177 50  0000 C CNN
-F 2 "" H 4000 6350 50  0001 C CNN
-F 3 "" H 4000 6350 50  0001 C CNN
-	1    4000 6350
+P 4050 4450
+F 0 "#PWR020" H 4050 4200 50  0001 C CNN
+F 1 "GNDA" H 4055 4277 50  0000 C CNN
+F 2 "" H 4050 4450 50  0001 C CNN
+F 3 "" H 4050 4450 50  0001 C CNN
+	1    4050 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:L L3
 U 1 1 5BFC0C35
-P 4350 5550
-F 0 "L3" V 4540 5550 50  0000 C CNN
-F 1 "100nH" V 4449 5550 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 5550 50  0001 C CNN
-F 3 "~" H 4350 5550 50  0001 C CNN
-F 4 "810-MLF2012DR10MT000" H 1050 -450 50  0001 C CNN "Mouser Best.Nr."
-	1    4350 5550
+P 4400 3650
+F 0 "L3" V 4590 3650 50  0000 C CNN
+F 1 "100nH" V 4499 3650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 3650 50  0001 C CNN
+F 3 "~" H 4400 3650 50  0001 C CNN
+F 4 "810-MLF2012DR10MT000" H 1100 -2350 50  0001 C CNN "Mouser Best.Nr."
+	1    4400 3650
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line
-	800  1150 800  7100
+	800  1250 800  7200
 Wire Notes Line
 	6700 1250 6700 7200
 Wire Notes Line
@@ -61,37 +57,37 @@ Wire Notes Line
 $Comp
 L Device:R_POT_TRIM RV3
 U 1 1 5BFC4F3F
-P 3600 5800
-F 0 "RV3" V 3500 5800 50  0000 C CNN
-F 1 "5k" V 3400 5800 50  0000 C CNN
-F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 3600 5800 50  0001 C CNN
-F 3 "~" H 3600 5800 50  0001 C CNN
-F 4 " 72-TS53YL-5K" H 750 -200 50  0001 C CNN "Mouser Best.Nr."
-	1    3600 5800
+P 3650 3900
+F 0 "RV3" V 3550 3900 50  0000 C CNN
+F 1 "5k" V 3450 3900 50  0000 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 3650 3900 50  0001 C CNN
+F 3 "~" H 3650 3900 50  0001 C CNN
+F 4 " 72-TS53YL-5K" H 800 -2100 50  0001 C CNN "Mouser Best.Nr."
+	1    3650 3900
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 5BFC0AC9
-P 4000 5950
-F 0 "C5" H 4115 5996 50  0000 L CNN
-F 1 "15pF" H 4115 5905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4038 5800 50  0001 C CNN
-F 3 "~" H 4000 5950 50  0001 C CNN
-F 4 "710-885012007011" H 1150 -450 50  0001 C CNN "Mouser Best.Nr."
-	1    4000 5950
+P 4050 4050
+F 0 "C5" H 4165 4096 50  0000 L CNN
+F 1 "15pF" H 4165 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 3900 50  0001 C CNN
+F 3 "~" H 4050 4050 50  0001 C CNN
+F 4 "710-885012007011" H 1200 -2350 50  0001 C CNN "Mouser Best.Nr."
+	1    4050 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 5BFC0997
-P 2050 5800
-F 0 "C2" V 1798 5800 50  0000 C CNN
-F 1 "1uF" V 1889 5800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 5650 50  0001 C CNN
-F 3 "~" H 2050 5800 50  0001 C CNN
-F 4 "80-C0805C105K3RAUTO" H 150 -200 50  0001 C CNN "Mouser Best.Nr."
-	1    2050 5800
+P 2100 3900
+F 0 "C2" V 1848 3900 50  0000 C CNN
+F 1 "1uF" V 1939 3900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2138 3750 50  0001 C CNN
+F 3 "~" H 2100 3900 50  0001 C CNN
+F 4 "80-C0805C105K3RAUTO" H 200 -2100 50  0001 C CNN "Mouser Best.Nr."
+	1    2100 3900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -125,35 +121,35 @@ Audio output is +/-350 mV, microphone input should be around +/-20mV
 $Comp
 L Connector:TestPoint TP7
 U 1 1 5C7783F5
-P 4700 5550
-F 0 "TP7" H 4758 5670 50  0000 L CNN
-F 1 "AUDIO_IN_A" H 4758 5579 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4900 5550 50  0001 C CNN
-F 3 "~" H 4900 5550 50  0001 C CNN
-F 4 "-" H 150 -350 50  0001 C CNN "Mouser Best.Nr."
-	1    4700 5550
+P 4750 3650
+F 0 "TP7" H 4808 3770 50  0000 L CNN
+F 1 "AUDIO_IN" H 4808 3679 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 3650 50  0001 C CNN
+F 3 "~" H 4950 3650 50  0001 C CNN
+F 4 "-" H 200 -2250 50  0001 C CNN "Mouser Best.Nr."
+	1    4750 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 5800 1400 5800
+	1300 3900 1450 3900
 Wire Wire Line
-	1250 6200 1400 6200
-Connection ~ 1400 5800
+	1300 4300 1450 4300
+Connection ~ 1450 3900
 Wire Wire Line
-	1400 5800 1900 5800
+	1450 3900 1950 3900
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5C77A456
-P 1400 6200
-F 0 "TP5" H 1458 6320 50  0000 L CNN
-F 1 "MIC_LN" H 1458 6229 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1600 6200 50  0001 C CNN
-F 3 "~" H 1600 6200 50  0001 C CNN
-F 4 "-" H 0   -150 50  0001 C CNN "Mouser Best.Nr."
-	1    1400 6200
+P 1450 4300
+F 0 "TP5" H 1508 4420 50  0000 L CNN
+F 1 "MIC_LN" H 1508 4329 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1650 4300 50  0001 C CNN
+F 3 "~" H 1650 4300 50  0001 C CNN
+F 4 "-" H 50  -2050 50  0001 C CNN "Mouser Best.Nr."
+	1    1450 4300
 	1    0    0    -1  
 $EndComp
-Connection ~ 1400 6200
+Connection ~ 1450 4300
 Text Notes 900  1500 0    50   ~ 0
 Audio Output
 $Comp
@@ -209,17 +205,6 @@ F 4 "810-MLF2012DR10MT000" H 900 -4100 50  0001 C CNN "Mouser Best.Nr."
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDA #PWR019
-U 1 1 5CD0D82A
-P 3900 2500
-F 0 "#PWR019" H 3900 2250 50  0001 C CNN
-F 1 "GNDA" H 3905 2327 50  0000 C CNN
-F 2 "" H 3900 2500 50  0001 C CNN
-F 3 "" H 3900 2500 50  0001 C CNN
-	1    3900 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C6
 U 1 1 5CD0D832
 P 3900 2100
@@ -248,34 +233,34 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5C77A38C
-P 1400 5800
-F 0 "TP4" H 1458 5920 50  0000 L CNN
-F 1 "MIC_LP" H 1458 5829 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1600 5800 50  0001 C CNN
-F 3 "~" H 1600 5800 50  0001 C CNN
-F 4 "-" H 0   -100 50  0001 C CNN "Mouser Best.Nr."
-	1    1400 5800
+P 1450 3900
+F 0 "TP4" H 1508 4020 50  0000 L CNN
+F 1 "MIC_LP" H 1508 3929 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1650 3900 50  0001 C CNN
+F 3 "~" H 1650 3900 50  0001 C CNN
+F 4 "-" H 50  -2000 50  0001 C CNN "Mouser Best.Nr."
+	1    1450 3900
 	1    0    0    -1  
 $EndComp
-Text HLabel 1250 6200 0    50   Output ~ 0
+Text HLabel 1300 4300 0    50   Output ~ 0
 MIC_LN
-Text HLabel 1250 5800 0    50   Output ~ 0
+Text HLabel 1300 3900 0    50   Output ~ 0
 MIC_LP
 $Comp
 L Connector:TestPoint TP8
 U 1 1 5C0DF1AC
-P 3800 4150
-F 0 "TP8" H 3858 4270 50  0000 L CNN
-F 1 "A_GND" H 3858 4179 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 4000 4150 50  0001 C CNN
-F 3 "~" H 4000 4150 50  0001 C CNN
-F 4 "-" H -750 -2700 50  0001 C CNN "Mouser Best.Nr."
-	1    3800 4150
+P 4750 4300
+F 0 "TP8" H 4808 4420 50  0000 L CNN
+F 1 "AUDIO_IN_GND" H 4808 4329 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 4950 4300 50  0001 C CNN
+F 3 "~" H 4950 4300 50  0001 C CNN
+F 4 "-" H 200 -2550 50  0001 C CNN "Mouser Best.Nr."
+	1    4750 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 5550 5250 5550
-Text HLabel 3250 5550 0    50   Output ~ 0
+	4750 3650 5300 3650
+Text HLabel 3300 3650 0    50   Output ~ 0
 VOX_OUT
 $Comp
 L Device:Transformer_1P_1S T?
@@ -299,57 +284,57 @@ Connection ~ 1400 2300
 $Comp
 L Device:Transformer_1P_1S T?
 U 1 1 5E232E72
-P 2750 6000
-F 0 "T?" H 2750 6381 50  0000 C CNN
-F 1 "Transformer_1P_1S" H 2750 6290 50  0000 C CNN
-F 2 "" H 2750 6000 50  0001 C CNN
-F 3 "~" H 2750 6000 50  0001 C CNN
-	1    2750 6000
+P 2800 4100
+F 0 "T?" H 2800 4481 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 2800 4390 50  0000 C CNN
+F 2 "" H 2800 4100 50  0001 C CNN
+F 3 "~" H 2800 4100 50  0001 C CNN
+	1    2800 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 5800 2350 5800
+	2250 3900 2400 3900
 Wire Wire Line
-	1400 6200 2350 6200
+	1450 4300 2400 4300
 Wire Wire Line
-	3150 5800 3350 5800
+	3200 3900 3400 3900
 Wire Wire Line
-	3600 5650 3600 5550
+	3650 3750 3650 3650
 Wire Wire Line
-	3600 5550 4000 5550
+	3650 3650 4050 3650
 Wire Wire Line
-	4000 5550 4000 5800
+	4050 3650 4050 3900
 Wire Wire Line
-	3150 6200 3600 6200
+	3200 4300 3650 4300
 Wire Wire Line
-	4000 6100 4000 6200
+	4050 4200 4050 4300
 Wire Wire Line
-	3600 5950 3600 6200
-Connection ~ 3600 6200
+	3650 4050 3650 4300
+Connection ~ 3650 4300
 Wire Wire Line
-	3600 6200 4000 6200
+	3650 4300 4050 4300
 Wire Wire Line
-	4000 5550 4200 5550
-Connection ~ 4000 5550
+	4050 3650 4250 3650
+Connection ~ 4050 3650
 Wire Wire Line
-	4500 5550 4700 5550
-Connection ~ 4700 5550
+	4550 3650 4750 3650
+Connection ~ 4750 3650
 Wire Wire Line
-	4000 6350 4000 6200
-Connection ~ 4000 6200
+	4050 4450 4050 4300
+Connection ~ 4050 4300
 $Comp
 L power:GNDA #PWR?
 U 1 1 5E2818E6
-P 3800 4300
-F 0 "#PWR?" H 3800 4050 50  0001 C CNN
-F 1 "GNDA" H 3805 4127 50  0000 C CNN
-F 2 "" H 3800 4300 50  0001 C CNN
-F 3 "" H 3800 4300 50  0001 C CNN
-	1    3800 4300
+P 4750 4450
+F 0 "#PWR?" H 4750 4200 50  0001 C CNN
+F 1 "GNDA" H 4755 4277 50  0000 C CNN
+F 2 "" H 4750 4450 50  0001 C CNN
+F 3 "" H 4750 4450 50  0001 C CNN
+	1    4750 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 4300 3800 4150
+	4750 4450 4750 4300
 Wire Wire Line
 	3550 1900 3900 1900
 Wire Wire Line
@@ -402,10 +387,54 @@ Wire Wire Line
 	5450 1900 4950 1900
 Connection ~ 4950 1900
 Wire Wire Line
-	3250 5550 3350 5550
+	3300 3650 3400 3650
 Wire Wire Line
-	3350 5550 3350 5800
-Connection ~ 3350 5800
+	3400 3650 3400 3900
+Connection ~ 3400 3900
 Wire Wire Line
-	3350 5800 3450 5800
+	3400 3900 3500 3900
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E419368
+P 3900 2500
+F 0 "#PWR?" H 3900 2250 50  0001 C CNN
+F 1 "GNDS" H 3905 2327 50  0000 C CNN
+F 2 "" H 3900 2500 50  0001 C CNN
+F 3 "" H 3900 2500 50  0001 C CNN
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+Text Notes 3800 2800 0    50   ~ 0
+MIC_GND
+Text Notes 4050 1650 0    50   ~ 0
+optional
+Text Notes 4250 3400 0    50   ~ 0
+optional
+Text Notes 950  3400 0    50   ~ 0
+Audio Input
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E4A031B
+P 4950 2300
+F 0 "TP?" H 5008 2420 50  0000 L CNN
+F 1 "AUDIO_OUT_GND" H 5008 2329 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 5150 2300 50  0001 C CNN
+F 3 "~" H 5150 2300 50  0001 C CNN
+F 4 "-" H 400 -4550 50  0001 C CNN "Mouser Best.Nr."
+	1    4950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E4A0945
+P 4950 2500
+F 0 "#PWR?" H 4950 2250 50  0001 C CNN
+F 1 "GNDS" H 4955 2327 50  0000 C CNN
+F 2 "" H 4950 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0001 C CNN
+	1    4950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2300 4950 2500
 $EndSCHEMATC

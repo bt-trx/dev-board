@@ -299,10 +299,6 @@ Wire Notes Line
 	700  3950 2150 3950
 Wire Notes Line
 	700  5550 2150 5550
-Text HLabel 6750 2400 0    50   Input ~ 0
-UART_CAT_RX
-Text HLabel 6750 2300 0    50   Output ~ 0
-UART_CAT_TX
 Text HLabel 6800 2000 0    50   Output ~ 0
 PTT_OUT
 Text Notes 800  3400 1    50   ~ 0
@@ -312,7 +308,7 @@ Wire Wire Line
 Text Notes 9250 2400 0    50   ~ 0
 Serial2 (WT32i) CTS, RTS need to\nbe remapped in software
 Wire Notes Line
-	6150 2250 6150 2450
+	6250 2250 6250 2450
 Text Label 8650 1800 0    50   ~ 0
 SDA
 Text Label 8650 1500 0    50   ~ 0
@@ -580,7 +576,7 @@ Wire Wire Line
 	8500 1500 8650 1500
 Wire Wire Line
 	6900 1900 6800 1900
-Text Notes 6100 2450 2    50   ~ 0
+Text Notes 6200 2450 2    50   ~ 0
 Serial1 (CAT)\nneed to be remapped \nin software
 Wire Wire Line
 	6750 2300 6900 2300
@@ -654,14 +650,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5D8F131B
-P 2600 5950
+P 2600 6050
 AR Path="/5D8F131B" Ref="#PWR?"  Part="1" 
 AR Path="/5C10B93A/5D8F131B" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 2600 5700 50  0001 C CNN
-F 1 "GND" V 2600 5750 50  0000 C CNN
-F 2 "" H 2600 5950 50  0001 C CNN
-F 3 "" H 2600 5950 50  0001 C CNN
-	1    2600 5950
+F 0 "#PWR0101" H 2600 5800 50  0001 C CNN
+F 1 "GND" V 2600 5850 50  0000 C CNN
+F 2 "" H 2600 6050 50  0001 C CNN
+F 3 "" H 2600 6050 50  0001 C CNN
+	1    2600 6050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -703,8 +699,8 @@ F 3 "" H 8600 1900 50  0001 C CNN
 	1    8600 1900
 	0    -1   -1   0   
 $EndComp
-Text Notes 3350 6050 2    50   ~ 0
-V4.1 = 0V
+Text Notes 3350 6150 2    50   ~ 0
+V4.1, V5.0 = 0V
 Text HLabel 6750 2700 0    50   Output ~ 0
 PTT_LED
 Wire Wire Line
@@ -726,7 +722,7 @@ NoConn ~ 8500 2600
 Text Label 6800 1800 2    50   ~ 0
 VOX
 Wire Wire Line
-	2600 5950 2950 5950
+	2600 6050 2950 6050
 Text Label 1750 6150 0    50   ~ 0
 VOX
 Wire Notes Line
@@ -749,7 +745,7 @@ Wire Notes Line
 	3650 5850 2250 5850
 Text Notes 2250 5850 0    50   ~ 0
 Hardware Version Indicator
-Text Label 2950 5950 0    50   ~ 0
+Text Label 2950 6050 0    50   ~ 0
 HW_VER
 Wire Wire Line
 	6900 1700 6800 1700
@@ -813,4 +809,70 @@ Wire Wire Line
 	1450 6150 1750 6150
 Wire Wire Line
 	1150 6150 1350 6150
+Text Label 6750 2300 2    50   ~ 0
+CAT_TX
+Text Label 6750 2400 2    50   ~ 0
+CAT_RX
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5E479877
+P 4050 5050
+F 0 "J?" H 3970 4625 50  0000 C CNN
+F 1 "I2C" H 3970 4716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4050 5050 50  0001 C CNN
+F 3 "~" H 4050 5050 50  0001 C CNN
+F 4 "855-M20-9770446" H 1150 0   50  0001 C CNN "Mouser Best.Nr."
+	1    4050 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E479881
+P 4350 5250
+AR Path="/5E479881" Ref="#PWR?"  Part="1" 
+AR Path="/5C10B93A/5E479881" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 5000 50  0001 C CNN
+F 1 "GND" H 4355 5077 50  0000 C CNN
+F 2 "" H 4350 5250 50  0001 C CNN
+F 3 "" H 4350 5250 50  0001 C CNN
+	1    4350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E47988B
+P 4450 5050
+AR Path="/5E47988B" Ref="#PWR?"  Part="1" 
+AR Path="/5C10B93A/5E47988B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4450 4900 50  0001 C CNN
+F 1 "+3V3" V 4450 5250 50  0000 C CNN
+F 2 "" H 4450 5050 50  0001 C CNN
+F 3 "" H 4450 5050 50  0001 C CNN
+	1    4450 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 5050 4450 5050
+Wire Wire Line
+	4250 5150 4350 5150
+Wire Wire Line
+	4350 5150 4350 5250
+Wire Notes Line
+	3800 3950 3800 5550
+Wire Notes Line
+	3800 5550 5200 5550
+Wire Notes Line
+	5200 5550 5200 3950
+Wire Notes Line
+	3800 3950 5200 3950
+Text Notes 4650 4050 2    50   ~ 0
+CAT (UART) Connector
+Text Label 4550 4850 0    50   ~ 0
+CAT_TX
+Text Label 4550 4950 0    50   ~ 0
+CAT_RX
+Wire Wire Line
+	4250 4850 4550 4850
+Wire Wire Line
+	4250 4950 4550 4950
 $EndSCHEMATC

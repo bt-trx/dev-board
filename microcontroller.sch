@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "BT-TRX Development Board "
-Date "2020-01-04"
+Date "2020-01-16"
 Rev "v5.0"
 Comp "bt-trx.com"
 Comment1 "Licensed under CERN OHL v1.2 - https://ohwr.org/licenses/cern-ohl/v1.2"
@@ -26,19 +26,6 @@ F 3 "" H 950 3300 50  0001 C CNN
 F 4 " 611-PTS645VK832" H -2700 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    950  3100
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C1540BF
-P 950 3350
-AR Path="/5C1540BF" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5C1540BF" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 950 3100 50  0001 C CNN
-F 1 "GND" H 955 3177 50  0000 C CNN
-F 2 "" H 950 3350 50  0001 C CNN
-F 3 "" H 950 3350 50  0001 C CNN
-	1    950  3350
-	1    0    0    -1  
 $EndComp
 Text Label 950  2700 1    50   ~ 0
 BTN0
@@ -69,19 +56,6 @@ F 3 "~" H 2450 3050 50  0001 C CNN
 F 4 "604-APA2107LVBCD" H -2300 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    2450 3050
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C1540E7
-P 2450 3350
-AR Path="/5C1540E7" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5C1540E7" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 2450 3100 50  0001 C CNN
-F 1 "GND" H 2455 3177 50  0000 C CNN
-F 2 "" H 2450 3350 50  0001 C CNN
-F 3 "" H 2450 3350 50  0001 C CNN
-	1    2450 3350
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2450 3200 2450 3350
@@ -117,19 +91,6 @@ F 4 "604-APA2107LZGCK" H -2300 -2500 50  0001 C CNN "Mouser Best.Nr."
 	1    2800 3050
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C1540FF
-P 2800 3350
-AR Path="/5C1540FF" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5C1540FF" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 2800 3100 50  0001 C CNN
-F 1 "GND" H 2805 3177 50  0000 C CNN
-F 2 "" H 2800 3350 50  0001 C CNN
-F 3 "" H 2800 3350 50  0001 C CNN
-	1    2800 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 3200 2800 3350
 Wire Wire Line
@@ -140,19 +101,6 @@ Text Notes 700  2000 0    50   ~ 0
 Button and LEDs
 Text HLabel 1000 1050 0    50   Input ~ 0
 +V_IN
-$Comp
-L power:GND #PWR?
-U 1 1 5C21F287
-P 2550 1500
-AR Path="/5C21F287" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5C21F287" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 2550 1250 50  0001 C CNN
-F 1 "GND" H 2555 1327 50  0000 C CNN
-F 2 "" H 2550 1500 50  0001 C CNN
-F 3 "" H 2550 1500 50  0001 C CNN
-	1    2550 1500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Polyfuse F1
 U 1 1 5C0D8051
@@ -212,241 +160,185 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C012726
-P 1200 4550
+P 1200 4450
 AR Path="/5C012726" Ref="R?"  Part="1" 
 AR Path="/5C10B93A/5C012726" Ref="R3"  Part="1" 
-F 0 "R3" H 1270 4596 50  0000 L CNN
-F 1 "2.2k" H 1270 4505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1130 4550 50  0001 C CNN
-F 3 "~" H 1200 4550 50  0001 C CNN
-F 4 "603-RC0805JR-072K2L " H -7550 1050 50  0001 C CNN "Mouser Best.Nr."
-	1    1200 4550
+F 0 "R3" H 1270 4496 50  0000 L CNN
+F 1 "2.2k" H 1270 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1130 4450 50  0001 C CNN
+F 3 "~" H 1200 4450 50  0001 C CNN
+F 4 "603-RC0805JR-072K2L " H -7550 950 50  0001 C CNN "Mouser Best.Nr."
+	1    1200 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 5C01272C
-P 1200 4950
+P 1200 4850
 AR Path="/5C01272C" Ref="D?"  Part="1" 
 AR Path="/5C10B93A/5C01272C" Ref="D1"  Part="1" 
-F 0 "D1" V 1238 4833 50  0000 R CNN
-F 1 "LED AMBER 2mA" V 1147 4833 50  0000 R CNN
-F 2 "Kingbright:APA2107LSECK" H 1200 4950 50  0001 C CNN
-F 3 "~" H 1200 4950 50  0001 C CNN
-F 4 "604-APA2107LSECKJ4RV" H -7550 1050 50  0001 C CNN "Mouser Best.Nr."
-	1    1200 4950
+F 0 "D1" V 1238 4733 50  0000 R CNN
+F 1 "LED AMBER 2mA" V 1147 4733 50  0000 R CNN
+F 2 "Kingbright:APA2107LSECK" H 1200 4850 50  0001 C CNN
+F 3 "~" H 1200 4850 50  0001 C CNN
+F 4 "604-APA2107LSECKJ4RV" H -7550 950 50  0001 C CNN "Mouser Best.Nr."
+	1    1200 4850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C012732
-P 1200 5250
-AR Path="/5C012732" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5C012732" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 1200 5000 50  0001 C CNN
-F 1 "GND" H 1205 5077 50  0000 C CNN
-F 2 "" H 1200 5250 50  0001 C CNN
-F 3 "" H 1200 5250 50  0001 C CNN
-	1    1200 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1200 5100 1200 5250
+	1200 5000 1200 5150
 Wire Wire Line
-	1200 4400 1200 4300
+	1200 4300 1200 4200
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C017F22
-P 1200 4300
+P 1200 4200
 AR Path="/5C017F22" Ref="#PWR?"  Part="1" 
 AR Path="/5C10B93A/5C017F22" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 1200 4150 50  0001 C CNN
-F 1 "+3V3" V 1200 4500 50  0000 C CNN
-F 2 "" H 1200 4300 50  0001 C CNN
-F 3 "" H 1200 4300 50  0001 C CNN
-	1    1200 4300
+F 0 "#PWR023" H 1200 4050 50  0001 C CNN
+F 1 "+3V3" V 1200 4400 50  0000 C CNN
+F 2 "" H 1200 4200 50  0001 C CNN
+F 3 "" H 1200 4200 50  0001 C CNN
+	1    1200 4200
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	2150 3950 2150 5550
+	2150 3850 2150 5450
 Text Label 1150 1050 2    50   ~ 0
 V_IN
 Wire Notes Line
-	700  3950 700  5550
-Text Notes 700  3950 0    50   ~ 0
+	700  3850 700  5450
+Text Notes 700  3850 0    50   ~ 0
 Power LEDs
 Wire Wire Line
 	950  3300 950  3350
 Text Notes 750  1200 0    50   ~ 0
 5...15 V DC
-Text Notes 6450 1300 2    50   ~ 0
-Ioutmax=1 A (AMS1117-3.3)
-Text HLabel 8600 2300 2    50   Output ~ 0
-UART_UC_TX
-Text HLabel 8600 2400 2    50   Input ~ 0
-UART_UC_RX
-Text Label 6800 2100 2    50   ~ 0
-LED0
-Text Label 6800 2200 2    50   ~ 0
-LED1
-Text HLabel 8600 2500 2    50   Output ~ 0
-WT32_ONOFF_FROM_UC
-Wire Wire Line
-	6800 2200 6900 2200
-Text HLabel 6800 1900 0    50   Input ~ 0
-PTT_IN
 Wire Notes Line
-	700  3950 2150 3950
+	700  3850 2150 3850
 Wire Notes Line
-	700  5550 2150 5550
-Text HLabel 6800 2000 0    50   Output ~ 0
-PTT_OUT
+	700  5450 2150 5450
 Text Notes 800  3400 1    50   ~ 0
 7914S-1-050E 
 Wire Wire Line
-	1200 4700 1200 4800
-Text Notes 9250 2400 0    50   ~ 0
-Serial2 (WT32i) CTS, RTS need to\nbe remapped in software
-Wire Notes Line
-	6250 2250 6250 2450
-Text Label 8650 1800 0    50   ~ 0
-SDA
-Text Label 8650 1500 0    50   ~ 0
-SCL
+	1200 4600 1200 4700
 $Comp
 L Connector_Generic:Conn_01x04 J6
 U 1 1 5C81AB61
-P 2500 5050
-F 0 "J6" H 2420 4625 50  0000 C CNN
-F 1 "I2C" H 2420 4716 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2500 5050 50  0001 C CNN
-F 3 "~" H 2500 5050 50  0001 C CNN
-F 4 "855-M20-9770446" H -400 0   50  0001 C CNN "Mouser Best.Nr."
-	1    2500 5050
+P 2500 4950
+F 0 "J6" H 2420 4525 50  0000 C CNN
+F 1 "I2C" H 2420 4616 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2500 4950 50  0001 C CNN
+F 3 "~" H 2500 4950 50  0001 C CNN
+F 4 "855-M20-9770446" H -400 -100 50  0001 C CNN "Mouser Best.Nr."
+	1    2500 4950
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C81ACBF
-P 2800 5250
-AR Path="/5C81ACBF" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5C81ACBF" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 2800 5000 50  0001 C CNN
-F 1 "GND" H 2805 5077 50  0000 C CNN
-F 2 "" H 2800 5250 50  0001 C CNN
-F 3 "" H 2800 5250 50  0001 C CNN
-	1    2800 5250
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C81ADC1
-P 2900 5050
+P 2900 4950
 AR Path="/5C81ADC1" Ref="#PWR?"  Part="1" 
 AR Path="/5C10B93A/5C81ADC1" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 2900 4900 50  0001 C CNN
-F 1 "+3V3" V 2900 5250 50  0000 C CNN
-F 2 "" H 2900 5050 50  0001 C CNN
-F 3 "" H 2900 5050 50  0001 C CNN
-	1    2900 5050
+F 0 "#PWR031" H 2900 4800 50  0001 C CNN
+F 1 "+3V3" V 2900 5150 50  0000 C CNN
+F 2 "" H 2900 4950 50  0001 C CNN
+F 3 "" H 2900 4950 50  0001 C CNN
+	1    2900 4950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2700 5050 2900 5050
+	2700 4950 2900 4950
 Wire Wire Line
-	2700 5150 2800 5150
+	2700 5050 2800 5050
 Wire Wire Line
-	2800 5150 2800 5250
+	2800 5050 2800 5150
 $Comp
 L Device:R R?
 U 1 1 5C81C8A6
-P 2900 4550
+P 2900 4450
 AR Path="/5C81C8A6" Ref="R?"  Part="1" 
 AR Path="/5C10B93A/5C81C8A6" Ref="R6"  Part="1" 
-F 0 "R6" H 2970 4596 50  0000 L CNN
-F 1 "4.7k" H 2970 4505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 4550 50  0001 C CNN
-F 3 "~" H 2900 4550 50  0001 C CNN
-F 4 "603-RC0805JR-074K7L" H -750 -600 50  0001 C CNN "Mouser Best.Nr."
-	1    2900 4550
+F 0 "R6" H 2970 4496 50  0000 L CNN
+F 1 "4.7k" H 2970 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 4450 50  0001 C CNN
+F 3 "~" H 2900 4450 50  0001 C CNN
+F 4 "603-RC0805JR-074K7L" H -750 -700 50  0001 C CNN "Mouser Best.Nr."
+	1    2900 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C81C972
-P 3200 4550
+P 3200 4450
 AR Path="/5C81C972" Ref="R?"  Part="1" 
 AR Path="/5C10B93A/5C81C972" Ref="R7"  Part="1" 
-F 0 "R7" H 3270 4596 50  0000 L CNN
-F 1 "4.7k" H 3270 4505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3130 4550 50  0001 C CNN
-F 3 "~" H 3200 4550 50  0001 C CNN
-F 4 "603-RC0805JR-074K7L" H -450 -600 50  0001 C CNN "Mouser Best.Nr."
-	1    3200 4550
+F 0 "R7" H 3270 4496 50  0000 L CNN
+F 1 "4.7k" H 3270 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3130 4450 50  0001 C CNN
+F 3 "~" H 3200 4450 50  0001 C CNN
+F 4 "603-RC0805JR-074K7L" H -450 -700 50  0001 C CNN "Mouser Best.Nr."
+	1    3200 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 4950 3200 4950
+	2700 4850 3200 4850
 Wire Wire Line
-	2700 4850 2900 4850
+	2700 4750 2900 4750
 Wire Wire Line
-	3200 4700 3200 4950
-Connection ~ 3200 4950
+	3200 4600 3200 4850
+Connection ~ 3200 4850
 Wire Wire Line
-	3200 4950 3300 4950
+	3200 4850 3300 4850
 Wire Wire Line
-	2900 4700 2900 4850
-Connection ~ 2900 4850
+	2900 4600 2900 4750
+Connection ~ 2900 4750
 Wire Wire Line
-	2900 4850 3000 4850
+	2900 4750 3000 4750
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C82175B
-P 2900 4300
+P 2900 4200
 AR Path="/5C82175B" Ref="#PWR?"  Part="1" 
 AR Path="/5C10B93A/5C82175B" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 2900 4150 50  0001 C CNN
-F 1 "+3V3" V 2900 4500 50  0000 C CNN
-F 2 "" H 2900 4300 50  0001 C CNN
-F 3 "" H 2900 4300 50  0001 C CNN
-	1    2900 4300
+F 0 "#PWR030" H 2900 4050 50  0001 C CNN
+F 1 "+3V3" V 2900 4400 50  0000 C CNN
+F 2 "" H 2900 4200 50  0001 C CNN
+F 3 "" H 2900 4200 50  0001 C CNN
+	1    2900 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C8217CF
-P 3200 4300
+P 3200 4200
 AR Path="/5C8217CF" Ref="#PWR?"  Part="1" 
 AR Path="/5C10B93A/5C8217CF" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 3200 4150 50  0001 C CNN
-F 1 "+3V3" V 3200 4500 50  0000 C CNN
-F 2 "" H 3200 4300 50  0001 C CNN
-F 3 "" H 3200 4300 50  0001 C CNN
-	1    3200 4300
+F 0 "#PWR032" H 3200 4050 50  0001 C CNN
+F 1 "+3V3" V 3200 4400 50  0000 C CNN
+F 2 "" H 3200 4200 50  0001 C CNN
+F 3 "" H 3200 4200 50  0001 C CNN
+	1    3200 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 4400 3200 4300
+	3200 4300 3200 4200
 Wire Wire Line
-	2900 4400 2900 4300
-Text Label 3300 4950 0    50   ~ 0
+	2900 4300 2900 4200
+Text Label 3300 4850 0    50   ~ 0
 SCL
-Text Label 3000 4850 0    50   ~ 0
+Text Label 3000 4750 0    50   ~ 0
 SDA
 Wire Notes Line
-	2250 3950 2250 5550
+	2250 3850 2250 5450
 Wire Notes Line
-	2250 5550 3650 5550
+	2250 5450 3650 5450
 Wire Notes Line
-	3650 5550 3650 3950
+	3650 5450 3650 3850
 Wire Notes Line
-	2250 3950 3650 3950
-Text Notes 2800 4050 2    50   ~ 0
+	2250 3850 3650 3850
+Text Notes 2800 3850 2    50   ~ 0
 I2C Connector
-Wire Wire Line
-	6800 2100 6900 2100
-Wire Wire Line
-	6800 2000 6900 2000
 Wire Notes Line
 	700  700  4750 700 
 Wire Notes Line
@@ -472,58 +364,11 @@ Wire Wire Line
 Connection ~ 2550 1050
 Wire Wire Line
 	2050 1050 2150 1050
-$Comp
-L power:GND #PWR?
-U 1 1 5CD51124
-P 3050 1500
-AR Path="/5CD51124" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5CD51124" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 3050 1250 50  0001 C CNN
-F 1 "GND" H 3055 1327 50  0000 C CNN
-F 2 "" H 3050 1500 50  0001 C CNN
-F 3 "" H 3050 1500 50  0001 C CNN
-	1    3050 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3050 1400 3050 1500
 Wire Wire Line
 	2550 1050 3050 1050
 Connection ~ 3050 1050
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D1E94DA
-P 6800 1300
-AR Path="/5D1E94DA" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D1E94DA" Ref="#PWR034"  Part="1" 
-F 0 "#PWR034" H 6800 1150 50  0001 C CNN
-F 1 "+3V3" V 6800 1500 50  0000 C CNN
-F 2 "" H 6800 1300 50  0001 C CNN
-F 3 "" H 6800 1300 50  0001 C CNN
-	1    6800 1300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6900 1300 6800 1300
-NoConn ~ 6900 1500
-NoConn ~ 6900 1600
-Text Notes 7100 3600 0    50   ~ 0
-ESP32 Pin Info:\nIO 6-11: Do not use! (onboard SPI Flash)\nIO 34-39: Input only\nADC1: IO 32...39\nADC2: Can't be used when using Wifi! (IO 0, 2, 4, 12...15, 25...27)
-Wire Wire Line
-	8500 1300 8600 1300
-NoConn ~ 8500 1600
-NoConn ~ 8500 1700
-Wire Wire Line
-	8500 1900 8600 1900
-NoConn ~ 6900 3000
-NoConn ~ 6900 1400
-NoConn ~ 8500 3100
-NoConn ~ 8500 3000
-NoConn ~ 8500 2900
-NoConn ~ 6900 2800
-NoConn ~ 6900 2900
-Wire Wire Line
-	6800 3100 6900 3100
 Wire Wire Line
 	3650 1050 3650 1000
 $Comp
@@ -541,68 +386,6 @@ F 3 "" H 3650 1000 50  0001 C CNN
 $EndComp
 Text Notes 1250 1500 0    50   ~ 0
 Bidirectional\nBreakdown Voltage: 15.2-16.8 V
-$Comp
-L power:+5V #PWR?
-U 1 1 5D215C9E
-P 6800 3100
-AR Path="/5D215C9E" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D215C9E" Ref="#PWR036"  Part="1" 
-F 0 "#PWR036" H 6800 2950 50  0001 C CNN
-F 1 "+5V" V 6800 3300 50  0000 C CNN
-F 2 "" H 6800 3100 50  0001 C CNN
-F 3 "" H 6800 3100 50  0001 C CNN
-	1    6800 3100
-	0    -1   -1   0   
-$EndComp
-Text Notes 8650 1700 0    50   ~ 0
-Serial0 (USB)
-Wire Notes Line
-	8600 1550 8600 1750
-Text Notes 7450 2300 0    50   ~ 0
-Vin=4.3...15 V
-Wire Wire Line
-	6800 2600 6900 2600
-Text Notes 8950 2700 0    50   ~ 0
-onboard LED
-Text Notes 8950 2600 0    50   ~ 0
-external 5k pullup
-Wire Wire Line
-	8500 2300 8600 2300
-Wire Wire Line
-	8500 2400 8600 2400
-Wire Wire Line
-	8500 1800 8650 1800
-Wire Wire Line
-	8500 1500 8650 1500
-Wire Wire Line
-	6900 1900 6800 1900
-Text Notes 6200 2450 2    50   ~ 0
-Serial1 (CAT)\nneed to be remapped \nin software
-Wire Wire Line
-	6750 2300 6900 2300
-Wire Wire Line
-	6900 2400 6750 2400
-NoConn ~ 8500 2000
-NoConn ~ 6900 2500
-NoConn ~ 8500 2800
-Wire Wire Line
-	8500 2500 8600 2500
-NoConn ~ 8500 1400
-NoConn ~ 8500 2200
-Wire Wire Line
-	8500 2100 8600 2100
-$Comp
-L ESP32-DEVKITC-32D:ESP32-DEVKITC-32D U3
-U 1 1 5D1E8FF9
-P 7700 2200
-F 0 "U3" H 7700 3367 50  0000 C CNN
-F 1 "ESP32-DEVKIT" H 7700 3276 50  0000 C CNN
-F 2 "nodemcu_esp-32s:ESP32-DEVKITC-32D" H 7700 2200 50  0001 L BNN
-F 3 "None" H 7700 2200 50  0001 L BNN
-F 4 " 356-ESP32-DEVKITC32D " H 7700 2200 50  0001 C CNN "Mouser Best.Nr."
-	1    7700 2200
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	700  2000 3650 2000
 Wire Notes Line
@@ -626,19 +409,6 @@ Wire Wire Line
 Connection ~ 950  2850
 Wire Wire Line
 	950  2850 950  2900
-$Comp
-L power:GND #PWR?
-U 1 1 5D94C957
-P 1450 3350
-AR Path="/5D94C957" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D94C957" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 1450 3100 50  0001 C CNN
-F 1 "GND" H 1455 3177 50  0000 C CNN
-F 2 "" H 1450 3350 50  0001 C CNN
-F 3 "" H 1450 3350 50  0001 C CNN
-	1    1450 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1450 2950 1450 3350
 Wire Wire Line
@@ -647,110 +417,16 @@ Wire Wire Line
 	1000 1050 1250 1050
 Wire Wire Line
 	1550 1050 1750 1050
-$Comp
-L power:GND #PWR?
-U 1 1 5D8F131B
-P 2600 6050
-AR Path="/5D8F131B" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D8F131B" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 2600 5800 50  0001 C CNN
-F 1 "GND" V 2600 5850 50  0000 C CNN
-F 2 "" H 2600 6050 50  0001 C CNN
-F 3 "" H 2600 6050 50  0001 C CNN
-	1    2600 6050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D22622B
-P 6800 2600
-AR Path="/5D22622B" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D22622B" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 6800 2350 50  0001 C CNN
-F 1 "GND" V 6800 2400 50  0000 C CNN
-F 2 "" H 6800 2600 50  0001 C CNN
-F 3 "" H 6800 2600 50  0001 C CNN
-	1    6800 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D1EF20C
-P 8600 1300
-AR Path="/5D1EF20C" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D1EF20C" Ref="#PWR037"  Part="1" 
-F 0 "#PWR037" H 8600 1050 50  0001 C CNN
-F 1 "GND" V 8600 1100 50  0000 C CNN
-F 2 "" H 8600 1300 50  0001 C CNN
-F 3 "" H 8600 1300 50  0001 C CNN
-	1    8600 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D1F3BFE
-P 8600 1900
-AR Path="/5D1F3BFE" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5D1F3BFE" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 8600 1650 50  0001 C CNN
-F 1 "GND" V 8600 1700 50  0000 C CNN
-F 2 "" H 8600 1900 50  0001 C CNN
-F 3 "" H 8600 1900 50  0001 C CNN
-	1    8600 1900
-	0    -1   -1   0   
-$EndComp
-Text Notes 3350 6150 2    50   ~ 0
-V4.1, V5.0 = 0V
-Text HLabel 6750 2700 0    50   Output ~ 0
-PTT_LED
-Wire Wire Line
-	6750 2700 6900 2700
-Text HLabel 1150 6150 0    50   Input ~ 0
+Text HLabel 1150 6200 0    50   Input ~ 0
 VOX_IN
-NoConn ~ 8500 2700
-Wire Wire Line
-	6900 1800 6800 1800
-Wire Notes Line
-	6250 2050 6250 1450
-Text Notes 6200 2050 2    50   ~ 0
-ADC1 (32...39)
-Wire Notes Line
-	9200 2250 9200 2450
-Text Label 8600 2100 0    50   ~ 0
-BTN0
-NoConn ~ 8500 2600
-Text Label 6800 1800 2    50   ~ 0
-VOX
-Wire Wire Line
-	2600 6050 2950 6050
-Text Label 1750 6150 0    50   ~ 0
+Text Label 1750 6200 0    50   ~ 0
 VOX
 Wire Notes Line
-	700  5650 2150 5650
+	700  5700 2150 5700
 Wire Notes Line
-	2150 5850 2150 6300
+	2150 6350 700  6350
 Wire Notes Line
-	2150 6300 700  6300
-Wire Notes Line
-	700  6300 700  5850
-Text Notes 700  5750 0    50   ~ 0
-VOX Input
-Wire Notes Line
-	2250 5850 2250 6300
-Wire Notes Line
-	2250 6300 3650 6300
-Wire Notes Line
-	3650 6300 3650 5850
-Wire Notes Line
-	3650 5850 2250 5850
-Text Notes 2250 5850 0    50   ~ 0
-Hardware Version Indicator
-Text Label 2950 6050 0    50   ~ 0
-HW_VER
-Wire Wire Line
-	6900 1700 6800 1700
-Text Label 6800 1700 2    50   ~ 0
-HW_VER
+	3650 5700 2250 5700
 $Comp
 L Device:R R?
 U 1 1 5D9F2FE4
@@ -794,85 +470,385 @@ Wire Notes Line
 Wire Notes Line
 	700  2000 700  3600
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J4
 U 1 1 5E316637
-P 1450 5950
-F 0 "J?" V 1400 5600 50  0000 C CNN
-F 1 "Conn_01x02" V 1600 5700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 5950 50  0001 C CNN
-F 3 "~" H 1450 5950 50  0001 C CNN
-F 4 " 855-M20-9990246" H 1450 5950 50  0001 C CNN "Mouser Best.Nr."
-	1    1450 5950
+P 1450 6000
+F 0 "J4" V 1400 5650 50  0000 C CNN
+F 1 "Conn_01x02" V 1600 5750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 6000 50  0001 C CNN
+F 3 "~" H 1450 6000 50  0001 C CNN
+F 4 " 855-M20-9990246" H 1450 6000 50  0001 C CNN "Mouser Best.Nr."
+	1    1450 6000
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	1450 6150 1750 6150
+	1450 6200 1750 6200
 Wire Wire Line
-	1150 6150 1350 6150
-Text Label 6750 2300 2    50   ~ 0
-CAT_TX
-Text Label 6750 2400 2    50   ~ 0
-CAT_RX
+	1150 6200 1350 6200
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J8
 U 1 1 5E479877
-P 4050 5050
-F 0 "J?" H 3970 4625 50  0000 C CNN
-F 1 "I2C" H 3970 4716 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4050 5050 50  0001 C CNN
-F 3 "~" H 4050 5050 50  0001 C CNN
-F 4 "855-M20-9770446" H 1150 0   50  0001 C CNN "Mouser Best.Nr."
-	1    4050 5050
+P 4050 4950
+F 0 "J8" H 3970 4525 50  0000 C CNN
+F 1 "I2C" H 3970 4616 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4050 4950 50  0001 C CNN
+F 3 "~" H 4050 4950 50  0001 C CNN
+F 4 "855-M20-9770446" H 1150 -100 50  0001 C CNN "Mouser Best.Nr."
+	1    4050 4950
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E479881
-P 4350 5250
-AR Path="/5E479881" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5E479881" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4350 5000 50  0001 C CNN
-F 1 "GND" H 4355 5077 50  0000 C CNN
-F 2 "" H 4350 5250 50  0001 C CNN
-F 3 "" H 4350 5250 50  0001 C CNN
-	1    4350 5250
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5E47988B
-P 4450 5050
+P 4450 4950
 AR Path="/5E47988B" Ref="#PWR?"  Part="1" 
-AR Path="/5C10B93A/5E47988B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4450 4900 50  0001 C CNN
-F 1 "+3V3" V 4450 5250 50  0000 C CNN
-F 2 "" H 4450 5050 50  0001 C CNN
-F 3 "" H 4450 5050 50  0001 C CNN
-	1    4450 5050
+AR Path="/5C10B93A/5E47988B" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 4450 4800 50  0001 C CNN
+F 1 "+3V3" V 4450 5150 50  0000 C CNN
+F 2 "" H 4450 4950 50  0001 C CNN
+F 3 "" H 4450 4950 50  0001 C CNN
+	1    4450 4950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4250 5050 4450 5050
+	4250 4950 4450 4950
 Wire Wire Line
-	4250 5150 4350 5150
+	4250 5050 4350 5050
 Wire Wire Line
-	4350 5150 4350 5250
+	4350 5050 4350 5150
 Wire Notes Line
-	3800 3950 3800 5550
+	3800 3850 3800 5450
 Wire Notes Line
-	3800 5550 5200 5550
-Wire Notes Line
-	5200 5550 5200 3950
-Wire Notes Line
-	3800 3950 5200 3950
-Text Notes 4650 4050 2    50   ~ 0
+	3800 5450 5200 5450
+Text Notes 4650 3850 2    50   ~ 0
 CAT (UART) Connector
-Text Label 4550 4850 0    50   ~ 0
+Text Label 4550 4750 0    50   ~ 0
 CAT_TX
-Text Label 4550 4950 0    50   ~ 0
+Text Label 4550 4850 0    50   ~ 0
 CAT_RX
 Wire Wire Line
-	4250 4850 4550 4850
+	4250 4750 4550 4750
 Wire Wire Line
-	4250 4950 4550 4950
+	4250 4850 4550 4850
+$Comp
+L power:GNDPWR #PWR027
+U 1 1 5E333CD8
+P 2550 1500
+F 0 "#PWR027" H 2550 1300 50  0001 C CNN
+F 1 "GNDPWR" H 2554 1346 50  0000 C CNN
+F 2 "" H 2550 1450 50  0001 C CNN
+F 3 "" H 2550 1450 50  0001 C CNN
+	1    2550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR037
+U 1 1 5E334309
+P 3050 1500
+F 0 "#PWR037" H 3050 1300 50  0001 C CNN
+F 1 "GNDPWR" H 3054 1346 50  0000 C CNN
+F 2 "" H 3050 1450 50  0001 C CNN
+F 3 "" H 3050 1450 50  0001 C CNN
+	1    3050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR022
+U 1 1 5E335E28
+P 950 3350
+F 0 "#PWR022" H 950 3150 50  0001 C CNN
+F 1 "GNDPWR" H 954 3196 50  0000 C CNN
+F 2 "" H 950 3300 50  0001 C CNN
+F 3 "" H 950 3300 50  0001 C CNN
+	1    950  3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR025
+U 1 1 5E336ADD
+P 1450 3350
+F 0 "#PWR025" H 1450 3150 50  0001 C CNN
+F 1 "GNDPWR" H 1454 3196 50  0000 C CNN
+F 2 "" H 1450 3300 50  0001 C CNN
+F 3 "" H 1450 3300 50  0001 C CNN
+	1    1450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR026
+U 1 1 5E336FDF
+P 2450 3350
+F 0 "#PWR026" H 2450 3150 50  0001 C CNN
+F 1 "GNDPWR" H 2454 3196 50  0000 C CNN
+F 2 "" H 2450 3300 50  0001 C CNN
+F 3 "" H 2450 3300 50  0001 C CNN
+	1    2450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR029
+U 1 1 5E337415
+P 2800 3350
+F 0 "#PWR029" H 2800 3150 50  0001 C CNN
+F 1 "GNDPWR" H 2804 3196 50  0000 C CNN
+F 2 "" H 2800 3300 50  0001 C CNN
+F 3 "" H 2800 3300 50  0001 C CNN
+	1    2800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR024
+U 1 1 5E33885A
+P 1200 5150
+F 0 "#PWR024" H 1200 4950 50  0001 C CNN
+F 1 "GNDPWR" H 1204 4996 50  0000 C CNN
+F 2 "" H 1200 5100 50  0001 C CNN
+F 3 "" H 1200 5100 50  0001 C CNN
+	1    1200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR035
+U 1 1 5E338E31
+P 2800 5150
+F 0 "#PWR035" H 2800 4950 50  0001 C CNN
+F 1 "GNDPWR" H 2804 4996 50  0000 C CNN
+F 2 "" H 2800 5100 50  0001 C CNN
+F 3 "" H 2800 5100 50  0001 C CNN
+	1    2800 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR038
+U 1 1 5E339404
+P 4350 5150
+F 0 "#PWR038" H 4350 4950 50  0001 C CNN
+F 1 "GNDPWR" H 4354 4996 50  0000 C CNN
+F 2 "" H 4350 5100 50  0001 C CNN
+F 3 "" H 4350 5100 50  0001 C CNN
+	1    4350 5150
+	1    0    0    -1  
+$EndComp
+Text Notes 700  5700 0    50   ~ 0
+VOX Input
+Text Notes 2250 5700 0    50   ~ 0
+Hardware Version Indicator
+Text Label 3100 6100 0    50   ~ 0
+HW_VER
+Wire Notes Line
+	2250 6350 3650 6350
+Wire Wire Line
+	2750 6100 3100 6100
+Text Notes 3500 6200 2    50   ~ 0
+V4.1, V5.0 = 0V
+$Comp
+L power:GNDPWR #PWR028
+U 1 1 5E339B27
+P 2750 6100
+F 0 "#PWR028" H 2750 5900 50  0001 C CNN
+F 1 "GNDPWR" V 2754 5991 50  0000 R CNN
+F 2 "" H 2750 6050 50  0001 C CNN
+F 3 "" H 2750 6050 50  0001 C CNN
+	1    2750 6100
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	3650 5700 3650 6350
+Wire Notes Line
+	2250 5700 2250 6350
+Wire Notes Line
+	2150 5700 2150 6350
+Wire Notes Line
+	700  5700 700  6350
+Text Notes 700  700  0    50   ~ 0
+Voltage Regulation
+$Comp
+L power:GNDPWR #PWR042
+U 1 1 5E39661C
+P 8600 1300
+F 0 "#PWR042" H 8600 1100 50  0001 C CNN
+F 1 "GNDPWR" V 8605 1192 50  0000 R CNN
+F 2 "" H 8600 1250 50  0001 C CNN
+F 3 "" H 8600 1250 50  0001 C CNN
+	1    8600 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR043
+U 1 1 5E38BC9D
+P 8600 1900
+F 0 "#PWR043" H 8600 1700 50  0001 C CNN
+F 1 "GNDPWR" V 8605 1792 50  0000 R CNN
+F 2 "" H 8600 1850 50  0001 C CNN
+F 3 "" H 8600 1850 50  0001 C CNN
+	1    8600 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR041
+U 1 1 5E3851F5
+P 6800 2600
+F 0 "#PWR041" H 6800 2400 50  0001 C CNN
+F 1 "GNDPWR" V 6804 2491 50  0000 R CNN
+F 2 "" H 6800 2550 50  0001 C CNN
+F 3 "" H 6800 2550 50  0001 C CNN
+	1    6800 2600
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	3800 3850 5200 3850
+Wire Notes Line
+	5200 5450 5200 3850
+Text Label 6750 2400 2    50   ~ 0
+CAT_RX
+Text Label 6750 2300 2    50   ~ 0
+CAT_TX
+Text Label 6800 1700 2    50   ~ 0
+HW_VER
+Wire Wire Line
+	6900 1700 6800 1700
+Text Label 6800 1800 2    50   ~ 0
+VOX
+NoConn ~ 8500 2600
+Text Label 8600 2100 0    50   ~ 0
+BTN0
+Wire Notes Line
+	9200 2250 9200 2450
+Text Notes 6200 2050 2    50   ~ 0
+ADC1 (32...39)
+Wire Notes Line
+	6250 2050 6250 1450
+Wire Wire Line
+	6900 1800 6800 1800
+NoConn ~ 8500 2700
+Wire Wire Line
+	6750 2700 6900 2700
+Text HLabel 6750 2700 0    50   Output ~ 0
+PTT_LED
+$Comp
+L ESP32-DEVKITC-32D:ESP32-DEVKITC-32D U3
+U 1 1 5D1E8FF9
+P 7700 2200
+F 0 "U3" H 7700 3367 50  0000 C CNN
+F 1 "ESP32-DEVKIT" H 7700 3276 50  0000 C CNN
+F 2 "nodemcu_esp-32s:ESP32-DEVKITC-32D" H 7700 2200 50  0001 L BNN
+F 3 "None" H 7700 2200 50  0001 L BNN
+F 4 " 356-ESP32-DEVKITC32D " H 7700 2200 50  0001 C CNN "Mouser Best.Nr."
+	1    7700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2100 8600 2100
+NoConn ~ 8500 2200
+NoConn ~ 8500 1400
+Wire Wire Line
+	8500 2500 8600 2500
+NoConn ~ 8500 2800
+NoConn ~ 6900 2500
+NoConn ~ 8500 2000
+Wire Wire Line
+	6900 2400 6750 2400
+Wire Wire Line
+	6750 2300 6900 2300
+Text Notes 6200 2450 2    50   ~ 0
+Serial1 (CAT)\nneed to be remapped \nin software
+Wire Wire Line
+	6900 1900 6800 1900
+Wire Wire Line
+	8500 1500 8650 1500
+Wire Wire Line
+	8500 1800 8650 1800
+Wire Wire Line
+	8500 2400 8600 2400
+Wire Wire Line
+	8500 2300 8600 2300
+Text Notes 8950 2600 0    50   ~ 0
+external 5k pullup
+Text Notes 8950 2700 0    50   ~ 0
+onboard LED
+Wire Wire Line
+	6800 2600 6900 2600
+Text Notes 7450 2300 0    50   ~ 0
+Vin=4.3...15 V
+Wire Notes Line
+	8600 1550 8600 1750
+Text Notes 8650 1700 0    50   ~ 0
+Serial0 (USB)
+$Comp
+L power:+5V #PWR?
+U 1 1 5D215C9E
+P 6800 3100
+AR Path="/5D215C9E" Ref="#PWR?"  Part="1" 
+AR Path="/5C10B93A/5D215C9E" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 6800 2950 50  0001 C CNN
+F 1 "+5V" V 6800 3300 50  0000 C CNN
+F 2 "" H 6800 3100 50  0001 C CNN
+F 3 "" H 6800 3100 50  0001 C CNN
+	1    6800 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 3100 6900 3100
+NoConn ~ 6900 2900
+NoConn ~ 6900 2800
+NoConn ~ 8500 2900
+NoConn ~ 8500 3000
+NoConn ~ 8500 3100
+NoConn ~ 6900 1400
+NoConn ~ 6900 3000
+Wire Wire Line
+	8500 1900 8600 1900
+NoConn ~ 8500 1700
+NoConn ~ 8500 1600
+Wire Wire Line
+	8500 1300 8600 1300
+Text Notes 7100 3600 0    50   ~ 0
+ESP32 Pin Info:\nIO 6-11: Do not use! (onboard SPI Flash)\nIO 34-39: Input only\nADC1: IO 32...39\nADC2: Can't be used when using Wifi! (IO 0, 2, 4, 12...15, 25...27)
+NoConn ~ 6900 1600
+NoConn ~ 6900 1500
+Wire Wire Line
+	6900 1300 6800 1300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D1E94DA
+P 6800 1300
+AR Path="/5D1E94DA" Ref="#PWR?"  Part="1" 
+AR Path="/5C10B93A/5D1E94DA" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 6800 1150 50  0001 C CNN
+F 1 "+3V3" V 6800 1500 50  0000 C CNN
+F 2 "" H 6800 1300 50  0001 C CNN
+F 3 "" H 6800 1300 50  0001 C CNN
+	1    6800 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 2000 6900 2000
+Wire Wire Line
+	6800 2100 6900 2100
+Text Label 8650 1500 0    50   ~ 0
+SCL
+Text Label 8650 1800 0    50   ~ 0
+SDA
+Wire Notes Line
+	6250 2250 6250 2450
+Text Notes 9250 2400 0    50   ~ 0
+Serial2 (WT32i) CTS, RTS need to\nbe remapped in software
+Text HLabel 6800 2000 0    50   Output ~ 0
+PTT_OUT
+Text HLabel 6800 1900 0    50   Input ~ 0
+PTT_IN
+Wire Wire Line
+	6800 2200 6900 2200
+Text HLabel 8600 2500 2    50   Output ~ 0
+WT32_ONOFF_FROM_UC
+Text Label 6800 2200 2    50   ~ 0
+LED1
+Text Label 6800 2100 2    50   ~ 0
+LED0
+Text HLabel 8600 2400 2    50   Input ~ 0
+UART_UC_RX
+Text HLabel 8600 2300 2    50   Output ~ 0
+UART_UC_TX
+Text Notes 6450 1300 2    50   ~ 0
+Ioutmax=1 A (AMS1117-3.3)
 $EndSCHEMATC

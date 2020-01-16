@@ -379,7 +379,7 @@ U 1 1 5E115F72
 P 9500 5650
 F 0 "U2" H 9500 5900 50  0000 C CNN
 F 1 "LTV-816S" H 9500 5450 50  0000 C CNN
-F 2 "" H 9300 5450 50  0001 L CIN
+F 2 "liteon:LTV-816S" H 9300 5450 50  0001 L CIN
 F 3 "https://www.mouser.de/datasheet/2/239/LTV-8x6-1175385.pdf" H 9500 5650 50  0001 L CNN
 	1    9500 5650
 	1    0    0    -1  
@@ -638,7 +638,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 5050 4650 5150
 Text Notes 4200 6300 0    50   ~ 0
-Bridge JP9 to connect PTT to MIC_GND \n(necessary for most handheld tranceivers)\n\nBridge JP10 to connect TRX_GND to MIC_GND \n(necessary for some TRX without separate MIC_GND)\n\nDO NOT BRIDGE BOTH JUMPER, OR PTT WILL NOT WORK!
+Bridge JP9 to connect PTT to MIC_GND \n(necessary for most handheld transceivers)\n\nBridge JP10 to connect TRX_GND to MIC_GND \n(necessary for some TRX without separate MIC_GND)\n\nDO NOT BRIDGE BOTH JUMPER, OR PTT WILL NOT WORK!
 $Comp
 L power:GND #PWR02
 U 1 1 5E30E15A
@@ -907,7 +907,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 7400 2650 7400
 Text Notes 750  7400 0    50   ~ 0
-JP12-JP18 can be used\nto direct bridge the\nJ1 Connector without\nusing jumper wires
+JP2-JP8 can be used\nto direct bridge the\nJ9/J10 Connectors without\nusing jumper wires
 Wire Notes Line
 	700  7500 6450 7500
 Wire Notes Line
@@ -926,7 +926,7 @@ U 1 1 5E77194E
 P 8850 5750
 F 0 "JP11" V 8896 5818 50  0000 L CNN
 F 1 "PTT_SEL" V 8805 5818 50  0000 L CNN
-F 2 "" H 8850 5750 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm" H 8850 5750 50  0001 C CNN
 F 3 "~" H 8850 5750 50  0001 C CNN
 	1    8850 5750
 	0    -1   -1   0   

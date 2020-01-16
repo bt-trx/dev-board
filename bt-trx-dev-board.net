@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch)
-    (date "Thu 16 Jan 2020 10:06:58 PM CET")
+    (date "Thu 16 Jan 2020 10:17:13 PM CET")
     (tool "Eeschema 5.1.5+dfsg1-2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -131,6 +131,7 @@
       (tstamp 5D9A6771))
     (comp (ref U2)
       (value LTV-816S)
+      (footprint liteon:LTV-816S)
       (datasheet https://www.mouser.de/datasheet/2/239/LTV-8x6-1175385.pdf)
       (libsource (lib Isolator) (part SFH617A-1) (description "Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, UL, BSI, FIMKO, cUL, THT PDIP-4"))
       (sheetpath (names /) (tstamps /))
@@ -232,6 +233,7 @@
       (tstamp 5E5E09DF))
     (comp (ref JP11)
       (value PTT_SEL)
+      (footprint Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm)
       (datasheet ~)
       (libsource (lib Jumper) (part SolderJumper_3_Open) (description "Solder Jumper, 3-pole, open"))
       (sheetpath (names /) (tstamps /))

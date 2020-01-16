@@ -403,10 +403,6 @@ F 3 "" H 4750 4550 50  0001 C CNN
 	1    4750 4550
 	1    0    0    -1  
 $EndComp
-Text Notes 2100 2450 0    50   ~ 10
-TODO Set correct footprint
-Text Notes 2350 4550 0    50   ~ 10
-TODO Set correct footprint
 $Comp
 L Device:R_POT_TRIM RV2
 U 1 1 5C774D1E

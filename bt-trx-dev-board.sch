@@ -216,19 +216,7 @@ Text Label 5150 1450 0    50   ~ 0
 SPK_LP
 Wire Wire Line
 	5150 1450 4650 1450
-$Comp
-L Connector_Generic:Conn_01x03 J5
-U 1 1 5C7B53A0
-P 8800 5750
-F 0 "J5" H 8950 5700 50  0000 R CNN
-F 1 "PTT_SELECT" H 9300 5800 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8800 5750 50  0001 C CNN
-F 3 "~" H 8800 5750 50  0001 C CNN
-F 4 "855-M20-9990346" H 1900 -50 50  0001 C CNN "Mouser Best.Nr."
-	1    8800 5750
-	-1   0    0    1   
-$EndComp
-Text Label 8650 6000 2    50   ~ 0
+Text Label 8650 6050 2    50   ~ 0
 UC_PTT_OUT
 Text Label 10500 5550 0    50   ~ 0
 PTT
@@ -316,7 +304,7 @@ F 4 " 603-RC0805FR-0710KL" H 3900 -400 50  0001 C CNN "Mouser Best.Nr."
 	-1   0    0    1   
 $EndComp
 Text Notes 8150 4750 0    50   ~ 0
-J5 selects if J2/J3 is connected directly\nto the radio or via ESP32\n(to enable Soft-PTT features).\n\nJ2 connects an internal PTT Button\n\nJ3 connects an external PTT Button
+JP11 selects if J2/J3 is connected directly\nto the radio or via ESP32\n(to enable Soft-PTT features).\n\nJ2 connects an internal PTT Button\n\nJ3 connects an external PTT Button
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5D3AD2F8
@@ -430,10 +418,6 @@ Wire Wire Line
 Wire Wire Line
 	9000 5750 9200 5750
 Wire Wire Line
-	8650 6000 9000 6000
-Wire Wire Line
-	9000 6000 9000 5850
-Wire Wire Line
 	7300 5100 7500 5100
 Wire Wire Line
 	7550 5000 7300 5000
@@ -447,12 +431,8 @@ Wire Wire Line
 	7400 5250 7400 5200
 Wire Wire Line
 	7450 5750 7550 5750
-Text Label 8650 5550 2    50   ~ 0
+Text Label 8650 5450 2    50   ~ 0
 PTT_BUTTON
-Wire Wire Line
-	8650 5550 9000 5550
-Wire Wire Line
-	9000 5550 9000 5650
 Wire Wire Line
 	7550 4500 7550 4600
 Wire Wire Line
@@ -470,8 +450,6 @@ F 3 "" H 4650 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9800 5750 10000 5750
-Text Notes 9600 5300 0    50   ~ 10
-TODO Set correct footprint
 Text Label 7650 4900 0    50   ~ 0
 UC_PTT_IN
 Wire Wire Line
@@ -660,7 +638,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 5050 4650 5150
 Text Notes 4200 6300 0    50   ~ 0
-Bridge JP1 to connect PTT to MIC_GND \n(necessary for most handheld tranceivers)\n\nBridge JP3 to connect TRX_GND to MIC_GND \n(necessary for some TRX without separate MIC_GND)\n\nDO NOT BRIDGE BOTH JUPMER, OR PTT WILL NOT WORK!
+Bridge JP9 to connect PTT to MIC_GND \n(necessary for most handheld tranceivers)\n\nBridge JP10 to connect TRX_GND to MIC_GND \n(necessary for some TRX without separate MIC_GND)\n\nDO NOT BRIDGE BOTH JUMPER, OR PTT WILL NOT WORK!
 $Comp
 L power:GND #PWR02
 U 1 1 5E30E15A
@@ -942,4 +920,23 @@ Wire Notes Line
 	700  4700 6450 4700
 Wire Notes Line
 	700  950  6450 950 
+$Comp
+L Jumper:SolderJumper_3_Open JP11
+U 1 1 5E77194E
+P 8850 5750
+F 0 "JP11" V 8896 5818 50  0000 L CNN
+F 1 "PTT_SEL" V 8805 5818 50  0000 L CNN
+F 2 "" H 8850 5750 50  0001 C CNN
+F 3 "~" H 8850 5750 50  0001 C CNN
+	1    8850 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 5450 8850 5450
+Wire Wire Line
+	8850 5450 8850 5550
+Wire Wire Line
+	8850 5950 8850 6050
+Wire Wire Line
+	8850 6050 8650 6050
 $EndSCHEMATC

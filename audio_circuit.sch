@@ -78,7 +78,7 @@ U 1 1 5C774C08
 P 1950 1900
 F 0 "C1" V 1698 1900 50  0000 C CNN
 F 1 "1uF" V 1789 1900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1988 1750 50  0001 C CNN
+F 2 "liteon:LTV-816S" H 1988 1750 50  0001 C CNN
 F 3 "~" H 1950 1900 50  0001 C CNN
 F 4 "80-C0805C105K3RAUTO" H 50  -4100 50  0001 C CNN "Mouser Best.Nr."
 	1    1950 1900
@@ -233,12 +233,12 @@ Wire Wire Line
 Text HLabel 3300 3750 0    50   Output ~ 0
 VOX_OUT
 $Comp
-L Device:Transformer_1P_1S T1
+L Transformer:PA1323NL T1
 U 1 1 5E2085AD
 P 2650 2100
 F 0 "T1" H 2650 2481 50  0000 C CNN
 F 1 "SM-LP-5001" H 2650 2390 50  0000 C CNN
-F 2 "" H 2650 2100 50  0001 C CNN
+F 2 "bourns:SM-LP-5001" H 2650 2100 50  0001 C CNN
 F 3 "~" H 2650 2100 50  0001 C CNN
 	1    2650 2100
 	1    0    0    -1  
@@ -246,36 +246,24 @@ $EndComp
 Wire Wire Line
 	1400 1900 1800 1900
 Connection ~ 1400 1900
-Wire Wire Line
-	2100 1900 2250 1900
-Wire Wire Line
-	2250 2300 1400 2300
 Connection ~ 1400 2300
 $Comp
-L Device:Transformer_1P_1S T2
+L Transformer:PA1323NL T2
 U 1 1 5E232E72
 P 2800 4200
 F 0 "T2" H 2800 4581 50  0000 C CNN
 F 1 "SM-LP-5001" H 2800 4490 50  0000 C CNN
-F 2 "" H 2800 4200 50  0001 C CNN
+F 2 "bourns:SM-LP-5001" H 2800 4200 50  0001 C CNN
 F 3 "~" H 2800 4200 50  0001 C CNN
 	1    2800 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2250 4000 2400 4000
-Wire Wire Line
-	1450 4400 2400 4400
-Wire Wire Line
-	3200 4000 3400 4000
 Wire Wire Line
 	3650 3850 3650 3750
 Wire Wire Line
 	3650 3750 4050 3750
 Wire Wire Line
 	4050 3750 4050 4000
-Wire Wire Line
-	3200 4400 3650 4400
 Wire Wire Line
 	4050 4300 4050 4400
 Wire Wire Line
@@ -308,11 +296,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 1900 3900 1900
 Wire Wire Line
-	3050 1900 3100 1900
-Wire Wire Line
 	3400 2050 3400 2300
-Wire Wire Line
-	3050 2300 3400 2300
 Wire Wire Line
 	3400 2300 3900 2300
 Wire Wire Line
@@ -447,4 +431,20 @@ F 4 " 72-TS53YL-5K" H 800 -2000 50  0001 C CNN "Mouser Best.Nr."
 	1    3650 4000
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	2100 1900 2450 1900
+Wire Wire Line
+	1400 2300 2450 2300
+Wire Wire Line
+	2850 1900 3100 1900
+Wire Wire Line
+	2850 2300 3400 2300
+Wire Wire Line
+	2250 4000 2600 4000
+Wire Wire Line
+	1450 4400 2600 4400
+Wire Wire Line
+	3000 4400 3650 4400
+Wire Wire Line
+	3000 4000 3400 4000
 $EndSCHEMATC

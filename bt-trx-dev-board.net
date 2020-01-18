@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch)
-    (date "Thu 16 Jan 2020 10:17:13 PM CET")
+    (date "Thu 16 Jan 2020 10:24:41 PM CET")
     (tool "Eeschema 5.1.5+dfsg1-2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -267,7 +267,7 @@
       (tstamp 5BFC0997))
     (comp (ref C1)
       (value 1uF)
-      (footprint liteon:LTV-816S)
+      (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
       (fields
         (field (name "Mouser Best.Nr.") 80-C0805C105K3RAUTO))

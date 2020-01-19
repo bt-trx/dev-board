@@ -14,21 +14,21 @@ Comment3 "Christian Obersteiner - DL1COM"
 Comment4 "Author:"
 $EndDescr
 Wire Wire Line
-	7550 1400 7450 1400
+	8450 1400 8350 1400
 Wire Wire Line
-	7550 1500 7450 1500
-Text Label 7450 1400 2    50   ~ 0
-MIC_LP
-Text Label 7450 1500 2    50   ~ 0
-MIC_LN
-Text Label 7450 1100 2    50   ~ 0
-SPK_LN
+	8450 1500 8350 1500
+Text Label 8350 1400 2    50   ~ 0
+A_IN_LP
+Text Label 8350 1500 2    50   ~ 0
+A_IN_LN
+Text Label 8350 1100 2    50   ~ 0
+A_OUT_LN
 Text Label 5150 1550 0    50   ~ 0
-SPK_LN
+A_OUT_LN
 Text Label 5150 1950 0    50   ~ 0
-MIC_LN
+A_IN_LN
 Text Label 5150 2050 0    50   ~ 0
-MIC_LP
+A_IN_LP
 Wire Wire Line
 	2850 1850 2700 1850
 Wire Wire Line
@@ -104,26 +104,26 @@ Wire Wire Line
 Wire Wire Line
 	2500 3250 2850 3250
 Wire Wire Line
-	9300 1150 9400 1150
-Text Label 9400 1150 0    50   ~ 0
+	10200 1150 10300 1150
+Text Label 10300 1150 0    50   ~ 0
 AUDIO_OUT_MIC
-Text Label 9400 1350 0    50   ~ 0
+Text Label 10300 1350 0    50   ~ 0
 AUDIO_IN_SPK
 Text Notes 700  4800 0    50   ~ 0
 Connection to Transceiver
 Wire Wire Line
-	7550 2600 7450 2600
+	8450 2600 8350 2600
 Wire Wire Line
-	7550 2850 7450 2850
+	8450 2850 8350 2850
 Wire Wire Line
-	7550 2950 7450 2950
-Text Label 7450 2600 2    50   ~ 0
+	8450 2950 8350 2950
+Text Label 8350 2600 2    50   ~ 0
 V_IN
-Text Label 7450 2950 2    50   ~ 0
+Text Label 8350 2950 2    50   ~ 0
 UART_UC_RX
-Text Label 7450 2850 2    50   ~ 0
+Text Label 8350 2850 2    50   ~ 0
 UART_UC_TX
-Text Label 7450 3550 2    50   ~ 0
+Text Label 8350 3550 2    50   ~ 0
 WT32_ONOFF_FROM_UC
 Wire Wire Line
 	4650 1550 5150 1550
@@ -142,25 +142,25 @@ PTT
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5C071389
-P 10400 1450
-F 0 "H1" H 10500 1496 50  0000 L CNN
-F 1 "MountingHole" H 10500 1405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 10400 1450 50  0001 C CNN
-F 3 "~" H 10400 1450 50  0001 C CNN
-F 4 "-" H 9600 -5700 50  0001 C CNN "Mouser Best.Nr."
-	1    10400 1450
+P 800 7000
+F 0 "H1" H 900 7046 50  0000 L CNN
+F 1 "MountingHole" H 900 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 800 7000 50  0001 C CNN
+F 3 "~" H 800 7000 50  0001 C CNN
+F 4 "-" H 0   -150 50  0001 C CNN "Mouser Best.Nr."
+	1    800  7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5C0713CD
-P 10400 1650
-F 0 "H2" H 10500 1696 50  0000 L CNN
-F 1 "MountingHole" H 10500 1605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 10400 1650 50  0001 C CNN
-F 3 "~" H 10400 1650 50  0001 C CNN
-F 4 "-" H 9600 -5700 50  0001 C CNN "Mouser Best.Nr."
-	1    10400 1650
+P 800 7200
+F 0 "H2" H 900 7246 50  0000 L CNN
+F 1 "MountingHole" H 900 7155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 800 7200 50  0001 C CNN
+F 3 "~" H 800 7200 50  0001 C CNN
+F 4 "-" H 0   -150 50  0001 C CNN "Mouser Best.Nr."
+	1    800  7200
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4650 2950
@@ -186,24 +186,24 @@ Wire Notes Line
 Wire Notes Line
 	6450 950  6450 4700
 $Sheet
-S 7550 950  1750 1400
+S 8450 950  1750 1400
 U 5BE3535B
 F0 "Audio Circuit" 50
 F1 "audio_circuit.sch" 50
-F2 "MIC_LP" O L 7550 1400 50 
-F3 "MIC_LN" O L 7550 1500 50 
-F4 "AUDIO_OUT" O R 9300 1150 50 
-F5 "SPK_LN" I L 7550 1100 50 
-F6 "AUDIO_IN" I R 9300 1350 50 
-F7 "SPK_LP" I L 7550 1200 50 
-F8 "VOX_OUT" O R 9300 2050 50 
+F2 "AUDIO_OUT" O R 10200 1150 50 
+F3 "AUDIO_IN" I R 10200 1350 50 
+F4 "VOX_OUT" O R 10200 2050 50 
+F5 "A_OUT_LN" I L 8450 1100 50 
+F6 "A_OUT_LP" I L 8450 1200 50 
+F7 "A_IN_LN" O L 8450 1400 50 
+F8 "A_IN_LP" O L 8450 1500 50 
 $EndSheet
 Wire Wire Line
-	9400 1350 9300 1350
+	10300 1350 10200 1350
 Wire Wire Line
-	7450 3550 7550 3550
+	8350 3550 8450 3550
 Wire Wire Line
-	7550 1100 7450 1100
+	8450 1100 8350 1100
 Wire Wire Line
 	4850 1650 4650 1650
 Wire Wire Line
@@ -213,43 +213,43 @@ NoConn ~ 4650 1850
 NoConn ~ 4650 2250
 NoConn ~ 4650 2350
 Text Label 5150 1450 0    50   ~ 0
-SPK_LP
+A_OUT_LP
 Wire Wire Line
 	5150 1450 4650 1450
 Text Label 8650 6050 2    50   ~ 0
 UC_PTT_OUT
-Text Label 10500 5550 0    50   ~ 0
+Text Label 10100 5550 0    50   ~ 0
 PTT
 Text Label 7650 5000 0    50   ~ 0
 PTT_BUTTON
 $Sheet
-S 7550 2550 1750 1200
+S 8450 2550 1750 1200
 U 5C10B93A
 F0 "Microcontroller" 50
 F1 "microcontroller.sch" 50
-F2 "UART_UC_TX" O L 7550 2850 50 
-F3 "UART_UC_RX" I L 7550 2950 50 
-F4 "WT32_ONOFF_FROM_UC" O L 7550 3550 50 
-F5 "+V_IN" I L 7550 2600 50 
-F6 "PTT_IN" I L 7550 3200 50 
-F7 "PTT_OUT" O L 7550 3300 50 
-F8 "PTT_LED" O L 7550 3400 50 
-F9 "VOX_IN" I R 9300 2850 50 
+F2 "UART_UC_TX" O L 8450 2850 50 
+F3 "UART_UC_RX" I L 8450 2950 50 
+F4 "WT32_ONOFF_FROM_UC" O L 8450 3550 50 
+F5 "+V_IN" I L 8450 2600 50 
+F6 "PTT_IN" I L 8450 3200 50 
+F7 "PTT_OUT" O L 8450 3300 50 
+F8 "PTT_LED" O L 8450 3400 50 
+F9 "VOX_IN" I R 10200 2850 50 
 $EndSheet
 Wire Wire Line
-	7550 3200 7450 3200
+	8450 3200 8350 3200
 Wire Wire Line
-	7550 3300 7450 3300
-Text Label 7450 3300 2    50   ~ 0
+	8450 3300 8350 3300
+Text Label 8350 3300 2    50   ~ 0
 UC_PTT_OUT
 Wire Wire Line
 	7550 5950 7550 6000
 Wire Wire Line
 	7450 5950 7550 5950
-Text Label 7450 1200 2    50   ~ 0
-SPK_LP
+Text Label 8350 1200 2    50   ~ 0
+A_OUT_LP
 Wire Wire Line
-	7550 1200 7450 1200
+	8450 1200 8350 1200
 $Comp
 L Connector:RJ45 J1
 U 1 1 5C7A0AB1
@@ -265,13 +265,13 @@ $EndComp
 $Comp
 L Mechanical:Housing N1
 U 1 1 5C831FC9
-P 10500 1100
-F 0 "N1" H 10653 1134 50  0000 L CNN
-F 1 "Housing" H 10653 1043 50  0000 L CNN
-F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 10550 1150 50  0001 C CNN
-F 3 "~" H 10550 1150 50  0001 C CNN
-F 4 " 546-1553CBKBAT " H 9600 -5250 50  0001 C CNN "Mouser Best.Nr."
-	1    10500 1100
+P 900 6650
+F 0 "N1" H 1053 6684 50  0000 L CNN
+F 1 "Housing" H 1053 6593 50  0000 L CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 950 6700 50  0001 C CNN
+F 3 "~" H 950 6700 50  0001 C CNN
+F 4 " 546-1553CBKBAT " H 0   300 50  0001 C CNN "Mouser Best.Nr."
+	1    900  6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -304,29 +304,29 @@ F 4 " 603-RC0805FR-0710KL" H 3900 -400 50  0001 C CNN "Mouser Best.Nr."
 	-1   0    0    1   
 $EndComp
 Text Notes 8150 4750 0    50   ~ 0
-JP11 selects if J2/J3 is connected directly\nto the radio or via ESP32\n(to enable Soft-PTT features).\n\nJ2 connects an internal PTT Button\n\nJ3 connects an external PTT Button
+J5 selects if J2/J3 is connected directly\nto the radio or via ESP32\n(to enable Soft-PTT features).\n\nJ2 connects an internal PTT Button\n\nJ3 connects an external PTT Button
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5D3AD2F8
-P 10400 1850
-F 0 "H3" H 10500 1896 50  0000 L CNN
-F 1 "MountingHole" H 10500 1805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 10400 1850 50  0001 C CNN
-F 3 "~" H 10400 1850 50  0001 C CNN
-F 4 "-" H 9600 -5300 50  0001 C CNN "Mouser Best.Nr."
-	1    10400 1850
+P 800 7400
+F 0 "H3" H 900 7446 50  0000 L CNN
+F 1 "MountingHole" H 900 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 800 7400 50  0001 C CNN
+F 3 "~" H 800 7400 50  0001 C CNN
+F 4 "-" H 0   250 50  0001 C CNN "Mouser Best.Nr."
+	1    800  7400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5D3AD300
-P 10400 2050
-F 0 "H4" H 10500 2096 50  0000 L CNN
-F 1 "MountingHole" H 10500 2005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 10400 2050 50  0001 C CNN
-F 3 "~" H 10400 2050 50  0001 C CNN
-F 4 "-" H 9600 -5300 50  0001 C CNN "Mouser Best.Nr."
-	1    10400 2050
+P 800 7600
+F 0 "H4" H 900 7646 50  0000 L CNN
+F 1 "MountingHole" H 900 7555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 800 7600 50  0001 C CNN
+F 3 "~" H 800 7600 50  0001 C CNN
+F 4 "-" H 0   250 50  0001 C CNN "Mouser Best.Nr."
+	1    800  7600
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3350 3850
@@ -348,16 +348,16 @@ Wire Wire Line
 Text Label 7550 5850 0    50   ~ 0
 UC_PTT_LED
 Wire Wire Line
-	7550 3400 7450 3400
-Text Label 7450 3400 2    50   ~ 0
+	8450 3400 8350 3400
+Text Label 8350 3400 2    50   ~ 0
 UC_PTT_LED
 Wire Wire Line
-	9300 2850 9500 2850
-Text Label 9500 2850 0    50   ~ 0
+	10200 2850 10400 2850
+Text Label 10400 2850 0    50   ~ 0
 VOX
 Wire Wire Line
-	9300 2050 9400 2050
-Text Label 9400 2050 0    50   ~ 0
+	10200 2050 10300 2050
+Text Label 10300 2050 0    50   ~ 0
 VOX
 $Comp
 L Connector_Generic:Conn_01x03 J2
@@ -416,8 +416,6 @@ Wire Wire Line
 Wire Wire Line
 	9100 5550 9200 5550
 Wire Wire Line
-	9000 5750 9200 5750
-Wire Wire Line
 	7300 5100 7500 5100
 Wire Wire Line
 	7550 5000 7300 5000
@@ -437,19 +435,6 @@ Wire Wire Line
 	7550 4500 7550 4600
 Wire Wire Line
 	7550 4900 7550 5000
-$Comp
-L power:GNDA #PWR0103
-U 1 1 5E1B9556
-P 4650 5450
-F 0 "#PWR0103" H 4650 5200 50  0001 C CNN
-F 1 "GNDA" H 4655 5277 50  0000 C CNN
-F 2 "" H 4650 5450 50  0001 C CNN
-F 3 "" H 4650 5450 50  0001 C CNN
-	1    4650 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9800 5750 10000 5750
 Text Label 7650 4900 0    50   ~ 0
 UC_PTT_IN
 Wire Wire Line
@@ -479,7 +464,7 @@ Wire Wire Line
 	4650 2450 5300 2450
 Wire Wire Line
 	2150 5350 1850 5350
-Text Label 1850 5150 2    50   ~ 0
+Text Label 1850 5050 2    50   ~ 0
 PTT
 Wire Wire Line
 	1850 5250 2150 5250
@@ -497,20 +482,9 @@ Text Label 1950 5750 2    50   ~ 0
 V_IN
 Text Label 1850 5450 2    50   ~ 0
 MIC_GND
-$Comp
-L Jumper:SolderJumper_2_Open JP9
-U 1 1 5E445652
-P 4650 5300
-F 0 "JP9" V 4600 5450 50  0000 C CNN
-F 1 "PTT_MIC_GND" V 4700 5650 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4650 5300 50  0001 C CNN
-F 3 "~" H 4650 5300 50  0001 C CNN
-	1    4650 5300
-	0    1    1    0   
-$EndComp
 Text Notes 750  6150 0    50   ~ 0
 GNDPWR: Vin Ground\nGND: Transceiver Ground\nGNDA: Transceiver Mic Ground
-Text Label 7450 3200 2    50   ~ 0
+Text Label 8350 3200 2    50   ~ 0
 UC_PTT_IN
 $Comp
 L power:GNDPWR #PWR010
@@ -633,12 +607,6 @@ F 3 "" H 850 5650 50  0001 C CNN
 	1    850  5650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 5750 10000 5950
-Wire Wire Line
-	4650 5050 4650 5150
-Text Notes 4200 6300 0    50   ~ 0
-Bridge JP9 to connect PTT to MIC_GND \n(necessary for most handheld transceivers)\n\nBridge JP10 to connect TRX_GND to MIC_GND \n(necessary for some TRX without separate MIC_GND)\n\nDO NOT BRIDGE BOTH JUMPER, OR PTT WILL NOT WORK!
 $Comp
 L power:GND #PWR02
 U 1 1 5E30E15A
@@ -648,17 +616,6 @@ F 1 "GND" H 1055 5477 50  0000 C CNN
 F 2 "" H 1050 5650 50  0001 C CNN
 F 3 "" H 1050 5650 50  0001 C CNN
 	1    1050 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 5E314D25
-P 10000 5950
-F 0 "#PWR017" H 10000 5700 50  0001 C CNN
-F 1 "GND" H 10005 5777 50  0000 C CNN
-F 2 "" H 10000 5950 50  0001 C CNN
-F 3 "" H 10000 5950 50  0001 C CNN
-	1    10000 5950
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -679,45 +636,6 @@ Wire Wire Line
 	850  5450 850  5650
 Wire Wire Line
 	850  5450 2150 5450
-Wire Wire Line
-	1850 5150 2150 5150
-Wire Wire Line
-	9800 5550 10500 5550
-$Comp
-L power:GNDA #PWR013
-U 1 1 5E54DFDF
-P 5450 5450
-F 0 "#PWR013" H 5450 5200 50  0001 C CNN
-F 1 "GNDA" H 5455 5277 50  0000 C CNN
-F 2 "" H 5450 5450 50  0001 C CNN
-F 3 "" H 5450 5450 50  0001 C CNN
-	1    5450 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP10
-U 1 1 5E54DFE9
-P 5450 5300
-F 0 "JP10" V 5400 5450 50  0000 C CNN
-F 1 "TRX_MIC_GND" V 5500 5650 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5450 5300 50  0001 C CNN
-F 3 "~" H 5450 5300 50  0001 C CNN
-	1    5450 5300
-	0    1    1    0   
-$EndComp
-Text Label 4650 5050 2    50   ~ 0
-PTT
-$Comp
-L power:GND #PWR0101
-U 1 1 5E590327
-P 5450 5150
-F 0 "#PWR0101" H 5450 4900 50  0001 C CNN
-F 1 "GND" H 5455 4977 50  0000 C CNN
-F 2 "" H 5450 5150 50  0001 C CNN
-F 3 "" H 5450 5150 50  0001 C CNN
-	1    5450 5150
-	-1   0    0    1   
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J9
 U 1 1 5E59CAEC
@@ -740,18 +658,6 @@ F 3 "~" H 2850 5350 50  0001 C CNN
 	1    2850 5350
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 5E5ADCEF
-P 2800 6500
-F 0 "JP2" H 3000 6450 50  0000 C CNN
-F 1 "2" V 2850 6850 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2800 6500 50  0001 C CNN
-F 3 "~" H 2800 6500 50  0001 C CNN
-	1    2800 6500
-	-1   0    0    1   
-$EndComp
-NoConn ~ 2150 5050
 Wire Wire Line
 	3050 5050 3200 5050
 Wire Wire Line
@@ -768,72 +674,6 @@ Wire Wire Line
 	3050 5650 3200 5650
 Wire Wire Line
 	3200 5750 3050 5750
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5E5DEC54
-P 2800 6650
-F 0 "JP3" H 3000 6600 50  0000 C CNN
-F 1 "3" V 2850 7000 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2800 6650 50  0001 C CNN
-F 3 "~" H 2800 6650 50  0001 C CNN
-	1    2800 6650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5E5DF8DB
-P 2800 6800
-F 0 "JP4" H 3000 6750 50  0000 C CNN
-F 1 "4" V 2850 7150 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2800 6800 50  0001 C CNN
-F 3 "~" H 2800 6800 50  0001 C CNN
-	1    2800 6800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP5
-U 1 1 5E5DFCF0
-P 2800 6950
-F 0 "JP5" H 3000 6900 50  0000 C CNN
-F 1 "5" V 2850 7300 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2800 6950 50  0001 C CNN
-F 3 "~" H 2800 6950 50  0001 C CNN
-	1    2800 6950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP6
-U 1 1 5E5E0148
-P 2800 7100
-F 0 "JP6" H 3000 7050 50  0000 C CNN
-F 1 "6" V 2850 7450 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2800 7100 50  0001 C CNN
-F 3 "~" H 2800 7100 50  0001 C CNN
-	1    2800 7100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP7
-U 1 1 5E5E055A
-P 2800 7250
-F 0 "JP7" H 3000 7200 50  0000 C CNN
-F 1 "7" V 2850 7600 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2800 7250 50  0001 C CNN
-F 3 "~" H 2800 7250 50  0001 C CNN
-	1    2800 7250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP8
-U 1 1 5E5E09DF
-P 2800 7400
-F 0 "JP8" H 3000 7350 50  0000 C CNN
-F 1 "8" V 2850 7750 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2800 7400 50  0001 C CNN
-F 3 "~" H 2800 7400 50  0001 C CNN
-	1    2800 7400
-	-1   0    0    1   
-$EndComp
 Text Label 3100 5050 0    50   ~ 0
 1
 Text Label 3100 5150 0    50   ~ 0
@@ -850,93 +690,130 @@ Text Label 3100 5650 0    50   ~ 0
 7
 Text Label 3100 5750 0    50   ~ 0
 8
-Text Label 3100 6500 0    50   ~ 0
-2
-Text Label 3100 6650 0    50   ~ 0
-3
-Text Label 3100 6800 0    50   ~ 0
-4
-Text Label 3100 6950 0    50   ~ 0
-5
-Text Label 3100 7100 0    50   ~ 0
-6
-Text Label 3100 7250 0    50   ~ 0
-7
-Text Label 3100 7400 0    50   ~ 0
-8
-Wire Wire Line
-	2950 6500 3100 6500
-Wire Wire Line
-	2950 6650 3100 6650
-Wire Wire Line
-	2950 6800 3100 6800
-Wire Wire Line
-	2950 6950 3100 6950
-Wire Wire Line
-	2950 7100 3100 7100
-Wire Wire Line
-	2950 7250 3100 7250
-Wire Wire Line
-	2950 7400 3100 7400
-Wire Wire Line
-	2650 6500 2400 6500
-Text Label 2400 6500 2    50   ~ 0
-PTT
-Text Label 2400 6650 2    50   ~ 0
-AUDIO_IN_SPK
-Text Label 2400 6800 2    50   ~ 0
-AUDIO_OUT_MIC
-Text Label 2400 6950 2    50   ~ 0
-MIC_GND
-Text Label 2400 7100 2    50   ~ 0
-TRX_GND
-Text Label 2400 7250 2    50   ~ 0
-PWR_GND
-Text Label 2400 7400 2    50   ~ 0
-V_IN
-Wire Wire Line
-	2400 6650 2650 6650
-Wire Wire Line
-	2400 6800 2650 6800
-Wire Wire Line
-	2400 6950 2650 6950
-Wire Wire Line
-	2400 7100 2650 7100
-Wire Wire Line
-	2400 7250 2650 7250
-Wire Wire Line
-	2400 7400 2650 7400
-Text Notes 750  7400 0    50   ~ 0
-JP2-JP8 can be used\nto direct bridge the\nJ9/J10 Connectors without\nusing jumper wires
 Wire Notes Line
-	700  7500 6450 7500
-Wire Notes Line
-	6450 4800 6450 7500
-Wire Notes Line
-	700  4800 700  7500
+	700  6400 6450 6400
 Wire Notes Line
 	700  4800 6450 4800
 Wire Notes Line
 	700  4700 6450 4700
 Wire Notes Line
 	700  950  6450 950 
-$Comp
-L Jumper:SolderJumper_3_Open JP11
-U 1 1 5E77194E
-P 8850 5750
-F 0 "JP11" V 8896 5818 50  0000 L CNN
-F 1 "PTT_SEL" V 8805 5818 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm" H 8850 5750 50  0001 C CNN
-F 3 "~" H 8850 5750 50  0001 C CNN
-	1    8850 5750
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8650 5450 8850 5450
 Wire Wire Line
-	8850 5450 8850 5550
-Wire Wire Line
-	8850 5950 8850 6050
-Wire Wire Line
 	8850 6050 8650 6050
+Text Label 1850 5150 2    50   ~ 0
+PTT_GND
+Wire Wire Line
+	1850 5050 2150 5050
+Wire Wire Line
+	2150 5150 1850 5150
+Text Label 10100 5750 0    50   ~ 0
+PTT_GND
+Wire Wire Line
+	9800 5550 10100 5550
+Wire Wire Line
+	9800 5750 10100 5750
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5E288400
+P 8650 5750
+F 0 "J5" H 8850 5750 50  0000 R CNN
+F 1 "PTT_SEL" H 9050 5650 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8650 5750 50  0001 C CNN
+F 3 "~" H 8650 5750 50  0001 C CNN
+F 4 "855-M20-9990346" H 1750 -50 50  0001 C CNN "Mouser Best.Nr."
+	1    8650 5750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5450 8850 5650
+Wire Wire Line
+	8850 5750 9200 5750
+Wire Wire Line
+	8850 5850 8850 6050
+$Comp
+L Device:C C?
+U 1 1 5E2A7D96
+P 1750 3700
+AR Path="/5BE3535B/5E2A7D96" Ref="C?"  Part="1" 
+AR Path="/5E2A7D96" Ref="C9"  Part="1" 
+F 0 "C9" V 1498 3700 50  0000 C CNN
+F 1 "100nF" V 1589 3700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1788 3550 50  0001 C CNN
+F 3 "~" H 1750 3700 50  0001 C CNN
+F 4 "80-C0805C105K3RAUTO" H 0   -3150 50  0001 C CNN "Mouser Best.Nr."
+	1    1750 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR028
+U 1 1 5E2A8D2C
+P 1750 3450
+F 0 "#PWR028" H 1750 3300 50  0001 C CNN
+F 1 "+3V3" H 1765 3623 50  0000 C CNN
+F 2 "" H 1750 3450 50  0001 C CNN
+F 3 "" H 1750 3450 50  0001 C CNN
+	1    1750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR044
+U 1 1 5E2A9426
+P 1750 3950
+F 0 "#PWR044" H 1750 3750 50  0001 C CNN
+F 1 "GNDPWR" H 1754 3796 50  0000 C CNN
+F 2 "" H 1750 3900 50  0001 C CNN
+F 3 "" H 1750 3900 50  0001 C CNN
+	1    1750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3450 1750 3550
+Wire Wire Line
+	1750 3850 1750 3950
+$Comp
+L Device:C C?
+U 1 1 5E2BF63A
+P 1300 3700
+AR Path="/5BE3535B/5E2BF63A" Ref="C?"  Part="1" 
+AR Path="/5E2BF63A" Ref="C8"  Part="1" 
+F 0 "C8" V 1048 3700 50  0000 C CNN
+F 1 "100nF" V 1139 3700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1338 3550 50  0001 C CNN
+F 3 "~" H 1300 3700 50  0001 C CNN
+F 4 "80-C0805C105K3RAUTO" H -450 -3150 50  0001 C CNN "Mouser Best.Nr."
+	1    1300 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR013
+U 1 1 5E2BF644
+P 1300 3450
+F 0 "#PWR013" H 1300 3300 50  0001 C CNN
+F 1 "+3V3" H 1315 3623 50  0000 C CNN
+F 2 "" H 1300 3450 50  0001 C CNN
+F 3 "" H 1300 3450 50  0001 C CNN
+	1    1300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR017
+U 1 1 5E2BF64E
+P 1300 3950
+F 0 "#PWR017" H 1300 3750 50  0001 C CNN
+F 1 "GNDPWR" H 1304 3796 50  0000 C CNN
+F 2 "" H 1300 3900 50  0001 C CNN
+F 3 "" H 1300 3900 50  0001 C CNN
+	1    1300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3450 1300 3550
+Wire Wire Line
+	1300 3850 1300 3950
+Wire Notes Line
+	6450 4800 6450 6400
+Wire Notes Line
+	700  4800 700  6400
 $EndSCHEMATC

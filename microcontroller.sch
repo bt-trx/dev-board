@@ -640,18 +640,7 @@ Wire Notes Line
 Wire Wire Line
 	2750 6100 3100 6100
 Text Notes 3500 6200 2    50   ~ 0
-V4.1, V5.0 = 0V
-$Comp
-L power:GNDPWR #PWR028
-U 1 1 5E339B27
-P 2750 6100
-F 0 "#PWR028" H 2750 5900 50  0001 C CNN
-F 1 "GNDPWR" V 2754 5991 50  0000 R CNN
-F 2 "" H 2750 6050 50  0001 C CNN
-F 3 "" H 2750 6050 50  0001 C CNN
-	1    2750 6100
-	0    1    1    0   
-$EndComp
+V5.0 = 3.3V
 Wire Notes Line
 	3650 5700 3650 6350
 Wire Notes Line
@@ -851,4 +840,17 @@ Text HLabel 8600 2300 2    50   Output ~ 0
 UART_UC_TX
 Text Notes 6450 1300 2    50   ~ 0
 Ioutmax=1 A (AMS1117-3.3)
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E2D79C9
+P 2750 6100
+AR Path="/5E2D79C9" Ref="#PWR?"  Part="1" 
+AR Path="/5C10B93A/5E2D79C9" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 2750 5950 50  0001 C CNN
+F 1 "+3V3" V 2750 6300 50  0000 C CNN
+F 2 "" H 2750 6100 50  0001 C CNN
+F 3 "" H 2750 6100 50  0001 C CNN
+	1    2750 6100
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

@@ -14,7 +14,7 @@ Comment3 "Christian Obersteiner - DL1COM"
 Comment4 "Author:"
 $EndDescr
 Text HLabel 1250 2300 0    50   Input ~ 0
-SPK_LN
+A_OUT_LN
 Text HLabel 5450 1900 2    50   Output ~ 0
 AUDIO_OUT
 Text HLabel 5300 3750 2    50   Input ~ 0
@@ -112,7 +112,7 @@ L Connector:TestPoint TP5
 U 1 1 5C77A456
 P 1450 4400
 F 0 "TP5" H 1508 4520 50  0000 L CNN
-F 1 "MIC_LN" H 1508 4429 50  0000 L CNN
+F 1 "A_IN_LN" H 1508 4429 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1650 4400 50  0001 C CNN
 F 3 "~" H 1650 4400 50  0001 C CNN
 F 4 "-" H 50  -1950 50  0001 C CNN "Mouser Best.Nr."
@@ -127,7 +127,7 @@ L Connector:TestPoint TP2
 U 1 1 5C77BF70
 P 1400 2300
 F 0 "TP2" H 1458 2420 50  0000 L CNN
-F 1 "SP_LN" H 1458 2329 50  0000 L CNN
+F 1 "A_OUT_LN" H 1458 2329 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1600 2300 50  0001 C CNN
 F 3 "~" H 1600 2300 50  0001 C CNN
 F 4 "-" H 0   650 50  0001 C CNN "Mouser Best.Nr."
@@ -147,13 +147,13 @@ F 4 "-" H 2150 -50 50  0001 C CNN "Mouser Best.Nr."
 	1    0    0    -1  
 $EndComp
 Text HLabel 1250 1900 0    50   Input ~ 0
-SPK_LP
+A_OUT_LP
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5C78B921
 P 1400 1900
 F 0 "TP3" H 1458 2020 50  0000 L CNN
-F 1 "SP_LP" H 1458 1929 50  0000 L CNN
+F 1 "A_OUT_LP" H 1458 1929 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1600 1900 50  0001 C CNN
 F 3 "~" H 1600 1900 50  0001 C CNN
 F 4 "-" H 0   -250 50  0001 C CNN "Mouser Best.Nr."
@@ -205,7 +205,7 @@ L Connector:TestPoint TP4
 U 1 1 5C77A38C
 P 1450 4000
 F 0 "TP4" H 1508 4120 50  0000 L CNN
-F 1 "MIC_LP" H 1508 4029 50  0000 L CNN
+F 1 "A_IN_LP" H 1508 4029 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1650 4000 50  0001 C CNN
 F 3 "~" H 1650 4000 50  0001 C CNN
 F 4 "-" H 50  -1900 50  0001 C CNN "Mouser Best.Nr."
@@ -213,9 +213,9 @@ F 4 "-" H 50  -1900 50  0001 C CNN "Mouser Best.Nr."
 	1    0    0    -1  
 $EndComp
 Text HLabel 1300 4400 0    50   Output ~ 0
-MIC_LN
+A_IN_LN
 Text HLabel 1300 4000 0    50   Output ~ 0
-MIC_LP
+A_IN_LP
 $Comp
 L Connector:TestPoint TP8
 U 1 1 5C0DF1AC

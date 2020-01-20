@@ -853,4 +853,31 @@ F 3 "" H 2750 6100 50  0001 C CNN
 	1    2750 6100
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4150 1500 4150 1350
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E465291
+P 4150 1350
+AR Path="/5BE3535B/5E465291" Ref="TP?"  Part="1" 
+AR Path="/5C10B93A/5E465291" Ref="TP?"  Part="1" 
+F 0 "TP?" H 4208 1470 50  0000 L CNN
+F 1 "PWR_GND" H 4208 1379 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 4350 1350 50  0001 C CNN
+F 3 "~" H 4350 1350 50  0001 C CNN
+F 4 "-" H -400 -5500 50  0001 C CNN "Mouser Best.Nr."
+	1    4150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5E46C073
+P 4150 1500
+F 0 "#PWR?" H 4150 1300 50  0001 C CNN
+F 1 "GNDPWR" H 4154 1346 50  0000 C CNN
+F 2 "" H 4150 1450 50  0001 C CNN
+F 3 "" H 4150 1450 50  0001 C CNN
+	1    4150 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

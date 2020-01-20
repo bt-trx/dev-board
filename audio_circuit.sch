@@ -216,18 +216,6 @@ Text HLabel 1300 4400 0    50   Output ~ 0
 A_IN_LN
 Text HLabel 1300 4000 0    50   Output ~ 0
 A_IN_LP
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5C0DF1AC
-P 4750 4400
-F 0 "TP8" H 4808 4520 50  0000 L CNN
-F 1 "TRX_GND" H 4808 4429 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 4950 4400 50  0001 C CNN
-F 3 "~" H 4950 4400 50  0001 C CNN
-F 4 "-" H 200 -2450 50  0001 C CNN "Mouser Best.Nr."
-	1    4750 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 3750 5300 3750
 Text HLabel 3300 3750 0    50   Output ~ 0
@@ -291,8 +279,6 @@ F 3 "" H 4950 2500 50  0001 C CNN
 	1    4950 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 4550 4750 4400
 Wire Wire Line
 	3550 1900 3900 1900
 Wire Wire Line
@@ -359,7 +345,7 @@ U 1 1 5E4A031B
 P 4950 2300
 F 0 "TP1" H 5008 2420 50  0000 L CNN
 F 1 "MIC_GND" H 5008 2329 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 5150 2300 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5150 2300 50  0001 C CNN
 F 3 "~" H 5150 2300 50  0001 C CNN
 F 4 "-" H 400 -4550 50  0001 C CNN "Mouser Best.Nr."
 	1    4950 2300
@@ -390,17 +376,6 @@ F 1 "GND" H 4055 4377 50  0000 C CNN
 F 2 "" H 4050 4550 50  0001 C CNN
 F 3 "" H 4050 4550 50  0001 C CNN
 	1    4050 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR019
-U 1 1 5E42553D
-P 4750 4550
-F 0 "#PWR019" H 4750 4300 50  0001 C CNN
-F 1 "GND" H 4755 4377 50  0000 C CNN
-F 2 "" H 4750 4550 50  0001 C CNN
-F 3 "" H 4750 4550 50  0001 C CNN
-	1    4750 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -443,4 +418,29 @@ Wire Wire Line
 	3000 4400 3650 4400
 Wire Wire Line
 	3000 4000 3400 4000
+$Comp
+L power:GND #PWR019
+U 1 1 5E42553D
+P 4750 4550
+F 0 "#PWR019" H 4750 4300 50  0001 C CNN
+F 1 "GND" H 4755 4377 50  0000 C CNN
+F 2 "" H 4750 4550 50  0001 C CNN
+F 3 "" H 4750 4550 50  0001 C CNN
+	1    4750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4550 4750 4400
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5C0DF1AC
+P 4750 4400
+F 0 "TP8" H 4808 4520 50  0000 L CNN
+F 1 "TRX_GND" H 4808 4429 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 4950 4400 50  0001 C CNN
+F 3 "~" H 4950 4400 50  0001 C CNN
+F 4 "-" H 200 -2450 50  0001 C CNN "Mouser Best.Nr."
+	1    4750 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

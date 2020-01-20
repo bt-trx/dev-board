@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch)
-    (date "Mon 20 Jan 2020 08:55:02 PM CET")
+    (date "Mon 20 Jan 2020 11:53:48 PM CET")
     (tool "Eeschema 5.1.5+dfsg1-2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

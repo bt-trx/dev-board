@@ -633,20 +633,14 @@ Text Notes 700  5700 0    50   ~ 0
 VOX Input
 Text Notes 2250 5700 0    50   ~ 0
 Hardware Version Indicator
-Text Label 3100 6100 0    50   ~ 0
+Text Label 3200 6000 0    50   ~ 0
 HW_VER
 Wire Notes Line
 	2250 6350 3650 6350
-Wire Wire Line
-	2750 6100 3100 6100
-Text Notes 3500 6200 2    50   ~ 0
+Text Notes 3600 6100 2    50   ~ 0
 V5.0 = 3.3V
 Wire Notes Line
 	3650 5700 3650 6350
-Wire Notes Line
-	2250 5700 2250 6350
-Wire Notes Line
-	2150 5700 2150 6350
 Wire Notes Line
 	700  5700 700  6350
 Text Notes 700  700  0    50   ~ 0
@@ -843,14 +837,14 @@ Ioutmax=1 A (AMS1117-3.3)
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5E2D79C9
-P 2750 6100
+P 2650 6000
 AR Path="/5E2D79C9" Ref="#PWR?"  Part="1" 
 AR Path="/5C10B93A/5E2D79C9" Ref="#PWR045"  Part="1" 
-F 0 "#PWR045" H 2750 5950 50  0001 C CNN
-F 1 "+3V3" V 2750 6300 50  0000 C CNN
-F 2 "" H 2750 6100 50  0001 C CNN
-F 3 "" H 2750 6100 50  0001 C CNN
-	1    2750 6100
+F 0 "#PWR045" H 2650 5850 50  0001 C CNN
+F 1 "+3V3" V 2650 6200 50  0000 C CNN
+F 2 "" H 2650 6000 50  0001 C CNN
+F 3 "" H 2650 6000 50  0001 C CNN
+	1    2650 6000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -880,4 +874,26 @@ F 3 "" H 4150 1450 50  0001 C CNN
 	1    4150 1500
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	2150 5700 2150 6350
+Wire Notes Line
+	2250 5700 2250 6350
+$Comp
+L Device:R R?
+U 1 1 5E288A63
+P 2900 6000
+AR Path="/5E288A63" Ref="R?"  Part="1" 
+AR Path="/5C10B93A/5E288A63" Ref="R9"  Part="1" 
+F 0 "R9" V 3000 5900 50  0000 L CNN
+F 1 "10k" V 3100 5900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 6000 50  0001 C CNN
+F 3 "~" H 2900 6000 50  0001 C CNN
+F 4 "603-RC0805JR-072K2L " H -5850 2500 50  0001 C CNN "Mouser Best.Nr."
+	1    2900 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 6000 2750 6000
+Wire Wire Line
+	3050 6000 3200 6000
 $EndSCHEMATC

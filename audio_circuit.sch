@@ -63,13 +63,13 @@ $EndComp
 $Comp
 L Device:C C2
 U 1 1 5BFC0997
-P 2100 4000
-F 0 "C2" V 1848 4000 50  0000 C CNN
-F 1 "1uF" V 1939 4000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2138 3850 50  0001 C CNN
-F 3 "~" H 2100 4000 50  0001 C CNN
-F 4 "80-C0805C105K3RAUTO" H 200 -2000 50  0001 C CNN "Mouser Best.Nr."
-	1    2100 4000
+P 2100 4400
+F 0 "C2" V 1848 4400 50  0000 C CNN
+F 1 "1uF" V 1939 4400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2138 4250 50  0001 C CNN
+F 3 "~" H 2100 4400 50  0001 C CNN
+F 4 "80-C0805C105K3RAUTO" H 200 -1600 50  0001 C CNN "Mouser Best.Nr."
+	1    2100 4400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -101,25 +101,24 @@ F 4 "-" H 200 -2150 50  0001 C CNN "Mouser Best.Nr."
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 4000 1450 4000
-Wire Wire Line
 	1300 4400 1450 4400
-Connection ~ 1450 4000
 Wire Wire Line
-	1450 4000 1950 4000
+	1300 4000 1450 4000
+Connection ~ 1450 4400
+Wire Wire Line
+	1450 4400 1950 4400
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5C77A456
-P 1450 4400
-F 0 "TP5" H 1508 4520 50  0000 L CNN
-F 1 "A_IN_LN" H 1508 4429 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1650 4400 50  0001 C CNN
-F 3 "~" H 1650 4400 50  0001 C CNN
-F 4 "-" H 50  -1950 50  0001 C CNN "Mouser Best.Nr."
-	1    1450 4400
+P 1450 4000
+F 0 "TP5" H 1508 4120 50  0000 L CNN
+F 1 "A_IN_LN" H 1508 4029 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1650 4000 50  0001 C CNN
+F 3 "~" H 1650 4000 50  0001 C CNN
+F 4 "-" H 50  -2350 50  0001 C CNN "Mouser Best.Nr."
+	1    1450 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 1450 4400
 Text Notes 800  1250 0    50   ~ 0
 Audio Output  (to TRX Microphone)
 $Comp
@@ -203,18 +202,18 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5C77A38C
-P 1450 4000
-F 0 "TP4" H 1508 4120 50  0000 L CNN
-F 1 "A_IN_LP" H 1508 4029 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1650 4000 50  0001 C CNN
-F 3 "~" H 1650 4000 50  0001 C CNN
-F 4 "-" H 50  -1900 50  0001 C CNN "Mouser Best.Nr."
-	1    1450 4000
+P 1450 4400
+F 0 "TP4" H 1508 4520 50  0000 L CNN
+F 1 "A_IN_LP" H 1508 4429 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1650 4400 50  0001 C CNN
+F 3 "~" H 1650 4400 50  0001 C CNN
+F 4 "-" H 50  -1500 50  0001 C CNN "Mouser Best.Nr."
+	1    1450 4400
 	1    0    0    -1  
 $EndComp
-Text HLabel 1300 4400 0    50   Output ~ 0
-A_IN_LN
 Text HLabel 1300 4000 0    50   Output ~ 0
+A_IN_LN
+Text HLabel 1300 4400 0    50   Output ~ 0
 A_IN_LP
 Wire Wire Line
 	4750 3750 5300 3750
@@ -244,7 +243,7 @@ F 1 "SM-LP-5001" H 2800 4490 50  0000 C CNN
 F 2 "bourns:SM-LP-5001" H 2800 4200 50  0001 C CNN
 F 3 "~" H 2800 4200 50  0001 C CNN
 	1    2800 4200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3650 3850 3650 3750
@@ -411,10 +410,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 2300 3400 2300
 Wire Wire Line
-	2250 4000 2600 4000
-Wire Wire Line
-	1450 4400 2600 4400
-Wire Wire Line
 	3000 4400 3650 4400
 Wire Wire Line
 	3000 4000 3400 4000
@@ -443,4 +438,9 @@ F 4 "-" H 200 -2450 50  0001 C CNN "Mouser Best.Nr."
 	1    4750 4400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1450 4000 2600 4000
+Connection ~ 1450 4000
+Wire Wire Line
+	2250 4400 2600 4400
 $EndSCHEMATC

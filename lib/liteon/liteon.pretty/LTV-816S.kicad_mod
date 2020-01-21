@@ -1,4 +1,4 @@
-(module LTV-816S (layer F.Cu) (tedit 5E20CE7E)
+(module LTV-816S (layer F.Cu) (tedit 5E2780F2)
   (fp_text reference REF** (at 2.54 5.08) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -15,6 +15,7 @@
   (fp_text user 816S (at 4.58 2.54) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
+  (fp_circle (center 2.286 0) (end 2.64521 0) (layer F.SilkS) (width 0.3))
   (pad 1 smd rect (at 0 0) (size 3 1.5) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0 2.54) (size 3 1.5) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at 9.16 2.54) (size 3 1.5) (layers F.Cu F.Paste F.Mask))

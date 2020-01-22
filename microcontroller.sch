@@ -419,7 +419,7 @@ Wire Wire Line
 	1550 1050 1750 1050
 Text HLabel 1150 6200 0    50   Input ~ 0
 VOX_IN
-Text Label 1750 6200 0    50   ~ 0
+Text Label 1050 5950 2    50   ~ 0
 VOX
 Wire Notes Line
 	700  5700 2150 5700
@@ -469,20 +469,8 @@ Wire Notes Line
 	3650 2000 3650 3600
 Wire Notes Line
 	700  2000 700  3600
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5E316637
-P 1450 6000
-F 0 "J4" V 1400 5650 50  0000 C CNN
-F 1 "Conn_01x02" V 1600 5750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 6000 50  0001 C CNN
-F 3 "~" H 1450 6000 50  0001 C CNN
-F 4 " 855-M20-9990246" H 1450 6000 50  0001 C CNN "Mouser Best.Nr."
-	1    1450 6000
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
-	1450 6200 1750 6200
+	1350 5950 1050 5950
 Wire Wire Line
 	1150 6200 1350 6200
 $Comp
@@ -896,4 +884,26 @@ Wire Wire Line
 	2650 6000 2750 6000
 Wire Wire Line
 	3050 6000 3200 6000
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 5E2A5603
+P 1550 5950
+F 0 "J11" H 1650 6000 50  0000 L CNN
+F 1 "VOX_IN" H 1630 5901 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1550 5950 50  0001 C CNN
+F 3 "~" H 1550 5950 50  0001 C CNN
+	1    1550 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 5E2BA804
+P 1550 6200
+F 0 "J12" H 1700 6150 50  0000 C CNN
+F 1 "VOX_TRX" H 1800 6250 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1550 6200 50  0001 C CNN
+F 3 "~" H 1550 6200 50  0001 C CNN
+	1    1550 6200
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

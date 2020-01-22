@@ -60,30 +60,6 @@ F 4 "710-885012007011" H 1200 -2250 50  0001 C CNN "Mouser Best.Nr."
 	1    4050 4150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C2
-U 1 1 5BFC0997
-P 2100 4400
-F 0 "C2" V 1848 4400 50  0000 C CNN
-F 1 "1uF" V 1939 4400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2138 4250 50  0001 C CNN
-F 3 "~" H 2100 4400 50  0001 C CNN
-F 4 "80-C0805C105K3RAUTO" H 200 -1600 50  0001 C CNN "Mouser Best.Nr."
-	1    2100 4400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 5C774C08
-P 1950 1900
-F 0 "C1" V 1698 1900 50  0000 C CNN
-F 1 "1uF" V 1789 1900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1988 1750 50  0001 C CNN
-F 3 "~" H 1950 1900 50  0001 C CNN
-F 4 "80-C0805C105K3RAUTO" H 50  -4100 50  0001 C CNN "Mouser Best.Nr."
-	1    1950 1900
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1250 1900 1400 1900
 Text Notes 3700 3150 0    50   ~ 0
@@ -105,8 +81,6 @@ Wire Wire Line
 Wire Wire Line
 	1300 4000 1450 4000
 Connection ~ 1450 4400
-Wire Wire Line
-	1450 4400 1950 4400
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5C77A456
@@ -230,8 +204,6 @@ F 3 "~" H 2650 2100 50  0001 C CNN
 	1    2650 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 1900 1800 1900
 Connection ~ 1400 1900
 Connection ~ 1400 2300
 $Comp
@@ -402,8 +374,6 @@ F 4 " 72-TS53YL-5K" H 800 -2000 50  0001 C CNN "Mouser Best.Nr."
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 1900 2450 1900
-Wire Wire Line
 	1400 2300 2450 2300
 Wire Wire Line
 	2850 1900 3100 1900
@@ -442,5 +412,7 @@ Wire Wire Line
 	1450 4000 2600 4000
 Connection ~ 1450 4000
 Wire Wire Line
-	2250 4400 2600 4400
+	1400 1900 2450 1900
+Wire Wire Line
+	1450 4400 2600 4400
 $EndSCHEMATC

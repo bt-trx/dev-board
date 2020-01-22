@@ -3,4 +3,6 @@
   (lib (name bc127)(type KiCad)(uri ${KIPRJMOD}/lib/bc127/bc127.pretty)(options "")(descr ""))
   (lib (name kingbright_led)(type KiCad)(uri ${KIPRJMOD}/lib/kingbright/kingbright_led.pretty)(options "")(descr ""))
   (lib (name nodemcu_esp-32s)(type KiCad)(uri ${KIPRJMOD}/lib/nodemcu_esp-32s/nodemcu_esp-32s.pretty)(options "")(descr ""))
+  (lib (name bourns)(type KiCad)(uri ${KIPRJMOD}/lib/bourns/bourns.pretty)(options "")(descr ""))
+  (lib (name liteon)(type KiCad)(uri ${KIPRJMOD}/lib/liteon/liteon.pretty)(options "")(descr ""))
 )

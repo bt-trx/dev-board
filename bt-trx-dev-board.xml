@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch</source>
-    <date>Sun 06 Oct 2019 10:10:22 PM CEST</date>
-    <tool>Eeschema 5.1.4+dfsg1-1</tool>
+    <date>Wed 22 Jan 2020 09:05:12 PM CET</date>
+    <tool>Eeschema 5.1.5+dfsg1-2</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>BT-TRX Development Board </title>
         <company>bt-trx.com</company>
-        <rev>v4.1</rev>
-        <date>2019-09-28</date>
+        <rev>v5.0</rev>
+        <date>2020-01-16</date>
         <source>bt-trx-dev-board.sch</source>
         <comment number="1" value="Licensed under CERN OHL v1.2 - https://ohwr.org/licenses/cern-ohl/v1.2"/>
         <comment number="2" value="Andreas Müller - DC1MIL"/>
@@ -21,8 +21,8 @@
       <title_block>
         <title>BT-TRX Development Board </title>
         <company>bt-trx.com</company>
-        <rev>v4.1</rev>
-        <date>2019-09-28</date>
+        <rev>v5.0</rev>
+        <date>2020-01-16</date>
         <source>audio_circuit.sch</source>
         <comment number="1" value="Licensed under CERN OHL v1.2 - https://ohwr.org/licenses/cern-ohl/v1.2"/>
         <comment number="2" value="Andreas Müller - DC1MIL"/>
@@ -34,8 +34,8 @@
       <title_block>
         <title>BT-TRX Development Board </title>
         <company>bt-trx.com</company>
-        <rev>v4.1</rev>
-        <date>2019-09-28</date>
+        <rev>v5.0</rev>
+        <date>2020-01-16</date>
         <source>microcontroller.sch</source>
         <comment number="1" value="Licensed under CERN OHL v1.2 - https://ohwr.org/licenses/cern-ohl/v1.2"/>
         <comment number="2" value="Andreas Müller - DC1MIL"/>
@@ -79,17 +79,6 @@
       <libsource lib="SILabs_WT32i" part="SILabs_WT32i" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BE40C7E</tstamp>
-    </comp>
-    <comp ref="J5">
-      <value>PTT_SELECT</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr.">855-M20-9990346</field>
-      </fields>
-      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5C7B53A0</tstamp>
     </comp>
     <comp ref="J1">
       <value>RJ45</value>
@@ -151,30 +140,46 @@
       <footprint>Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DNA">DNA</field>
         <field name="Mouser Best.Nr.">490-SJ1-3533NG</field>
       </fields>
       <libsource lib="Connector" part="AudioJack3" description="Audio Jack, 3 Poles (Stereo / TRS)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D8E8C9D</tstamp>
     </comp>
-    <comp ref="JP4">
-      <value>EN_PTT_PULLUP</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D933957</tstamp>
-    </comp>
     <comp ref="J2">
       <value>PTT_BUTTON</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DNA">DNA</field>
         <field name="Mouser Best.Nr.">855-M20-9990346</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D9A6771</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LTV-816S</value>
+      <footprint>liteon:LTV-816S</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/239/LTV-8x6-1175385.pdf</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr."> 859-LTV-816S </field>
+      </fields>
+      <libsource lib="Isolator" part="SFH617A-1" description="Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, UL, BSI, FIMKO, cUL, THT PDIP-4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E115F72</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>220R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr."> 603-RC0805FR-0710KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E1205EF</tstamp>
     </comp>
     <comp ref="C4">
       <value>1uF</value>
@@ -184,8 +189,63 @@
         <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5C1B06FB</tstamp>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E304AD9</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>JMP_CON</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr."> 855-M20-7820842 </field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E59CAEC</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>JMP_CON_TRX</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr."> 855-M20-7820842 </field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E59D538</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>PTT_SEL</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr.">855-M20-9990346</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E288400</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E2A7D96</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E2BF63A</tstamp>
     </comp>
     <comp ref="L3">
       <value>100nH</value>
@@ -198,17 +258,6 @@
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
       <tstamp>5BFC0C35</tstamp>
     </comp>
-    <comp ref="RV3">
-      <value>5k</value>
-      <footprint>Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr."> 72-TS53YL-5K</field>
-      </fields>
-      <libsource lib="Device" part="R_POT_TRIM" description="Trim-potentiometer"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5BFC4F3F</tstamp>
-    </comp>
     <comp ref="C5">
       <value>15pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
@@ -220,85 +269,8 @@
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
       <tstamp>5BFC0AC9</tstamp>
     </comp>
-    <comp ref="C3">
-      <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5BFC09F7</tstamp>
-    </comp>
-    <comp ref="C2">
-      <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5BFC0997</tstamp>
-    </comp>
-    <comp ref="L1">
-      <value>100nH</value>
-      <footprint>Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr.">810-MLF2012DR10MT000</field>
-      </fields>
-      <libsource lib="Device" part="L" description="Inductor"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5C7723BE</tstamp>
-    </comp>
-    <comp ref="RV1">
-      <value>5k</value>
-      <footprint>Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr."> 72-TS53YL-5K</field>
-      </fields>
-      <libsource lib="Device" part="R_POT_TRIM" description="Trim-potentiometer"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5C7723C7</tstamp>
-    </comp>
-    <comp ref="JP1">
-      <value>AUDIO_B</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr.">-</field>
-      </fields>
-      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5C773465</tstamp>
-    </comp>
-    <comp ref="C1">
-      <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5C774C08</tstamp>
-    </comp>
-    <comp ref="RV2">
-      <value>5k</value>
-      <footprint>Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr."> 72-TS53YL-5K</field>
-      </fields>
-      <libsource lib="Device" part="R_POT_TRIM" description="Trim-potentiometer"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5C774D1E</tstamp>
-    </comp>
     <comp ref="TP7">
-      <value>AUDIO_IN_A</value>
+      <value>AUDIO_IN</value>
       <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -309,7 +281,7 @@
       <tstamp>5C7783F5</tstamp>
     </comp>
     <comp ref="TP5">
-      <value>MIC_LN</value>
+      <value>A_IN_LN</value>
       <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -319,19 +291,8 @@
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
       <tstamp>5C77A456</tstamp>
     </comp>
-    <comp ref="TP1">
-      <value>AUDIO_IN_B</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr.">-</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5C77A4DC</tstamp>
-    </comp>
     <comp ref="TP2">
-      <value>SP_LN</value>
+      <value>A_OUT_LN</value>
       <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -353,7 +314,7 @@
       <tstamp>5C77C5A9</tstamp>
     </comp>
     <comp ref="TP3">
-      <value>SP_LP</value>
+      <value>A_OUT_LP</value>
       <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -385,7 +346,7 @@
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
       <tstamp>5CD0D832</tstamp>
     </comp>
-    <comp ref="JP2">
+    <comp ref="JP1">
       <value>BYPASS</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
@@ -396,19 +357,8 @@
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
       <tstamp>5D4B6C36</tstamp>
     </comp>
-    <comp ref="C8">
-      <value>15pF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr.">710-885012007011</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5D4A378C</tstamp>
-    </comp>
     <comp ref="TP4">
-      <value>MIC_LP</value>
+      <value>A_IN_LP</value>
       <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -418,19 +368,75 @@
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
       <tstamp>5C77A38C</tstamp>
     </comp>
-    <comp ref="L5">
-      <value>100nH</value>
-      <footprint>Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+    <comp ref="T1">
+      <value>SM-LP-5001</value>
+      <footprint>bourns:SM-LP-5001</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr.">810-MLF2012DR10MT000</field>
+        <field name="Mouser Best.Nr.">652-SM-LP-5001</field>
       </fields>
-      <libsource lib="Device" part="L" description="Inductor"/>
+      <libsource lib="Transformer" part="PA1323NL" description="SMT Gate Drive Transformer, 1:1"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
-      <tstamp>5D4E74BE</tstamp>
+      <tstamp>5E2085AD</tstamp>
+    </comp>
+    <comp ref="T2">
+      <value>SM-LP-5001</value>
+      <footprint>bourns:SM-LP-5001</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr.">652-SM-LP-5001</field>
+      </fields>
+      <libsource lib="Transformer" part="PA1323NL" description="SMT Gate Drive Transformer, 1:1"/>
+      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
+      <tstamp>5E232E72</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
+      <tstamp>5E2AD650</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>MIC_GND</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr.">-</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
+      <tstamp>5E4A031B</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>5k</value>
+      <footprint>Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNA">DNA</field>
+        <field name="Mouser Best.Nr."> 72-TS53YL-5K</field>
+      </fields>
+      <libsource lib="Device" part="R_POT_TRIM" description="Trim-potentiometer"/>
+      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
+      <tstamp>5C774D1E</tstamp>
+    </comp>
+    <comp ref="RV3">
+      <value>5k</value>
+      <footprint>Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr."> 72-TS53YL-5K</field>
+      </fields>
+      <libsource lib="Device" part="R_POT_TRIM" description="Trim-potentiometer"/>
+      <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
+      <tstamp>5BFC4F3F</tstamp>
     </comp>
     <comp ref="TP8">
-      <value>GND</value>
+      <value>TRX_GND</value>
       <footprint>TestPoint:TestPoint_Pad_4.0x4.0mm</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -565,6 +571,7 @@
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DNA">DNA</field>
         <field name="Mouser Best.Nr.">855-M20-9770446</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -604,35 +611,17 @@
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
       <tstamp>5CD4937D</tstamp>
     </comp>
-    <comp ref="U3">
-      <value>ESP32-DEVKIT</value>
-      <footprint>nodemcu_esp-32s:ESP32-DEVKITC-32D</footprint>
-      <datasheet>None</datasheet>
-      <fields>
-        <field name="Mouser Best.Nr."> 356-ESP32-DEVKITC32D </field>
-      </fields>
-      <libsource lib="ESP32-DEVKITC-32D" part="ESP32-DEVKITC-32D" description=""/>
-      <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
-      <tstamp>5D1E8FF9</tstamp>
-    </comp>
     <comp ref="J7">
-      <value>Conn_01x02</value>
+      <value>SW1_CON</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 855-M20-9990246</field>
+        <field name="DNA">DNA</field>
+        <field name="Mouser Best.Nr.">855-M20-9990246</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
       <tstamp>5D923484</tstamp>
-    </comp>
-    <comp ref="JP3">
-      <value>VOX</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
-      <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
-      <tstamp>5D943D8B</tstamp>
     </comp>
     <comp ref="R2">
       <value>10k</value>
@@ -644,6 +633,75 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
       <tstamp>5D9F2FE4</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>I2C</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNA">DNA</field>
+        <field name="Mouser Best.Nr.">855-M20-9770446</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
+      <tstamp>5E479877</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>ESP32-DEVKIT</value>
+      <footprint>nodemcu_esp-32s:ESP32-DEVKITC-32D</footprint>
+      <datasheet>None</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr."> 356-ESP32-DEVKITC32D </field>
+      </fields>
+      <libsource lib="ESP32-DEVKITC-32D" part="ESP32-DEVKITC-32D" description=""/>
+      <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
+      <tstamp>5D1E8FF9</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>PWR_GND</value>
+      <footprint>TestPoint:TestPoint_Pad_4.0x4.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr.">-</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
+      <tstamp>5E465291</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser Best.Nr."> 603-RC0805FR-0710KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
+      <tstamp>5E288A63</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>VOX_IN</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNA">DNA</field>
+        <field name="Mouser Best.Nr.">-</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
+      <tstamp>5E2A5603</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>VOX_TRX</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNA">DNA</field>
+        <field name="Mouser Best.Nr.">-</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
+      <tstamp>5E2BA804</tstamp>
     </comp>
   </components>
   <libparts>
@@ -719,6 +777,20 @@
         <pin num="1" name="1" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x02">
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
@@ -765,6 +837,27 @@
         <pin num="2" name="Pin_2" type="passive"/>
         <pin num="3" name="Pin_3" type="passive"/>
         <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x08">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="C">
@@ -968,6 +1061,34 @@
         <pin num="38" name="CLK" type="input"/>
       </pins>
     </libpart>
+    <libpart lib="Isolator" part="TLP785">
+      <aliases>
+        <alias>SFH617A-1</alias>
+        <alias>SFH617A-2</alias>
+        <alias>SFH617A-3</alias>
+        <alias>SFH617A-4</alias>
+        <alias>SFH617A-1X001</alias>
+        <alias>SFH617A-2X001</alias>
+        <alias>SFH617A-3X001</alias>
+        <alias>SFH617A-4X001</alias>
+      </aliases>
+      <description>DC Optocoupler, Vce 80V, CTR 50-200%, DIP4</description>
+      <docs>https://toshiba.semicon-storage.com/info/docget.jsp?did=10569&amp;prodName=TLP785</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLP785</field>
+        <field name="Footprint">Package_DIP:DIP-4_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Jumper" part="SolderJumper_2_Open">
       <description>Solder Jumper, 2-pole, open</description>
       <docs>~</docs>
@@ -1080,6 +1201,24 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Transformer" part="PA1323NL">
+      <description>SMT Gate Drive Transformer, 1:1</description>
+      <docs>https://productfinder.pulseeng.com/products/datasheets/SPM2007_61.pdf</docs>
+      <footprints>
+        <fp>Pulse*PA1323NL*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">PA1323NL</field>
+        <field name="Footprint">Transformer_SMD:Pulse_PA1323NL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector">
@@ -1094,6 +1233,9 @@
     <library logical="ESP32-DEVKITC-32D">
       <uri>/home/andz/workspace/git/bt-trx/dev-board/lib/nodemcu_esp-32s/ESP32-DEVKITC-32D.lib</uri>
     </library>
+    <library logical="Isolator">
+      <uri>/usr/share/kicad/library/Isolator.lib</uri>
+    </library>
     <library logical="Jumper">
       <uri>/usr/share/kicad/library/Jumper.lib</uri>
     </library>
@@ -1106,377 +1248,424 @@
     <library logical="Switch">
       <uri>/usr/share/kicad/library/Switch.lib</uri>
     </library>
+    <library logical="Transformer">
+      <uri>/usr/share/kicad/library/Transformer.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(U1-Pad41)">
-      <node ref="U1" pin="41"/>
+    <net code="1" name="/PTT">
+      <node ref="J9" pin="7"/>
+      <node ref="U2" pin="4"/>
     </net>
-    <net code="2" name="/PTT">
-      <node ref="J5" pin="2"/>
-      <node ref="J1" pin="5"/>
+    <net code="2" name="/AUDIO_OUT_MIC">
+      <node ref="C3" pin="1"/>
+      <node ref="TP6" pin="1"/>
+      <node ref="J9" pin="4"/>
     </net>
-    <net code="3" name="/CAT_RX">
-      <node ref="J1" pin="3"/>
-      <node ref="U3" pin="12"/>
+    <net code="3" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2"/>
+      <node ref="U1" pin="40"/>
     </net>
-    <net code="4" name="/CAT_TX">
-      <node ref="U3" pin="11"/>
-      <node ref="J1" pin="1"/>
+    <net code="4" name="/AUDIO_IN_SPK">
+      <node ref="TP7" pin="1"/>
+      <node ref="J9" pin="6"/>
+      <node ref="L3" pin="2"/>
     </net>
-    <net code="5" name="/SPK_LP">
-      <node ref="TP3" pin="1"/>
-      <node ref="U1" pin="50"/>
-    </net>
-    <net code="6" name="/UC_PTT_OUT">
-      <node ref="U3" pin="8"/>
-      <node ref="J5" pin="3"/>
-    </net>
-    <net code="7" name="Net-(U1-Pad42)">
-      <node ref="U1" pin="42"/>
-    </net>
-    <net code="8" name="Net-(U1-Pad46)">
-      <node ref="U1" pin="46"/>
-    </net>
-    <net code="9" name="Net-(U1-Pad47)">
-      <node ref="U1" pin="47"/>
-    </net>
-    <net code="10" name="GND">
-      <node ref="C4" pin="1"/>
-      <node ref="RV2" pin="3"/>
-      <node ref="J1" pin="8"/>
-      <node ref="U3" pin="5"/>
-      <node ref="RV1" pin="3"/>
-      <node ref="U1" pin="31"/>
-      <node ref="U1" pin="2"/>
-      <node ref="U1" pin="18"/>
-      <node ref="C6" pin="2"/>
-      <node ref="U1" pin="3"/>
+    <net code="5" name="+3V3">
+      <node ref="U1" pin="37"/>
       <node ref="C8" pin="2"/>
-      <node ref="U1" pin="39"/>
-      <node ref="U1" pin="4"/>
+      <node ref="C9" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="17"/>
+      <node ref="J8" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U3" pin="1"/>
+      <node ref="J6" pin="2"/>
+      <node ref="R9" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="6" name="GNDA">
+      <node ref="J9" pin="5"/>
+      <node ref="T1" pin="4"/>
+      <node ref="TP1" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="RV2" pin="3"/>
+    </net>
+    <net code="7" name="/V_IN">
+      <node ref="J9" pin="1"/>
+      <node ref="F1" pin="2"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="T2" pin="6"/>
       <node ref="C5" pin="2"/>
-      <node ref="U3" pin="14"/>
-      <node ref="RV3" pin="3"/>
-      <node ref="L5" pin="2"/>
       <node ref="TP8" pin="1"/>
-      <node ref="D4" pin="1"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="J3" pin="S"/>
-      <node ref="D1" pin="1"/>
-      <node ref="D3" pin="2"/>
-      <node ref="U1" pin="48"/>
-      <node ref="J6" pin="1"/>
-      <node ref="C7" pin="2"/>
-      <node ref="U1" pin="43"/>
-      <node ref="D5" pin="1"/>
-      <node ref="J7" pin="1"/>
-      <node ref="U3" pin="20"/>
-      <node ref="J2" pin="2"/>
-      <node ref="U3" pin="26"/>
+      <node ref="RV3" pin="3"/>
+      <node ref="J9" pin="3"/>
     </net>
-    <net code="11" name="/UART_UC_TX">
-      <node ref="U1" pin="15"/>
-      <node ref="U3" pin="30"/>
+    <net code="9" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
     </net>
-    <net code="12" name="Net-(U1-Pad9)">
-      <node ref="U1" pin="9"/>
-    </net>
-    <net code="13" name="Net-(U1-Pad8)">
-      <node ref="U1" pin="8"/>
-    </net>
-    <net code="14" name="Net-(U1-Pad7)">
-      <node ref="U1" pin="7"/>
-    </net>
-    <net code="15" name="Net-(U1-Pad6)">
-      <node ref="U1" pin="6"/>
-    </net>
-    <net code="16" name="Net-(U1-Pad5)">
-      <node ref="U1" pin="5"/>
-    </net>
-    <net code="17" name="AUDIO_B">
-      <node ref="C8" pin="1"/>
+    <net code="10" name="/VOX">
       <node ref="RV3" pin="2"/>
-      <node ref="C2" pin="1"/>
-      <node ref="JP3" pin="2"/>
-      <node ref="JP1" pin="1"/>
+      <node ref="T2" pin="4"/>
+      <node ref="J12" pin="1"/>
     </net>
-    <net code="18" name="/UC_PTT_LED">
+    <net code="11" name="/UC_PTT_LED">
       <node ref="J3" pin="R"/>
       <node ref="U3" pin="15"/>
       <node ref="J2" pin="3"/>
     </net>
-    <net code="19" name="Net-(U1-Pad21)">
+    <net code="12" name="Net-(U1-Pad21)">
       <node ref="U1" pin="21"/>
     </net>
-    <net code="20" name="Net-(U1-Pad20)">
-      <node ref="U1" pin="20"/>
+    <net code="13" name="Net-(R8-Pad2)">
+      <node ref="U2" pin="1"/>
+      <node ref="R8" pin="2"/>
     </net>
-    <net code="21" name="+3V3">
+    <net code="14" name="Net-(J5-Pad2)">
+      <node ref="U2" pin="2"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="15" name="/PTT_GND">
+      <node ref="U2" pin="3"/>
+      <node ref="J9" pin="8"/>
+    </net>
+    <net code="16" name="/UC_PTT_OUT">
+      <node ref="J5" pin="3"/>
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="17" name="/PTT_BUTTON">
       <node ref="R1" pin="1"/>
-      <node ref="R2" pin="1"/>
-      <node ref="R3" pin="1"/>
-      <node ref="U1" pin="17"/>
-      <node ref="J6" pin="2"/>
-      <node ref="U3" pin="1"/>
-      <node ref="U1" pin="37"/>
-      <node ref="R7" pin="1"/>
-      <node ref="R6" pin="1"/>
-    </net>
-    <net code="22" name="/PTT_BUTTON">
-      <node ref="JP4" pin="1"/>
+      <node ref="U3" pin="7"/>
       <node ref="J3" pin="T"/>
       <node ref="J5" pin="1"/>
-      <node ref="U3" pin="7"/>
       <node ref="J2" pin="1"/>
     </net>
-    <net code="23" name="Net-(JP4-Pad2)">
-      <node ref="JP4" pin="2"/>
-      <node ref="R1" pin="2"/>
+    <net code="18" name="/8">
+      <node ref="J1" pin="8"/>
+      <node ref="J10" pin="8"/>
     </net>
-    <net code="24" name="/AUDIO_OUT">
-      <node ref="TP6" pin="1"/>
+    <net code="19" name="/7">
+      <node ref="J10" pin="7"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="20" name="/6">
+      <node ref="J10" pin="6"/>
       <node ref="J1" pin="6"/>
-      <node ref="L2" pin="2"/>
-      <node ref="C6" pin="1"/>
     </net>
-    <net code="25" name="/WT32_ONOFF_FROM_UC">
+    <net code="21" name="/5">
+      <node ref="J1" pin="5"/>
+      <node ref="J10" pin="5"/>
+    </net>
+    <net code="22" name="/4">
+      <node ref="J1" pin="4"/>
+      <node ref="J10" pin="4"/>
+    </net>
+    <net code="23" name="/3">
+      <node ref="J1" pin="3"/>
+      <node ref="J10" pin="3"/>
+    </net>
+    <net code="24" name="/2">
+      <node ref="J10" pin="2"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="25" name="/1">
+      <node ref="J10" pin="1"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="26" name="/WT32_ONOFF_FROM_UC">
       <node ref="U3" pin="32"/>
       <node ref="U1" pin="1"/>
     </net>
-    <net code="26" name="/MIC_BIAS">
-      <node ref="U1" pin="40"/>
-      <node ref="C4" pin="2"/>
+    <net code="27" name="/UART_UC_TX">
+      <node ref="U1" pin="15"/>
+      <node ref="U3" pin="30"/>
     </net>
-    <net code="27" name="Net-(U1-Pad38)">
-      <node ref="U1" pin="38"/>
+    <net code="28" name="/UART_UC_RX">
+      <node ref="U3" pin="31"/>
+      <node ref="U1" pin="16"/>
     </net>
-    <net code="28" name="Net-(U1-Pad26)">
-      <node ref="U1" pin="26"/>
+    <net code="29" name="/A_OUT_LN">
+      <node ref="T1" pin="3"/>
+      <node ref="U1" pin="49"/>
+      <node ref="TP2" pin="1"/>
     </net>
-    <net code="29" name="/AUDIO_IN_A">
-      <node ref="TP7" pin="1"/>
-      <node ref="J1" pin="4"/>
-      <node ref="L3" pin="2"/>
+    <net code="30" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
     </net>
-    <net code="30" name="/AUDIO_IN_B">
-      <node ref="TP1" pin="1"/>
-      <node ref="L1" pin="1"/>
-      <node ref="J1" pin="2"/>
+    <net code="31" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
     </net>
-    <net code="31" name="Net-(U1-Pad27)">
-      <node ref="U1" pin="27"/>
+    <net code="32" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
     </net>
-    <net code="32" name="Net-(U1-Pad28)">
-      <node ref="U1" pin="28"/>
+    <net code="33" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
     </net>
-    <net code="33" name="Net-(U1-Pad29)">
-      <node ref="U1" pin="29"/>
-    </net>
-    <net code="34" name="Net-(U1-Pad30)">
-      <node ref="U1" pin="30"/>
+    <net code="34" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
     </net>
     <net code="35" name="Net-(U1-Pad11)">
       <node ref="U1" pin="11"/>
     </net>
-    <net code="36" name="/MIC_LP">
-      <node ref="U1" pin="44"/>
-      <node ref="C2" pin="2"/>
-      <node ref="TP4" pin="1"/>
+    <net code="36" name="Net-(U1-Pad38)">
+      <node ref="U1" pin="38"/>
     </net>
-    <net code="37" name="/MIC_LN">
-      <node ref="U1" pin="45"/>
-      <node ref="TP5" pin="1"/>
-      <node ref="C3" pin="2"/>
-    </net>
-    <net code="38" name="/SPK_LN">
-      <node ref="U1" pin="49"/>
-      <node ref="TP2" pin="1"/>
-      <node ref="C1" pin="2"/>
-    </net>
-    <net code="39" name="Net-(U1-Pad12)">
-      <node ref="U1" pin="12"/>
-    </net>
-    <net code="40" name="Net-(U1-Pad10)">
-      <node ref="U1" pin="10"/>
-    </net>
-    <net code="41" name="Net-(U1-Pad13)">
-      <node ref="U1" pin="13"/>
-    </net>
-    <net code="42" name="Net-(U1-Pad14)">
-      <node ref="U1" pin="14"/>
-    </net>
-    <net code="43" name="Net-(U1-Pad36)">
-      <node ref="U1" pin="36"/>
-    </net>
-    <net code="44" name="Net-(U1-Pad19)">
-      <node ref="U1" pin="19"/>
-    </net>
-    <net code="45" name="Net-(U1-Pad22)">
-      <node ref="U1" pin="22"/>
-    </net>
-    <net code="46" name="Net-(U1-Pad23)">
-      <node ref="U1" pin="23"/>
-    </net>
-    <net code="47" name="Net-(U1-Pad24)">
-      <node ref="U1" pin="24"/>
-    </net>
-    <net code="48" name="Net-(U1-Pad25)">
-      <node ref="U1" pin="25"/>
-    </net>
-    <net code="49" name="Net-(U1-Pad32)">
+    <net code="37" name="Net-(U1-Pad32)">
       <node ref="U1" pin="32"/>
     </net>
-    <net code="50" name="Net-(U1-Pad33)">
+    <net code="38" name="Net-(U1-Pad33)">
       <node ref="U1" pin="33"/>
     </net>
-    <net code="51" name="Net-(U1-Pad34)">
+    <net code="39" name="Net-(U1-Pad34)">
       <node ref="U1" pin="34"/>
     </net>
-    <net code="52" name="Net-(U1-Pad35)">
+    <net code="40" name="Net-(U1-Pad35)">
       <node ref="U1" pin="35"/>
     </net>
-    <net code="53" name="/UART_UC_RX">
-      <node ref="U1" pin="16"/>
-      <node ref="U3" pin="31"/>
+    <net code="41" name="/A_IN_LP">
+      <node ref="TP5" pin="1"/>
+      <node ref="T2" pin="3"/>
+      <node ref="U1" pin="44"/>
     </net>
-    <net code="54" name="/V_IN">
-      <node ref="J1" pin="7"/>
-      <node ref="F1" pin="2"/>
+    <net code="42" name="/A_IN_LN">
+      <node ref="T2" pin="1"/>
+      <node ref="U1" pin="45"/>
+      <node ref="TP4" pin="1"/>
     </net>
-    <net code="55" name="Net-(C1-Pad1)">
+    <net code="43" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="44" name="Net-(U1-Pad27)">
+      <node ref="U1" pin="27"/>
+    </net>
+    <net code="45" name="Net-(U1-Pad28)">
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="46" name="Net-(U1-Pad29)">
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="47" name="Net-(U1-Pad30)">
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="48" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="49" name="GNDPWR">
+      <node ref="TP9" pin="1"/>
+      <node ref="U3" pin="14"/>
+      <node ref="J9" pin="2"/>
+      <node ref="U3" pin="26"/>
+      <node ref="U3" pin="20"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="48"/>
+      <node ref="U1" pin="43"/>
+      <node ref="C7" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U1" pin="39"/>
+      <node ref="J6" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="31"/>
+      <node ref="C9" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="J3" pin="S"/>
+      <node ref="D1" pin="1"/>
+      <node ref="U1" pin="18"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="50" name="Net-(U1-Pad22)">
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="51" name="Net-(U1-Pad26)">
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="52" name="Net-(U1-Pad25)">
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="53" name="Net-(U1-Pad24)">
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="54" name="Net-(U1-Pad23)">
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="55" name="Net-(U1-Pad36)">
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="56" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="57" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="58" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="59" name="/A_OUT_LP">
+      <node ref="U1" pin="50"/>
+      <node ref="T1" pin="1"/>
+      <node ref="TP3" pin="1"/>
+    </net>
+    <net code="60" name="Net-(U1-Pad41)">
+      <node ref="U1" pin="41"/>
+    </net>
+    <net code="61" name="Net-(U1-Pad42)">
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="62" name="Net-(U1-Pad46)">
+      <node ref="U1" pin="46"/>
+    </net>
+    <net code="63" name="Net-(U1-Pad47)">
+      <node ref="U1" pin="47"/>
+    </net>
+    <net code="64" name="Net-(JP1-Pad2)">
+      <node ref="JP1" pin="2"/>
+      <node ref="T1" pin="6"/>
       <node ref="RV2" pin="1"/>
-      <node ref="JP2" pin="2"/>
-      <node ref="C1" pin="1"/>
     </net>
-    <net code="56" name="Net-(JP2-Pad1)">
-      <node ref="JP2" pin="1"/>
-      <node ref="L2" pin="1"/>
+    <net code="65" name="Net-(C6-Pad1)">
       <node ref="RV2" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="L2" pin="1"/>
+      <node ref="JP1" pin="1"/>
     </net>
-    <net code="57" name="Net-(C3-Pad1)">
-      <node ref="L5" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C5" pin="1"/>
+    <net code="66" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2"/>
+      <node ref="L2" pin="2"/>
     </net>
-    <net code="58" name="Net-(L3-Pad1)">
+    <net code="67" name="Net-(C5-Pad1)">
       <node ref="RV3" pin="1"/>
       <node ref="L3" pin="1"/>
-    </net>
-    <net code="59" name="Net-(L1-Pad2)">
-      <node ref="RV1" pin="1"/>
-      <node ref="L1" pin="2"/>
-    </net>
-    <net code="60" name="Net-(JP1-Pad2)">
-      <node ref="JP1" pin="2"/>
-      <node ref="RV1" pin="2"/>
-    </net>
-    <net code="61" name="Net-(U3-Pad13)">
-      <node ref="U3" pin="13"/>
-    </net>
-    <net code="62" name="/Microcontroller/VOX">
-      <node ref="JP3" pin="1"/>
-      <node ref="U3" pin="6"/>
-    </net>
-    <net code="63" name="Net-(U3-Pad4)">
-      <node ref="U3" pin="4"/>
-    </net>
-    <net code="64" name="Net-(U3-Pad3)">
-      <node ref="U3" pin="3"/>
-    </net>
-    <net code="65" name="Net-(U3-Pad2)">
-      <node ref="U3" pin="2"/>
-    </net>
-    <net code="66" name="Net-(U3-Pad16)">
-      <node ref="U3" pin="16"/>
-    </net>
-    <net code="67" name="Net-(U3-Pad17)">
-      <node ref="U3" pin="17"/>
+      <node ref="C5" pin="1"/>
     </net>
     <net code="68" name="Net-(U3-Pad18)">
       <node ref="U3" pin="18"/>
     </net>
-    <net code="69" name="Net-(U3-Pad38)">
-      <node ref="U3" pin="38"/>
+    <net code="69" name="Net-(U3-Pad17)">
+      <node ref="U3" pin="17"/>
     </net>
-    <net code="70" name="Net-(U3-Pad37)">
-      <node ref="U3" pin="37"/>
+    <net code="70" name="Net-(U3-Pad16)">
+      <node ref="U3" pin="16"/>
     </net>
-    <net code="71" name="Net-(U3-Pad36)">
-      <node ref="U3" pin="36"/>
+    <net code="71" name="Net-(U3-Pad13)">
+      <node ref="U3" pin="13"/>
     </net>
-    <net code="72" name="Net-(U3-Pad35)">
-      <node ref="U3" pin="35"/>
-    </net>
-    <net code="73" name="Net-(U3-Pad34)">
-      <node ref="U3" pin="34"/>
-    </net>
-    <net code="74" name="Net-(U3-Pad33)">
-      <node ref="U3" pin="33"/>
-    </net>
-    <net code="75" name="/Microcontroller/BTN0">
-      <node ref="J7" pin="2"/>
-      <node ref="U3" pin="28"/>
-      <node ref="R2" pin="2"/>
-      <node ref="SW1" pin="2"/>
-    </net>
-    <net code="76" name="Net-(U3-Pad27)">
-      <node ref="U3" pin="27"/>
-    </net>
-    <net code="77" name="Net-(U3-Pad21)">
-      <node ref="U3" pin="21"/>
-    </net>
-    <net code="78" name="Net-(U3-Pad29)">
-      <node ref="U3" pin="29"/>
-    </net>
-    <net code="79" name="Net-(D4-Pad2)">
-      <node ref="D4" pin="2"/>
-      <node ref="R4" pin="2"/>
-    </net>
-    <net code="80" name="Net-(D5-Pad2)">
-      <node ref="D5" pin="2"/>
-      <node ref="R5" pin="2"/>
-    </net>
-    <net code="81" name="Net-(U3-Pad24)">
-      <node ref="U3" pin="24"/>
-    </net>
-    <net code="82" name="Net-(U3-Pad23)">
-      <node ref="U3" pin="23"/>
-    </net>
-    <net code="83" name="Net-(D2-Pad2)">
-      <node ref="D2" pin="2"/>
-      <node ref="F1" pin="1"/>
-    </net>
-    <net code="84" name="+5V">
-      <node ref="D3" pin="1"/>
-      <node ref="U3" pin="19"/>
-      <node ref="C7" pin="1"/>
-      <node ref="L4" pin="1"/>
-    </net>
-    <net code="85" name="Net-(D2-Pad1)">
-      <node ref="L4" pin="2"/>
-      <node ref="D2" pin="1"/>
-    </net>
-    <net code="86" name="Net-(D1-Pad2)">
-      <node ref="D1" pin="2"/>
-      <node ref="R3" pin="2"/>
-    </net>
-    <net code="87" name="/Microcontroller/LED0">
+    <net code="72" name="/Microcontroller/LED0">
       <node ref="R4" pin="1"/>
       <node ref="U3" pin="9"/>
     </net>
-    <net code="88" name="/Microcontroller/LED1">
-      <node ref="R5" pin="1"/>
-      <node ref="U3" pin="10"/>
+    <net code="73" name="Net-(U3-Pad4)">
+      <node ref="U3" pin="4"/>
     </net>
-    <net code="89" name="/Microcontroller/SCL">
-      <node ref="J6" pin="3"/>
-      <node ref="R7" pin="2"/>
-      <node ref="U3" pin="22"/>
+    <net code="74" name="Net-(U3-Pad38)">
+      <node ref="U3" pin="38"/>
+    </net>
+    <net code="75" name="Net-(U3-Pad37)">
+      <node ref="U3" pin="37"/>
+    </net>
+    <net code="76" name="Net-(U3-Pad36)">
+      <node ref="U3" pin="36"/>
+    </net>
+    <net code="77" name="Net-(U3-Pad35)">
+      <node ref="U3" pin="35"/>
+    </net>
+    <net code="78" name="Net-(U3-Pad34)">
+      <node ref="U3" pin="34"/>
+    </net>
+    <net code="79" name="Net-(U3-Pad33)">
+      <node ref="U3" pin="33"/>
+    </net>
+    <net code="80" name="Net-(U3-Pad29)">
+      <node ref="U3" pin="29"/>
+    </net>
+    <net code="81" name="Net-(U3-Pad27)">
+      <node ref="U3" pin="27"/>
+    </net>
+    <net code="82" name="Net-(U3-Pad3)">
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="83" name="/Microcontroller/CAT_RX">
+      <node ref="U3" pin="12"/>
+      <node ref="J8" pin="3"/>
+    </net>
+    <net code="84" name="/Microcontroller/CAT_TX">
+      <node ref="J8" pin="4"/>
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="85" name="/Microcontroller/VOX">
+      <node ref="U3" pin="6"/>
+      <node ref="J11" pin="1"/>
+    </net>
+    <net code="86" name="/Microcontroller/BTN0">
+      <node ref="U3" pin="28"/>
+      <node ref="J7" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="87" name="Net-(U3-Pad2)">
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="88" name="/Microcontroller/LED1">
+      <node ref="U3" pin="10"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="89" name="Net-(U3-Pad23)">
+      <node ref="U3" pin="23"/>
     </net>
     <net code="90" name="/Microcontroller/SDA">
-      <node ref="R6" pin="2"/>
       <node ref="U3" pin="25"/>
+      <node ref="R6" pin="2"/>
       <node ref="J6" pin="4"/>
+    </net>
+    <net code="91" name="Net-(U3-Pad24)">
+      <node ref="U3" pin="24"/>
+    </net>
+    <net code="92" name="/Microcontroller/HW_VER">
+      <node ref="U3" pin="5"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="93" name="/Microcontroller/SCL">
+      <node ref="U3" pin="22"/>
+      <node ref="J6" pin="3"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="94" name="Net-(U3-Pad21)">
+      <node ref="U3" pin="21"/>
+    </net>
+    <net code="95" name="+5V">
+      <node ref="U3" pin="19"/>
+      <node ref="C7" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="L4" pin="1"/>
+    </net>
+    <net code="96" name="Net-(D1-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="97" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="98" name="Net-(D5-Pad2)">
+      <node ref="D5" pin="2"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="99" name="Net-(D2-Pad1)">
+      <node ref="L4" pin="2"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="100" name="Net-(D2-Pad2)">
+      <node ref="F1" pin="1"/>
+      <node ref="D2" pin="2"/>
     </net>
   </nets>
 </export>

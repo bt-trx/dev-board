@@ -231,6 +231,7 @@ F 1 "I2C" H 2420 4616 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2500 4950 50  0001 C CNN
 F 3 "~" H 2500 4950 50  0001 C CNN
 F 4 "855-M20-9770446" H -400 -100 50  0001 C CNN "Mouser Best.Nr."
+F 5 "DNA" H 2500 4950 50  0001 C CNN "DNA"
 	1    2500 4950
 	-1   0    0    1   
 $EndComp
@@ -395,10 +396,11 @@ L Connector_Generic:Conn_01x02 J7
 U 1 1 5D923484
 P 1650 2950
 F 0 "J7" H 1600 2600 50  0000 C CNN
-F 1 "Conn_01x02" H 1800 2700 50  0000 C CNN
+F 1 "SW1_CON" H 1700 2700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1650 2950 50  0001 C CNN
 F 3 "~" H 1650 2950 50  0001 C CNN
-F 4 " 855-M20-9990246" H 1650 2950 50  0001 C CNN "Mouser Best.Nr."
+F 4 "855-M20-9990246" H 1650 2950 50  0001 C CNN "Mouser Best.Nr."
+F 5 "DNA" H 1650 2950 50  0001 C CNN "DNA"
 	1    1650 2950
 	1    0    0    1   
 $EndComp
@@ -482,6 +484,7 @@ F 1 "I2C" H 3970 4616 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4050 4950 50  0001 C CNN
 F 3 "~" H 4050 4950 50  0001 C CNN
 F 4 "855-M20-9770446" H 1150 -100 50  0001 C CNN "Mouser Best.Nr."
+F 5 "DNA" H 4050 4950 50  0001 C CNN "DNA"
 	1    4050 4950
 	-1   0    0    1   
 $EndComp
@@ -876,7 +879,7 @@ F 0 "R9" V 3000 5900 50  0000 L CNN
 F 1 "10k" V 3100 5900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 6000 50  0001 C CNN
 F 3 "~" H 2900 6000 50  0001 C CNN
-F 4 "603-RC0805JR-072K2L " H -5850 2500 50  0001 C CNN "Mouser Best.Nr."
+F 4 " 603-RC0805FR-0710KL" H -5850 2500 50  0001 C CNN "Mouser Best.Nr."
 	1    2900 6000
 	0    1    1    0   
 $EndComp
@@ -892,6 +895,8 @@ F 0 "J11" H 1650 6000 50  0000 L CNN
 F 1 "VOX_IN" H 1630 5901 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1550 5950 50  0001 C CNN
 F 3 "~" H 1550 5950 50  0001 C CNN
+F 4 "DNA" H 1550 5950 50  0001 C CNN "DNA"
+F 5 "-" H 1550 5950 50  0001 C CNN "Mouser Best.Nr."
 	1    1550 5950
 	1    0    0    -1  
 $EndComp
@@ -903,6 +908,8 @@ F 0 "J12" H 1700 6150 50  0000 C CNN
 F 1 "VOX_TRX" H 1800 6250 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1550 6200 50  0001 C CNN
 F 3 "~" H 1550 6200 50  0001 C CNN
+F 4 "DNA" H 1550 6200 50  0001 C CNN "DNA"
+F 5 "-" H 1550 6200 50  0001 C CNN "Mouser Best.Nr."
 	1    1550 6200
 	1    0    0    1   
 $EndComp

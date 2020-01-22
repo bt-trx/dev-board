@@ -340,6 +340,7 @@ F 1 "PTT_CON" H 7350 5600 50  0000 R CNN
 F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 7250 5850 50  0001 C CNN
 F 3 "~" H 7250 5850 50  0001 C CNN
 F 4 "490-SJ1-3533NG" H 7250 5850 50  0001 C CNN "Mouser Best.Nr."
+F 5 "DNA" H 7250 5850 50  0001 C CNN "DNA"
 	1    7250 5850
 	1    0    0    1   
 $EndComp
@@ -368,6 +369,7 @@ F 1 "PTT_BUTTON" H 7200 5350 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7100 5100 50  0001 C CNN
 F 3 "~" H 7100 5100 50  0001 C CNN
 F 4 "855-M20-9990346" H 200 -700 50  0001 C CNN "Mouser Best.Nr."
+F 5 "DNA" H 7100 5100 50  0001 C CNN "DNA"
 	1    7100 5100
 	-1   0    0    -1  
 $EndComp
@@ -381,6 +383,7 @@ F 0 "U2" H 9500 5900 50  0000 C CNN
 F 1 "LTV-816S" H 9500 5450 50  0000 C CNN
 F 2 "liteon:LTV-816S" H 9300 5450 50  0001 L CIN
 F 3 "https://www.mouser.de/datasheet/2/239/LTV-8x6-1175385.pdf" H 9500 5650 50  0001 L CNN
+F 4 " 859-LTV-816S " H 9500 5650 50  0001 C CNN "Mouser Best.Nr."
 	1    9500 5650
 	1    0    0    -1  
 $EndComp
@@ -629,9 +632,10 @@ L Connector_Generic:Conn_01x08 J9
 U 1 1 5E59CAEC
 P 2400 5350
 F 0 "J9" H 2350 4850 50  0000 L CNN
-F 1 "Conn_01x08" H 2200 4750 50  0000 L CNN
+F 1 "JMP_CON" H 2200 4750 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2400 5350 50  0001 C CNN
 F 3 "~" H 2400 5350 50  0001 C CNN
+F 4 " 855-M20-7820842 " H 2400 5350 50  0001 C CNN "Mouser Best.Nr."
 	1    2400 5350
 	1    0    0    -1  
 $EndComp
@@ -640,9 +644,10 @@ L Connector_Generic:Conn_01x08 J10
 U 1 1 5E59D538
 P 2850 5350
 F 0 "J10" H 2850 4850 50  0000 C CNN
-F 1 "Conn_01x08" H 2800 4750 50  0000 C CNN
+F 1 "JMP_CON_TRX" H 2800 4750 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2850 5350 50  0001 C CNN
 F 3 "~" H 2850 5350 50  0001 C CNN
+F 4 " 855-M20-7820842 " H 2850 5350 50  0001 C CNN "Mouser Best.Nr."
 	1    2850 5350
 	-1   0    0    -1  
 $EndComp

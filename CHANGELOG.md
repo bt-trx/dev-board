@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 nothing yet
 
+## [v5.0] - 2020-01-25
+### Added
+- Transformers in audio path
+- Optocoupler for PTT
+- Pinheader for pin-assignment daughterboard
+- J8 for CAT interface
+- Capacitors for U1
+- Pinheader for VOX (J11, J12)
+- VIAs on all testpoints for better alignment
+
+### Changed
+- Separate GND plane for audio
+- Put HW indicator pin to 3.3V
+- Better mounting hole alignment
+- Reorderd RJ-45 pin assignment
+
+### Removed
+- Audio B
+
 ## [v4.1] - 2019-10-06
 ### Added
 - LED Output on Audio Jack and PTT_BUTTON Pinheader
@@ -78,7 +97,8 @@ Initial public release
 - BC127 and WT32i footprints
 - Audio cirquit bypass
 
-[Unreleased]: https://github.com/bt-trx/dev-board/compare/v4...HEAD
+[Unreleased]: https://github.com/bt-trx/dev-board/compare/v5.0...HEAD
+[v5.0]: https://github.com/bt-trx/dev-board/compare/v4.1...v5.0
 [v4.1]: https://github.com/bt-trx/dev-board/compare/v4...v4.1
 [v4]: https://github.com/bt-trx/dev-board/compare/v3...v4
 [v3]: https://github.com/bt-trx/dev-board/tree/v3

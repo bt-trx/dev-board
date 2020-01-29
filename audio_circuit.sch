@@ -359,7 +359,7 @@ F 0 "RV2" V 3300 1900 50  0000 C CNN
 F 1 "5k" V 3200 1900 50  0000 C CNN
 F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 3400 1900 50  0001 C CNN
 F 3 "~" H 3400 1900 50  0001 C CNN
-F 4 " 72-TS53YL-5K" H 550 -4100 50  0001 C CNN "Mouser Best.Nr."
+F 4 "72-TS53YL-5K" H 550 -4100 50  0001 C CNN "Mouser Best.Nr."
 F 5 "DNA" H 3400 1900 50  0001 C CNN "DNA"
 	1    3400 1900
 	1    0    0    -1  
@@ -372,7 +372,7 @@ F 0 "RV3" V 3550 4000 50  0000 C CNN
 F 1 "5k" V 3450 4000 50  0000 C CNN
 F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 3650 4000 50  0001 C CNN
 F 3 "~" H 3650 4000 50  0001 C CNN
-F 4 " 72-TS53YL-5K" H 800 -2000 50  0001 C CNN "Mouser Best.Nr."
+F 4 "72-TS53YL-5K" H 800 -2000 50  0001 C CNN "Mouser Best.Nr."
 	1    3650 4000
 	-1   0    0    -1  
 $EndComp

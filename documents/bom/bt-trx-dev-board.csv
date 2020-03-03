@@ -1,5 +1,5 @@
 Component,Part,References,Value,Footprint,Quantity Per PCB,Reichelt Best.Nr.,Mouser Best.Nr.,DNA
-1,C,C8 C9,100nF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,80-C0805C105K3RAUTO,
+1,C,C8 C9,100nF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,710-885012207098,
 2,C,C5 C6,15pF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,710-885012007011,
 3,C,C3 C4,1uF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,80-C0805C105K3RAUTO,
 4,CP,C7,220uF 25V,CP_Elec_10x10.5,1,,667-EEE-HA1H221P,
@@ -25,7 +25,7 @@ Component,Part,References,Value,Footprint,Quantity Per PCB,Reichelt Best.Nr.,Mou
 24,Housing,N1,Housing,OSHW-Logo2_7.3x6mm_SilkScreen,1,,546-1553CBKBAT,
 25,R,R1 R2 R9,10k,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,3,,603-RC0805FR-0710KL,
 26,R,R3,2.2k,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,,603-RC0805JR-072K2L,
-27,R,R8,220R,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,,603-RC0805FR-0710KL,
+27,R,R8,220R,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,,603-RC0805FR-10220RL,
 28,R,R6 R7,4.7k,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,603-RC0805JR-074K7L,
 29,R,R4 R5,820R,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,,603-RC0805JR-07820RL,
 30,R_POT_TRIM,RV2 RV3,5k,Potentiometer_Vishay_TS53YL_Vertical,2,,72-TS53YL-5K,DNA
@@ -46,6 +46,6 @@ Number of PCBs:,1
 Total components:,46
 Schematic Version:,v5.0
 Schematic Date:,2020-01-16
-BoM Date:,Wed 22 Jan 2020 09:05:12 PM CET
+BoM Date:,Tue 03 Mar 2020 09:21:07 PM CET
 Schematic Source:,/home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch
 KiCad Version:,Eeschema 5.1.5+dfsg1-2

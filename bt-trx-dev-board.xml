@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch</source>
-    <date>Wed 22 Jan 2020 09:05:12 PM CET</date>
+    <date>Tue 03 Mar 2020 09:21:09 PM CET</date>
     <tool>Eeschema 5.1.5+dfsg1-2</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -96,7 +96,7 @@
       <footprint>Symbol:OSHW-Logo2_7.3x6mm_SilkScreen</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 546-1553CBKBAT </field>
+        <field name="Mouser Best.Nr.">546-1553CBKBAT </field>
       </fields>
       <libsource lib="Mechanical" part="Housing" description="Housing"/>
       <sheetpath names="/" tstamps="/"/>
@@ -107,7 +107,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 603-RC0805FR-0710KL</field>
+        <field name="Mouser Best.Nr.">603-RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -164,7 +164,7 @@
       <footprint>liteon:LTV-816S</footprint>
       <datasheet>https://www.mouser.de/datasheet/2/239/LTV-8x6-1175385.pdf</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 859-LTV-816S </field>
+        <field name="Mouser Best.Nr.">859-LTV-816S </field>
       </fields>
       <libsource lib="Isolator" part="SFH617A-1" description="Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, UL, BSI, FIMKO, cUL, THT PDIP-4"/>
       <sheetpath names="/" tstamps="/"/>
@@ -175,7 +175,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 603-RC0805FR-0710KL</field>
+        <field name="Mouser Best.Nr.">603-RC0805FR-10220RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -197,7 +197,7 @@
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 855-M20-7820842 </field>
+        <field name="Mouser Best.Nr.">855-M20-7820842 </field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -208,7 +208,7 @@
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 855-M20-7820842 </field>
+        <field name="Mouser Best.Nr.">855-M20-7820842 </field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -230,7 +230,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
+        <field name="Mouser Best.Nr.">710-885012207098</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -241,7 +241,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
+        <field name="Mouser Best.Nr.">710-885012207098</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -418,7 +418,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="DNA">DNA</field>
-        <field name="Mouser Best.Nr."> 72-TS53YL-5K</field>
+        <field name="Mouser Best.Nr.">72-TS53YL-5K</field>
       </fields>
       <libsource lib="Device" part="R_POT_TRIM" description="Trim-potentiometer"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -429,7 +429,7 @@
       <footprint>Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 72-TS53YL-5K</field>
+        <field name="Mouser Best.Nr.">72-TS53YL-5K</field>
       </fields>
       <libsource lib="Device" part="R_POT_TRIM" description="Trim-potentiometer"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -450,7 +450,7 @@
       <value>SW_Push</value>
       <footprint>Button_Switch_THT:SW_Tactile_SKHH_Angled</footprint>
       <fields>
-        <field name="Mouser Best.Nr."> 611-PTS645VK832</field>
+        <field name="Mouser Best.Nr.">611-PTS645VK832</field>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -628,7 +628,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 603-RC0805FR-0710KL</field>
+        <field name="Mouser Best.Nr.">603-RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -651,7 +651,7 @@
       <footprint>nodemcu_esp-32s:ESP32-DEVKITC-32D</footprint>
       <datasheet>None</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 356-ESP32-DEVKITC32D </field>
+        <field name="Mouser Best.Nr.">356-ESP32-DEVKITC32D </field>
       </fields>
       <libsource lib="ESP32-DEVKITC-32D" part="ESP32-DEVKITC-32D" description=""/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -673,7 +673,7 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr."> 603-RC0805FR-0710KL</field>
+        <field name="Mouser Best.Nr.">603-RC0805FR-0710KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>

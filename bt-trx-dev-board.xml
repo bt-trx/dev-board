@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/andz/workspace/git/bt-trx/dev-board/bt-trx-dev-board.sch</source>
-    <date>Tue 03 Mar 2020 09:21:09 PM CET</date>
-    <tool>Eeschema 5.1.5+dfsg1-2</tool>
+    <source>/home/chris/projects/github/bt-trx/dev-board/bt-trx-dev-board.sch</source>
+    <date>Tue 03 Mar 2020 09:31:44 PM CET</date>
+    <tool>Eeschema 5.1.4+dfsg1-2</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>BT-TRX Development Board </title>
@@ -75,6 +75,7 @@
         <field name="Manufacturer">Silicon Labs</field>
         <field name="Model">WT32i BT Audio Module</field>
         <field name="Mouser Best.Nr.">634-WT32I-A-AI61</field>
+        <field name="PartNrDigikey">336-3599-1-ND</field>
       </fields>
       <libsource lib="SILabs_WT32i" part="SILabs_WT32i" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -86,6 +87,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">649-54602-908LF </field>
+        <field name="PartNrDigikey">609-1046-ND</field>
       </fields>
       <libsource lib="Connector" part="RJ45" description="RJ connector, 8P8C (8 positions 8 connected)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -96,7 +98,8 @@
       <footprint>Symbol:OSHW-Logo2_7.3x6mm_SilkScreen</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Best.Nr.">546-1553CBKBAT </field>
+        <field name="Mouser Best.Nr.">546-1553CBK</field>
+        <field name="PartNrDigikey">HM447-ND</field>
       </fields>
       <libsource lib="Mechanical" part="Housing" description="Housing"/>
       <sheetpath names="/" tstamps="/"/>
@@ -108,6 +111,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">603-RC0805FR-0710KL</field>
+        <field name="PartNrDigikey">311-10.0KCRCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -142,6 +146,7 @@
       <fields>
         <field name="DNA">DNA</field>
         <field name="Mouser Best.Nr.">490-SJ1-3533NG</field>
+        <field name="PartNrDigikey">CP1-3533NG-ND</field>
       </fields>
       <libsource lib="Connector" part="AudioJack3" description="Audio Jack, 3 Poles (Stereo / TRS)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -154,6 +159,7 @@
       <fields>
         <field name="DNA">DNA</field>
         <field name="Mouser Best.Nr.">855-M20-9990346</field>
+        <field name="PartNrDigikey">952-2264-ND</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -165,6 +171,7 @@
       <datasheet>https://www.mouser.de/datasheet/2/239/LTV-8x6-1175385.pdf</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">859-LTV-816S </field>
+        <field name="PartNrDigikey">160-1361-5-ND</field>
       </fields>
       <libsource lib="Isolator" part="SFH617A-1" description="Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, UL, BSI, FIMKO, cUL, THT PDIP-4"/>
       <sheetpath names="/" tstamps="/"/>
@@ -187,6 +194,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
+        <field name="PartNrDigikey">399-6929-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -198,6 +206,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">855-M20-7820842 </field>
+        <field name="PartNrDigikey">952-1823-ND</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -209,6 +218,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">855-M20-7820842 </field>
+        <field name="PartNrDigikey">952-1823-ND</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -220,6 +230,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">855-M20-9990346</field>
+        <field name="PartNrDigikey">952-2264-ND</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -231,6 +242,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">710-885012207098</field>
+        <field name="PartNrDigikey">732-8080-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -242,6 +254,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">710-885012207098</field>
+        <field name="PartNrDigikey">732-8080-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -253,6 +266,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">810-MLF2012DR10MT000</field>
+        <field name="PartNrDigikey">445-8983-1-ND</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -264,6 +278,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">710-885012007011</field>
+        <field name="PartNrDigikey">732-7815-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -330,6 +345,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">810-MLF2012DR10MT000</field>
+        <field name="PartNrDigikey">445-8983-1-ND</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -341,6 +357,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">710-885012007011</field>
+        <field name="PartNrDigikey">732-7815-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -374,6 +391,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">652-SM-LP-5001</field>
+        <field name="PartNrDigikey">SM-LP-5001-ND</field>
       </fields>
       <libsource lib="Transformer" part="PA1323NL" description="SMT Gate Drive Transformer, 1:1"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -385,6 +403,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">652-SM-LP-5001</field>
+        <field name="PartNrDigikey">SM-LP-5001-ND</field>
       </fields>
       <libsource lib="Transformer" part="PA1323NL" description="SMT Gate Drive Transformer, 1:1"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -396,6 +415,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">80-C0805C105K3RAUTO</field>
+        <field name="PartNrDigikey">399-6929-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -419,6 +439,7 @@
       <fields>
         <field name="DNA">DNA</field>
         <field name="Mouser Best.Nr.">72-TS53YL-5K</field>
+        <field name="PartNrDigikey">TS53YL-5.0KCT-ND</field>
       </fields>
       <libsource lib="Device" part="R_POT_TRIM" description="Trim-potentiometer"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -430,6 +451,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">72-TS53YL-5K</field>
+        <field name="PartNrDigikey">TS53YL-5.0KCT-ND</field>
       </fields>
       <libsource lib="Device" part="R_POT_TRIM" description="Trim-potentiometer"/>
       <sheetpath names="/Audio Circuit/" tstamps="/5BE3535B/"/>
@@ -451,6 +473,7 @@
       <footprint>Button_Switch_THT:SW_Tactile_SKHH_Angled</footprint>
       <fields>
         <field name="Mouser Best.Nr.">611-PTS645VK832</field>
+        <field name="PartNrDigikey">CKN10950-ND</field>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -462,6 +485,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">603-RC0805JR-07820RL</field>
+        <field name="PartNrDigikey">311-820ARCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -473,6 +497,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">604-APA2107LVBCD</field>
+        <field name="PartNrDigikey">754-1923-1-ND</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -484,6 +509,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">603-RC0805JR-07820RL</field>
+        <field name="PartNrDigikey">311-820ARCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -495,6 +521,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">604-APA2107LZGCK</field>
+        <field name="PartNrDigikey">754-1924-1-ND</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -506,6 +533,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">530-0ZCJ0025AF2E</field>
+        <field name="PartNrDigikey">507-1799-1-ND</field>
       </fields>
       <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -517,6 +545,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">710-74438335470</field>
+        <field name="PartNrDigikey">732-4872-1-ND</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -528,6 +557,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">652-P6SMB16CA</field>
+        <field name="PartNrDigikey">P6SMB16CABBCT-ND</field>
       </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -550,6 +580,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">603-RC0805JR-072K2L </field>
+        <field name="PartNrDigikey">311-2.2KARCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -561,6 +592,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">604-APA2107LSECKJ4RV</field>
+        <field name="PartNrDigikey">754-1921-1-ND</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -573,6 +605,7 @@
       <fields>
         <field name="DNA">DNA</field>
         <field name="Mouser Best.Nr.">855-M20-9770446</field>
+        <field name="PartNrDigikey">952-1785-ND</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -584,6 +617,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">603-RC0805JR-074K7L</field>
+        <field name="PartNrDigikey">311-4.7KARCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -595,6 +629,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">603-RC0805JR-074K7L</field>
+        <field name="PartNrDigikey">311-4.7KARCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -606,6 +641,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">667-EEE-HA1H221P </field>
+        <field name="PartNrDigikey">PCE4214CT-ND</field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -618,6 +654,7 @@
       <fields>
         <field name="DNA">DNA</field>
         <field name="Mouser Best.Nr.">855-M20-9990246</field>
+        <field name="PartNrDigikey">952-2262-ND</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -629,6 +666,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">603-RC0805FR-0710KL</field>
+        <field name="PartNrDigikey">311-10.0KCRCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -641,6 +679,7 @@
       <fields>
         <field name="DNA">DNA</field>
         <field name="Mouser Best.Nr.">855-M20-9770446</field>
+        <field name="PartNrDigikey">952-1785-ND</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -652,6 +691,7 @@
       <datasheet>None</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">356-ESP32-DEVKITC32D </field>
+        <field name="PartNrDigikey">1965-1000-ND</field>
       </fields>
       <libsource lib="ESP32-DEVKITC-32D" part="ESP32-DEVKITC-32D" description=""/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -674,6 +714,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser Best.Nr.">603-RC0805FR-0710KL</field>
+        <field name="PartNrDigikey">311-10.0KCRCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/5C10B93A/"/>
@@ -1231,7 +1272,7 @@
       <uri>/usr/share/kicad/library/Device.lib</uri>
     </library>
     <library logical="ESP32-DEVKITC-32D">
-      <uri>/home/andz/workspace/git/bt-trx/dev-board/lib/nodemcu_esp-32s/ESP32-DEVKITC-32D.lib</uri>
+      <uri>/home/chris/projects/github/bt-trx/dev-board/lib/nodemcu_esp-32s/ESP32-DEVKITC-32D.lib</uri>
     </library>
     <library logical="Isolator">
       <uri>/usr/share/kicad/library/Isolator.lib</uri>
@@ -1243,7 +1284,7 @@
       <uri>/usr/share/kicad/library/Mechanical.lib</uri>
     </library>
     <library logical="SILabs_WT32i">
-      <uri>/home/andz/workspace/git/bt-trx/dev-board/lib/wt32i/SILabs_WT32i.lib</uri>
+      <uri>/home/chris/projects/github/bt-trx/dev-board/lib/wt32i/SILabs_WT32i.lib</uri>
     </library>
     <library logical="Switch">
       <uri>/usr/share/kicad/library/Switch.lib</uri>

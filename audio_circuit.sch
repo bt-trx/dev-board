@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:bt-trx-dev-board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -41,6 +42,7 @@ F 1 "100nH" V 4499 3750 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 3750 50  0001 C CNN
 F 3 "~" H 4400 3750 50  0001 C CNN
 F 4 "810-MLF2012DR10MT000" H 1100 -2250 50  0001 C CNN "Mouser Best.Nr."
+F 5 "445-8983-1-ND" H 4400 3750 50  0001 C CNN "PartNrDigikey"
 	1    4400 3750
 	0    -1   -1   0   
 $EndComp
@@ -57,6 +59,7 @@ F 1 "15pF" H 4165 4105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 4000 50  0001 C CNN
 F 3 "~" H 4050 4150 50  0001 C CNN
 F 4 "710-885012007011" H 1200 -2250 50  0001 C CNN "Mouser Best.Nr."
+F 5 "732-7815-1-ND" H 4050 4150 50  0001 C CNN "PartNrDigikey"
 	1    4050 4150
 	1    0    0    -1  
 $EndComp
@@ -144,6 +147,7 @@ F 1 "100nH" V 4299 1900 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 1900 50  0001 C CNN
 F 3 "~" H 4200 1900 50  0001 C CNN
 F 4 "810-MLF2012DR10MT000" H 900 -4100 50  0001 C CNN "Mouser Best.Nr."
+F 5 "445-8983-1-ND" H 4200 1900 50  0001 C CNN "PartNrDigikey"
 	1    4200 1900
 	0    -1   -1   0   
 $EndComp
@@ -156,6 +160,7 @@ F 1 "15pF" H 4015 2055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3938 1950 50  0001 C CNN
 F 3 "~" H 3900 2100 50  0001 C CNN
 F 4 "710-885012007011" H 1050 -4300 50  0001 C CNN "Mouser Best.Nr."
+F 5 "732-7815-1-ND" H 3900 2100 50  0001 C CNN "PartNrDigikey"
 	1    3900 2100
 	1    0    0    -1  
 $EndComp
@@ -202,6 +207,7 @@ F 1 "SM-LP-5001" H 2650 2390 50  0000 C CNN
 F 2 "bourns:SM-LP-5001" H 2650 2100 50  0001 C CNN
 F 3 "~" H 2650 2100 50  0001 C CNN
 F 4 "652-SM-LP-5001" H 2650 2100 50  0001 C CNN "Mouser Best.Nr."
+F 5 "SM-LP-5001-ND" H 2650 2100 50  0001 C CNN "PartNrDigikey"
 	1    2650 2100
 	1    0    0    -1  
 $EndComp
@@ -216,6 +222,7 @@ F 1 "SM-LP-5001" H 2800 4490 50  0000 C CNN
 F 2 "bourns:SM-LP-5001" H 2800 4200 50  0001 C CNN
 F 3 "~" H 2800 4200 50  0001 C CNN
 F 4 "652-SM-LP-5001" H 2800 4200 50  0001 C CNN "Mouser Best.Nr."
+F 5 "SM-LP-5001-ND" H 2800 4200 50  0001 C CNN "PartNrDigikey"
 	1    2800 4200
 	1    0    0    1   
 $EndComp
@@ -291,6 +298,7 @@ F 1 "1uF" V 4489 1900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4688 1750 50  0001 C CNN
 F 3 "~" H 4650 1900 50  0001 C CNN
 F 4 "80-C0805C105K3RAUTO" H 2750 -4100 50  0001 C CNN "Mouser Best.Nr."
+F 5 "399-6929-1-ND" H 4650 1900 50  0001 C CNN "PartNrDigikey"
 	1    4650 1900
 	0    1    1    0   
 $EndComp
@@ -361,6 +369,7 @@ F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 3400 1900 50  000
 F 3 "~" H 3400 1900 50  0001 C CNN
 F 4 "72-TS53YL-5K" H 550 -4100 50  0001 C CNN "Mouser Best.Nr."
 F 5 "DNA" H 3400 1900 50  0001 C CNN "DNA"
+F 6 "TS53YL-5.0KCT-ND" H 3400 1900 50  0001 C CNN "PartNrDigikey"
 	1    3400 1900
 	1    0    0    -1  
 $EndComp
@@ -373,6 +382,7 @@ F 1 "5k" V 3450 4000 50  0000 C CNN
 F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 3650 4000 50  0001 C CNN
 F 3 "~" H 3650 4000 50  0001 C CNN
 F 4 "72-TS53YL-5K" H 800 -2000 50  0001 C CNN "Mouser Best.Nr."
+F 5 "TS53YL-5.0KCT-ND" H 3650 4000 50  0001 C CNN "PartNrDigikey"
 	1    3650 4000
 	-1   0    0    -1  
 $EndComp

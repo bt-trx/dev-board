@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:bt-trx-dev-board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -178,6 +179,7 @@ F 3 "None" H 2900 3550 50  0001 L BNN
 F 4 "WT32i BT Audio Module" H 2900 3750 50  0001 L BNN "Model"
 F 5 "Silicon Labs" H 2900 3850 50  0001 L BNN "Manufacturer"
 F 6 "634-WT32I-A-AI61" H 0   0   50  0001 C CNN "Mouser Best.Nr."
+F 7 "336-3599-1-ND" H 3750 2550 50  0001 C CNN "PartNrDigikey"
 	1    3750 2550
 	1    0    0    -1  
 $EndComp
@@ -259,6 +261,7 @@ F 1 "RJ45" H 3270 5355 50  0000 R CNN
 F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 3600 5375 50  0001 C CNN
 F 3 "~" V 3600 5375 50  0001 C CNN
 F 4 "649-54602-908LF " H -6000 -400 50  0001 C CNN "Mouser Best.Nr."
+F 5 "609-1046-ND" H 3600 5350 50  0001 C CNN "PartNrDigikey"
 	1    3600 5350
 	-1   0    0    1   
 $EndComp
@@ -270,7 +273,8 @@ F 0 "N1" H 1053 6684 50  0000 L CNN
 F 1 "Housing" H 1053 6593 50  0000 L CNN
 F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 950 6700 50  0001 C CNN
 F 3 "~" H 950 6700 50  0001 C CNN
-F 4 "546-1553CBKBAT " H 0   300 50  0001 C CNN "Mouser Best.Nr."
+F 4 "546-1553CBK" H 0   300 50  0001 C CNN "Mouser Best.Nr."
+F 5 "HM447-ND" H 900 6650 50  0001 C CNN "PartNrDigikey"
 	1    900  6650
 	1    0    0    -1  
 $EndComp
@@ -300,6 +304,7 @@ F 1 "10k" H 7620 4705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7480 4750 50  0001 C CNN
 F 3 "~" H 7550 4750 50  0001 C CNN
 F 4 "603-RC0805FR-0710KL" H 3900 -400 50  0001 C CNN "Mouser Best.Nr."
+F 5 "311-10.0KCRCT-ND" H 7550 4750 50  0001 C CNN "PartNrDigikey"
 	1    7550 4750
 	-1   0    0    1   
 $EndComp
@@ -341,6 +346,7 @@ F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 7250 5850 50  0001 
 F 3 "~" H 7250 5850 50  0001 C CNN
 F 4 "490-SJ1-3533NG" H 7250 5850 50  0001 C CNN "Mouser Best.Nr."
 F 5 "DNA" H 7250 5850 50  0001 C CNN "DNA"
+F 6 "CP1-3533NG-ND" H 7250 5850 50  0001 C CNN "PartNrDigikey"
 	1    7250 5850
 	1    0    0    1   
 $EndComp
@@ -370,6 +376,7 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7100 5100 50 
 F 3 "~" H 7100 5100 50  0001 C CNN
 F 4 "855-M20-9990346" H 200 -700 50  0001 C CNN "Mouser Best.Nr."
 F 5 "DNA" H 7100 5100 50  0001 C CNN "DNA"
+F 6 "952-2264-ND" H 7100 5100 50  0001 C CNN "PartNrDigikey"
 	1    7100 5100
 	-1   0    0    -1  
 $EndComp
@@ -384,6 +391,7 @@ F 1 "LTV-816S" H 9500 5450 50  0000 C CNN
 F 2 "liteon:LTV-816S" H 9300 5450 50  0001 L CIN
 F 3 "https://www.mouser.de/datasheet/2/239/LTV-8x6-1175385.pdf" H 9500 5650 50  0001 L CNN
 F 4 "859-LTV-816S " H 9500 5650 50  0001 C CNN "Mouser Best.Nr."
+F 5 "160-1361-5-ND" H 9500 5650 50  0001 C CNN "PartNrDigikey"
 	1    9500 5650
 	1    0    0    -1  
 $EndComp
@@ -456,6 +464,7 @@ F 1 "1uF" V 5289 2450 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5488 2300 50  0001 C CNN
 F 3 "~" H 5450 2450 50  0001 C CNN
 F 4 "80-C0805C105K3RAUTO" H 3700 -4400 50  0001 C CNN "Mouser Best.Nr."
+F 5 "399-6929-1-ND" H 5450 2450 50  0001 C CNN "PartNrDigikey"
 	1    5450 2450
 	0    1    1    0   
 $EndComp
@@ -636,6 +645,7 @@ F 1 "JMP_CON" H 2200 4750 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2400 5350 50  0001 C CNN
 F 3 "~" H 2400 5350 50  0001 C CNN
 F 4 "855-M20-7820842 " H 2400 5350 50  0001 C CNN "Mouser Best.Nr."
+F 5 "952-1823-ND" H 2400 5350 50  0001 C CNN "PartNrDigikey"
 	1    2400 5350
 	1    0    0    -1  
 $EndComp
@@ -648,6 +658,7 @@ F 1 "JMP_CON_TRX" H 2800 4750 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2850 5350 50  0001 C CNN
 F 3 "~" H 2850 5350 50  0001 C CNN
 F 4 "855-M20-7820842 " H 2850 5350 50  0001 C CNN "Mouser Best.Nr."
+F 5 "952-1823-ND" H 2850 5350 50  0001 C CNN "PartNrDigikey"
 	1    2850 5350
 	-1   0    0    -1  
 $EndComp
@@ -716,6 +727,7 @@ F 1 "PTT_SEL" H 9050 5650 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8650 5750 50  0001 C CNN
 F 3 "~" H 8650 5750 50  0001 C CNN
 F 4 "855-M20-9990346" H 1750 -50 50  0001 C CNN "Mouser Best.Nr."
+F 5 "952-2264-ND" H 8650 5750 50  0001 C CNN "PartNrDigikey"
 	1    8650 5750
 	-1   0    0    -1  
 $EndComp
@@ -736,6 +748,7 @@ F 1 "100nF" V 1589 3700 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1788 3550 50  0001 C CNN
 F 3 "~" H 1750 3700 50  0001 C CNN
 F 4 "710-885012207098" H 0   -3150 50  0001 C CNN "Mouser Best.Nr."
+F 5 "732-8080-1-ND" H 1750 3700 50  0001 C CNN "PartNrDigikey"
 	1    1750 3700
 	-1   0    0    1   
 $EndComp
@@ -776,6 +789,7 @@ F 1 "100nF" V 1139 3700 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1338 3550 50  0001 C CNN
 F 3 "~" H 1300 3700 50  0001 C CNN
 F 4 "710-885012207098" H -450 -3150 50  0001 C CNN "Mouser Best.Nr."
+F 5 "732-8080-1-ND" H 1300 3700 50  0001 C CNN "PartNrDigikey"
 	1    1300 3700
 	-1   0    0    1   
 $EndComp

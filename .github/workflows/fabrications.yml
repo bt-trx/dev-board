@@ -1,0 +1,32 @@
+name: kicad-exports
+
+on:
+  push:
+    branches: [ kicad-export-test ]
+    paths:
+      - '**.kicad_pcb'
+
+jobs:
+  fabrications:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: kicad-exports fabrications
+      uses: nerdyscout/kicad-exports@v0.2
+      with:
+        cmd: fabrication
+        dir: gerber
+        manufacturer: jlcpcb
+    - name: git commit && git push 
+      uses: github-actions-x/commit@v2.6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: fabrications
+        name: kicad-exports
+        rebase: 'true'
+        files: gerber/*
+    - name: upload gerbers
+      uses: actions/upload-artifact@v2
+      with:
+        name: fabrications
+        path: gerber/*

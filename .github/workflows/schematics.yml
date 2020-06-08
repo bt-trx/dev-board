@@ -1,0 +1,31 @@
+name: kicad-exports
+
+on:
+  push:
+    branches: [ kicad-export-test ]
+    paths:
+      - '**.sch'
+      - '**.kicad_pcb'
+  pull_request:
+    paths:
+      - '**.sch'
+      - '**.kicad_pcb'
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: kicad-exports kicad-schematic
+        uses: nerdyscout/kicad-exports@master
+        with:
+          cmd: kicad-schematic
+          dir: images
+      - name: git commit && git push 
+        uses: github-actions-x/commit@v2.6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: docs
+          name: kicad-exports
+          rebase: 'true'
+          files: images/*.pdf images/*.svg

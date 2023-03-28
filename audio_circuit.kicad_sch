@@ -6,8 +6,8 @@
 
   (title_block
     (title "BT-TRX Development Board ")
-    (date "2020-01-16")
-    (rev "v5.0")
+    (date "2023-03-28")
+    (rev "v6.0")
     (company "bt-trx.com")
     (comment 1 "Licensed under CERN OHL v1.2 - https://ohwr.org/licenses/cern-ohl/v1.2")
     (comment 2 "Andreas Müller - DC1MIL")

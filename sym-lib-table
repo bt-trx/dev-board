@@ -1,6 +1,8 @@
 (sym_lib_table
-  (lib (name Sierra_BC127)(type Legacy)(uri ${KIPRJMOD}/lib/bc127/Sierra_BC127.lib)(options "")(descr ""))
-  (lib (name SILabs_WT32i)(type Legacy)(uri ${KIPRJMOD}/lib/wt32i/SILabs_WT32i.lib)(options "")(descr ""))
-  (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/lib/teensy/teensy.lib)(options "")(descr ""))
-  (lib (name ESP32-DEVKITC-32D)(type Legacy)(uri ${KIPRJMOD}/lib/nodemcu_esp-32s/ESP32-DEVKITC-32D.lib)(options "")(descr ""))
+  (lib (name "Sierra_BC127")(type "Legacy")(uri "${KIPRJMOD}/lib/bc127/Sierra_BC127.lib")(options "")(descr ""))
+  (lib (name "SILabs_WT32i")(type "Legacy")(uri "${KIPRJMOD}/lib/wt32i/SILabs_WT32i.lib")(options "")(descr ""))
+  (lib (name "teensy")(type "Legacy")(uri "${KIPRJMOD}/lib/teensy/teensy.lib")(options "")(descr ""))
+  (lib (name "ESP32-DEVKITC-32D")(type "Legacy")(uri "${KIPRJMOD}/lib/nodemcu_esp-32s/ESP32-DEVKITC-32D.lib")(options "")(descr ""))
+  (lib (name "bt-trx-dev-board-rescue")(type "Legacy")(uri "${KIPRJMOD}/bt-trx-dev-board-rescue.lib")(options "")(descr ""))
+  (lib (name "fbm100")(type "Legacy")(uri "${KIPRJMOD}/lib/FMB100/FMB100.lib")(options "")(descr ""))
 )

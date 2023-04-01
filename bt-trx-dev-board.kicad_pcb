@@ -4925,7 +4925,7 @@
   (gr_text "-   + SCL SDA" (at 152.146 84.582) (layer "F.SilkS") (tstamp 456f1162-9a3d-4da7-ac2a-5785f38f5d4e)
     (effects (font (size 0.75 0.75) (thickness 0.125)))
   )
-  (gr_text "01-2020" (at 124.46 126.492) (layer "F.SilkS") (tstamp 6e5c0afc-543e-43e1-849b-bdd5fd986d38)
+  (gr_text "03-2023" (at 124.46 126.492) (layer "F.SilkS") (tstamp 6e5c0afc-543e-43e1-849b-bdd5fd986d38)
     (effects (font (size 1.2 1) (thickness 0.15)))
   )
   (gr_text "8" (at 177.546 68.58) (layer "F.SilkS") (tstamp 705a59db-3317-4e2a-84c6-ed2343e36335)
